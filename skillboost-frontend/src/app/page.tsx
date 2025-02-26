@@ -1,5 +1,5 @@
 
-import RootLayoutClient from "./layoutClient";
+import RootLayoutClient from "../app/layoutClient";
 import styles from "./page.module.css";
 
 export default function Home() {
