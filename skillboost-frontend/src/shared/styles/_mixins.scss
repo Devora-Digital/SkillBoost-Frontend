@@ -1,0 +1,8 @@
+@import '@/shared/styles/variables';
+
+@mixin HeaderText {
+    font-family: 'Inter';
+    font-weight: 500;
+    line-height: 19px;
+    color: $header-text-color;
+}

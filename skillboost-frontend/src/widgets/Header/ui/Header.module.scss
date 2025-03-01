@@ -1,3 +1,6 @@
+@import '@/shared/styles/mixins';
+
+
 .headerContainer {
     display: flex;
     justify-content: space-between;
@@ -17,25 +20,19 @@
         }
 
         .headerLogoText {
-            color: #334155;
-            font-family: 'Inter';
+            @include HeaderText;
             font-size: 16px;
-            font-weight: 500;
-            line-height: 19px;
             cursor: pointer;
         }
     }
 
     .headerNavLink {
-        color: #334155;
-        font-family: 'Inter';
+        @include HeaderText;
         font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
     }
 
     .headerSearch {
-        border: 1px solid #334155;
+        border: 1px solid $header-text-color;
         border-radius: 8px;
 
         .headerSearchLabel {
@@ -46,7 +43,7 @@
         }
 
         .headerSearchInput {
-            color: #64748B;
+            color: $header-secondary-color;
             font-family: 'Inter', sans-serif;
             font-size: 12px;
             font-weight: 400;
@@ -55,18 +52,14 @@
             outline: none;
 
             &::placeholder {
-                color: #334155;
-                font-weight: 500;
+                @include HeaderText;
             }
         }
     }
 
     .headerTeach {
-        color: #334155;
-        font-family: 'Inter';
+        @include HeaderText;
         font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
 
     }
 
@@ -79,7 +72,7 @@
             .headerIconProfile {
                 width: 40px;
                 height: 40px;
-                background-color: #64748b;
+                background-color: $header-secondary-color;
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
@@ -101,13 +94,11 @@
 
             .headerAuthLogin {
                 background-color: #ffffff;
-                border: 1px solid #64748b;
+                border: 1px solid $header-secondary-color;
                 padding: 10px;
                 color: #64748b;
-                font-family: 'Inter';
+                @include HeaderText;
                 font-size: 14px;
-                font-weight: 500;
-                line-height: 20px;
 
                 &:hover {
                     background-color: #f3f5f8;
@@ -116,13 +107,11 @@
             }
 
             .headerAuthSignup {
+                @include HeaderText;
                 padding: 10px;
-                background: #64748b;
+                background: $header-secondary-color;
                 color: #ffffff;
-                font-family: 'Inter';
                 font-size: 14px;
-                font-weight: 500;
-                line-height: 20px;
 
                 &:hover {
                     background-color: #7b8ca3;
