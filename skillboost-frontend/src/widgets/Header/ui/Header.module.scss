@@ -1,0 +1,138 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 13px 80px;
+    border-bottom: 1px solid #E2E8F0;
+
+    .headerLogo {
+        display: flex;
+        align-items: center;
+
+        .headerLogoIcon {
+            width: 31px;
+            height: 41px;
+            cursor: pointer;
+        }
+
+        .headerLogoText {
+            color: #334155;
+            font-family: 'Inter';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            cursor: pointer;
+        }
+    }
+
+    .headerNavLink {
+        color: #334155;
+        font-family: 'Inter';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    .headerSearch {
+        border: 1px solid #334155;
+        border-radius: 8px;
+
+        .headerSearchLabel {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0px 10px 10px;
+        }
+
+        .headerSearchInput {
+            color: #64748B;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+            border: none;
+            outline: none;
+
+            &::placeholder {
+                color: #334155;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .headerTeach {
+        color: #334155;
+        font-family: 'Inter';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+
+    }
+
+    .headerActions {
+        .headerIcons {
+            display: flex;
+            gap: 29px;
+            align-items: center;
+
+            .headerIconProfile {
+                width: 40px;
+                height: 40px;
+                background-color: #64748b;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19px;
+                cursor: pointer;
+            }
+
+        }
+
+        .headerAuth {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .headerAuthLogin {
+                background-color: #ffffff;
+                border: 1px solid #64748b;
+                padding: 10px;
+                color: #64748b;
+                font-family: 'Inter';
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+
+                &:hover {
+                    background-color: #f3f5f8;
+                }
+
+            }
+
+            .headerAuthSignup {
+                padding: 10px;
+                background: #64748b;
+                color: #ffffff;
+                font-family: 'Inter';
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+
+                &:hover {
+                    background-color: #7b8ca3;
+                }
+            }
+        }
+
+        .headerIcon {
+            cursor: pointer;
+        }
+    }
+
+}
