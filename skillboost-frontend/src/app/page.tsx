@@ -6,7 +6,12 @@ export default function Home() {
   return (
     <RootLayoutClient>
       <div className={styles.page}>
-          <h1>Home page</h1>
+          <div>Banner</div>
+          <div>Statistic</div>
+          <div>Top Categories</div>
+          <div>Top Courses</div>
+          <div>Top Instructors</div>
+          <div>Promotions</div>
       </div>
     </RootLayoutClient>
   );
