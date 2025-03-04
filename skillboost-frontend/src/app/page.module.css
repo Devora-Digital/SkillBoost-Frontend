@@ -1,0 +1,17 @@
+
+.statistic_block {
+    display: flex;
+}
+
+.inside_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 85.5px;
+    margin-right: 85.5px;
+}
+
+.vertical_line {
+    border-left: 1px solid #000;
+    height: 55px;
+}
