@@ -32,6 +32,7 @@
     height: 55px;
 }
 
+/*Categories styles*/
 .categories_block {
     display: flex;
     flex-direction: column;
@@ -50,6 +51,32 @@
 }
 
 .all_categories_button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background: #FFF;
+    color: #3B82F6;
+    padding: 13px 24px 13px 24px;
+}
+
+/*Courses styles*/
+.courses_block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.courses_control_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.all_courses_button {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     background: #FFF;

@@ -35,7 +35,12 @@ export default function Home() {
               </div>
               <div></div>
           </div>
-          <div>Top Courses</div>
+          <div className={styles.courses_block}>
+              <div className={styles.courses_control_block}>
+                  <p className={styles.courses_title}>Top Courses</p>
+                  <button className={styles.all_courses_button}>See All</button>
+              </div>
+          </div>
           <div>Top Instructors</div>
           <div>Promotions</div>
       </div>
