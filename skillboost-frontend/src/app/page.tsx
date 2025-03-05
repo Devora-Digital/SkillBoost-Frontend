@@ -40,8 +40,15 @@ export default function Home() {
                   <p className={styles.courses_title}>Top Courses</p>
                   <button className={styles.all_courses_button}>See All</button>
               </div>
+              <div></div>
           </div>
-          <div>Top Instructors</div>
+          <div className={styles.instructors_block}>
+              <div className={styles.instructors_control_block}>
+                  <p className={styles.instructors_title}>Top Instructors</p>
+                  <button className={styles.all_instructors_button}>See All</button>
+              </div>
+              <div></div>
+          </div>
           <div>Promotions</div>
       </div>
     </RootLayoutClient>

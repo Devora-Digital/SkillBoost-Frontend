@@ -88,3 +88,29 @@
     color: #3B82F6;
     padding: 13px 24px 13px 24px;
 }
+
+/*Instructors styles*/
+.instructors_block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.instructors_control_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.instructors_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.all_instructors_button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background: #FFF;
+    color: #3B82F6;
+    padding: 13px 24px 13px 24px;
+}
