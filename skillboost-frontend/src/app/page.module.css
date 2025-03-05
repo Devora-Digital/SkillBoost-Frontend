@@ -1,6 +1,7 @@
 
 .statistic_block {
     display: flex;
+    background: #F8FAFC;
 }
 
 .inside_block {
@@ -22,6 +23,6 @@
 }
 
 .vertical_line {
-    border-left: 1px solid #000;
+    border-left: 4px solid #E2E8F0;
     height: 55px;
 }
