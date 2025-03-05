@@ -5,34 +5,50 @@ const Footer = () => {
     <footer>
       <div className={styles.footerContainer}>
         <div className={styles.footerColumn}>
-          <div className={styles.logo}>
+          <div className={styles.footerLogo}>
             <img
               className={styles.footerLogoIcon}
               src='/icons/icon-logo.png'
-              alt='Byway'
+              alt='SKILLBOOST'
             />
-            <p className={styles.footerLogoText}>Byway</p>
+            <p className={styles.footerLogoText}>SkillBoost</p>
           </div>
           <p className={styles.footerColumnttext}>
             Empowering learners through accessible and engaging online
-            education. Byway is a leading online learning platform dedicated to
-            providing high-quality, flexible, and affordable educational
-            experiences.
+            education. <br></br>SkillBoost is a leading online learning platform
+            dedicated to providing high-quality, flexible, and affordable
+            educational experiences.
           </p>
         </div>
         <div className={styles.footerColumn}>
           <h4 className={styles.footerColumnTitle}>Get Help</h4>
-          <Link href='/'>Contact Us</Link>
-          <Link href='/'>Latest Articles</Link>
-          <Link href='/'>FAQ</Link>
+          <Link href='/' className={styles.footerLink}>
+            Contact Us
+          </Link>
+          <Link href='/' className={styles.footerLink}>
+            Latest Articles
+          </Link>
+          <Link href='/' className={styles.footerLink}>
+            FAQ
+          </Link>
         </div>
         <div className={styles.footerColumn}>
           <h4 className={styles.footerColumnTitle}>Programs</h4>
-          <Link href='/'>Art & Design</Link>
-          <Link href='/'>Business</Link>
-          <Link href='/'>IT & Software</Link>
-          <Link href='/'>Languages</Link>
-          <Link href='/'>Programming</Link>
+          <Link href='/' className={styles.footerLink}>
+            Art & Design
+          </Link>
+          <Link href='/' className={styles.footerLink}>
+            Business
+          </Link>
+          <Link href='/' className={styles.footerLink}>
+            IT & Software
+          </Link>
+          <Link href='/' className={styles.footerLink}>
+            Languages
+          </Link>
+          <Link href='/' className={styles.footerLink}>
+            Programming
+          </Link>
         </div>
         <div className={styles.footerColumn}>
           <h4 className={styles.footerColumnTitle}>Contact Us</h4>
@@ -42,27 +58,47 @@ const Footer = () => {
           <ul className={styles.footerColumnSoc}>
             <li className={styles.footerSocIcon}>
               <a href='#'>
-                <img src='/icons/icon-gb.svg' alt='SKILLBOOST' />
+                <img
+                  src='/icons/icon-fb.svg'
+                  alt='SKILLBOOST'
+                  className={styles.footerSocImg}
+                />
               </a>
             </li>
             <li className={styles.footerSocIcon}>
               <a href='#'>
-                <img src='/icons/icon-github.svg' alt='SKILLBOOST' />
+                <img
+                  src='/icons/icon-github.svg'
+                  alt='SKILLBOOST'
+                  className={styles.footerSocImg}
+                />
               </a>
             </li>
             <li className={styles.footerSocIcon}>
               <a href='#'>
-                <img src='/icons/icon-google.svg' alt='SKILLBOOST' />
+                <img
+                  src='/icons/icon-google.svg'
+                  alt='SKILLBOOST'
+                  className={styles.footerSocImg}
+                />
               </a>
             </li>
             <li className={styles.footerSocIcon}>
               <a href='#'>
-                <img src='/icons/icon-x.svg' alt='SKILLBOOST' />
+                <img
+                  src='/icons/icon-x.svg'
+                  alt='SKILLBOOST'
+                  className={styles.footerSocImg}
+                />
               </a>
             </li>
             <li className={styles.footerSocIcon}>
               <a href='#'>
-                <img src='/icons/icon-microsoft.svg' alt='SKILLBOOST' />
+                <img
+                  src='/icons/icon-microsoft.svg'
+                  alt='SKILLBOOST'
+                  className={styles.footerSocImg}
+                />
               </a>
             </li>
           </ul>

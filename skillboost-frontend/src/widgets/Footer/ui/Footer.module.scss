@@ -1,0 +1,65 @@
+@import '@/shared/styles/mixins';
+
+.footerContainer {
+    padding: 80px;
+    background-color: #1E293B;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 122px;
+
+    .footerColumn {
+        display: flex;
+        flex-direction: column;
+        color: $footer-secondary-text;
+        max-width: 416px;
+        gap: 8px;
+        @include FooterText;
+
+        .footerLogo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 8px;
+
+            .footerLogoIcon {
+                width: 31px;
+                height: 41px;
+                cursor: pointer;
+            }
+
+            .footerLogoText {
+                @include HeaderText;
+                font-size: 16px;
+                cursor: pointer;
+                cursor: pointer;
+                color: $footer-main-color
+            }
+        }
+
+        .footerLink {
+            @include FooterText;
+
+            &:hover {
+                color: #eef0f3;
+            }
+
+        }
+
+        .footerColumnSoc {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            .footerSocImg {
+                width: 40px;
+                height: 40px;
+                background-color: #fff;
+                border-radius: 50%;
+                padding: 4px;
+
+            }
+        }
+    }
+}
