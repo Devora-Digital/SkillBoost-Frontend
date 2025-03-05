@@ -31,3 +31,28 @@
     border-left: 4px solid #E2E8F0;
     height: 55px;
 }
+
+.categories_block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.categories_control_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.all_categories_button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background: #FFF;
+    color: #3B82F6;
+    padding: 13px 24px 13px 24px;
+}

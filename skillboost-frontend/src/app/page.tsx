@@ -28,7 +28,13 @@ export default function Home() {
                   <p className={styles.description_section}>Courses by our best mentors</p>
               </div>
           </div>
-          <div>Top Categories</div>
+          <div className={styles.categories_block}>
+              <div className={styles.categories_control_block}>
+                  <p className={styles.categories_title}>Top Categories</p>
+                  <button className={styles.all_categories_button}>See All</button>
+              </div>
+              <div></div>
+          </div>
           <div>Top Courses</div>
           <div>Top Instructors</div>
           <div>Promotions</div>
