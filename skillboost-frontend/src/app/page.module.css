@@ -11,6 +11,16 @@
     margin-right: 85.5px;
 }
 
+.numbers_section {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.description_section {
+    font-family: 'Inter', sans-serif;
+}
+
 .vertical_line {
     border-left: 1px solid #000;
     height: 55px;
