@@ -1,4 +1,8 @@
 
+.page {
+    width: 1440px;
+}
+
 .statistic_block {
     display: flex;
     background: #F8FAFC;
