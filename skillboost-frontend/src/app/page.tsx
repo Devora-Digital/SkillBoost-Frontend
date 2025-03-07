@@ -33,7 +33,20 @@ export default function Home() {
                   <p className={styles.categories_title}>Top Categories</p>
                   <button className={styles.all_categories_button}>See All</button>
               </div>
-              <div></div>
+              <div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+              </div>
           </div>
           <div className={styles.courses_block}>
               <div className={styles.courses_control_block}>
