@@ -83,6 +83,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 .icon_circle_place {
@@ -99,11 +100,13 @@
     font-size: 20px;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
+    margin: 0px 3px 0px 3px;
 }
 
 .category_item_count {
     font-family: 'Inter', sans-serif;
     color: #334155;
+    margin: 0px 9px 0px 9px;
 }
 
 /*Courses styles*/
