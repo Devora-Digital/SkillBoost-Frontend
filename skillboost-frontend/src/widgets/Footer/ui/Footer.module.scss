@@ -29,11 +29,10 @@
             }
 
             .footerLogoText {
-                @include HeaderText;
+                @include FooterText;
                 font-size: 16px;
                 cursor: pointer;
-                cursor: pointer;
-                color: $footer-main-color
+                color: $footer-main-color;
             }
         }
 

@@ -13,7 +13,7 @@ const Footer = () => {
             />
             <p className={styles.footerLogoText}>SkillBoost</p>
           </div>
-          <p className={styles.footerColumnttext}>
+          <p className={styles.footerColumntext}>
             Empowering learners through accessible and engaging online
             education. <br></br>SkillBoost is a leading online learning platform
             dedicated to providing high-quality, flexible, and affordable

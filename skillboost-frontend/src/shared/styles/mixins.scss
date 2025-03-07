@@ -1,16 +1,15 @@
 @import '@/shared/styles/variables';
 
-@mixin HeaderText {
-    font-family: 'Inter';
-    font-weight: 500;
-    line-height: 19px;
-    color: $header-text-color;
-}
-
 @mixin FooterText {
     color: $footer-secondary-text;
     font-family: 'Inter';
     font-size: 14px;
     font-weight: 400;
-    line-height: 150%;
+}
+
+@mixin HeaderText {
+    font-family: 'Inter';
+    font-weight: 500;
+    line-height: 19px;
+    color: $header-text-color;
 }
