@@ -63,6 +63,17 @@
     padding: 13px 24px 13px 24px;
 }
 
+.category_item_title {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.category_item_count {
+    font-family: 'Inter', sans-serif;
+    color: #334155;
+}
+
 /*Courses styles*/
 .courses_block {
     display: flex;

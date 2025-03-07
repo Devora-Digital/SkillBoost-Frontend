@@ -35,16 +35,40 @@ export default function Home() {
               </div>
               <div>
                 <div>
-                    <div></div>
+                    <div>
+                        <div></div>
+                        <div>
+                            <p className={styles.category_item_title}>Astrology</p>
+                            <p className={styles.category_item_count}>11 Courses</p>
+                        </div>
+                    </div>
                 </div>
                 <div>
+                    <div>
                     <div></div>
+                        <div>
+                            <p className={styles.category_item_title}>Development</p>
+                            <p className={styles.category_item_count}>12 Courses</p>
+                        </div>
+                    </div>
                 </div>
                 <div>
+                    <div>
                     <div></div>
+                        <div>
+                            <p className={styles.category_item_title}>Marketing</p>
+                            <p className={styles.category_item_count}>12 Courses</p>
+                        </div>
+                    </div>
                 </div>
                 <div>
+                    <div>
                     <div></div>
+                        <div>
+                            <p className={styles.category_item_title}>Physics</p>
+                            <p className={styles.category_item_count}>14 Courses</p>
+                        </div>
+                    </div>
                 </div>
               </div>
           </div>
