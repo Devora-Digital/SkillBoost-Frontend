@@ -63,6 +63,16 @@
     padding: 13px 24px 13px 24px;
 }
 
+.icon_circle_place {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #a4c4e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .category_item_title {
     font-size: 20px;
     font-weight: 600;

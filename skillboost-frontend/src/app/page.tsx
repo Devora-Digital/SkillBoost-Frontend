@@ -1,5 +1,9 @@
 
 import RootLayoutClient from "../app/layoutClient";
+import { LucideTelescope } from "lucide-react";
+import { LucideCode } from "lucide-react";
+import { LucideBriefcase } from "lucide-react";
+import { LucideAtom } from "lucide-react";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -36,7 +40,11 @@ export default function Home() {
               <div>
                 <div>
                     <div>
-                        <div></div>
+                        <div className={styles.icon_circle_place}>
+                            <div>
+                                <LucideTelescope />
+                            </div>
+                        </div>
                         <div>
                             <p className={styles.category_item_title}>Astrology</p>
                             <p className={styles.category_item_count}>11 Courses</p>
@@ -45,7 +53,11 @@ export default function Home() {
                 </div>
                 <div>
                     <div>
-                    <div></div>
+                        <div className={styles.icon_circle_place}>
+                            <div>
+                                <LucideCode />
+                            </div>
+                        </div>
                         <div>
                             <p className={styles.category_item_title}>Development</p>
                             <p className={styles.category_item_count}>12 Courses</p>
@@ -54,7 +66,11 @@ export default function Home() {
                 </div>
                 <div>
                     <div>
-                    <div></div>
+                        <div className={styles.icon_circle_place}>
+                            <div>
+                                <LucideBriefcase />
+                            </div>
+                        </div>
                         <div>
                             <p className={styles.category_item_title}>Marketing</p>
                             <p className={styles.category_item_count}>12 Courses</p>
@@ -63,7 +79,11 @@ export default function Home() {
                 </div>
                 <div>
                     <div>
-                    <div></div>
+                        <div className={styles.icon_circle_place}>
+                            <div>
+                                <LucideAtom />
+                            </div>
+                        </div>
                         <div>
                             <p className={styles.category_item_title}>Physics</p>
                             <p className={styles.category_item_count}>14 Courses</p>
