@@ -37,57 +37,49 @@ export default function Home() {
                   <p className={styles.categories_title}>Top Categories</p>
                   <button className={styles.all_categories_button}>See All</button>
               </div>
-              <div>
-                <div>
-                    <div>
+              <div className={styles.categories_items_block}>
+                <div className={styles.categories_item}>
+                    <div className={styles.categories_item_inside}>
                         <div className={styles.icon_circle_place}>
                             <div>
                                 <LucideTelescope />
                             </div>
                         </div>
-                        <div>
-                            <p className={styles.category_item_title}>Astrology</p>
-                            <p className={styles.category_item_count}>11 Courses</p>
-                        </div>
+                        <p className={styles.category_item_title}>Astrology</p>
+                        <p className={styles.category_item_count}>11 Courses</p>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div className={styles.categories_item}>
+                    <div className={styles.categories_item_inside}>
                         <div className={styles.icon_circle_place}>
                             <div>
                                 <LucideCode />
                             </div>
                         </div>
-                        <div>
-                            <p className={styles.category_item_title}>Development</p>
-                            <p className={styles.category_item_count}>12 Courses</p>
-                        </div>
+                        <p className={styles.category_item_title}>Development</p>
+                        <p className={styles.category_item_count}>12 Courses</p>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div className={styles.categories_item}>
+                    <div className={styles.categories_item_inside}>
                         <div className={styles.icon_circle_place}>
                             <div>
                                 <LucideBriefcase />
                             </div>
                         </div>
-                        <div>
-                            <p className={styles.category_item_title}>Marketing</p>
-                            <p className={styles.category_item_count}>12 Courses</p>
-                        </div>
+                        <p className={styles.category_item_title}>Marketing</p>
+                        <p className={styles.category_item_count}>12 Courses</p>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div className={styles.categories_item}>
+                    <div className={styles.categories_item_inside}>
                         <div className={styles.icon_circle_place}>
                             <div>
                                 <LucideAtom />
                             </div>
                         </div>
-                        <div>
-                            <p className={styles.category_item_title}>Physics</p>
-                            <p className={styles.category_item_count}>14 Courses</p>
-                        </div>
+                        <p className={styles.category_item_title}>Physics</p>
+                        <p className={styles.category_item_count}>14 Courses</p>
                     </div>
                 </div>
               </div>

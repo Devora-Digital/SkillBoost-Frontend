@@ -63,6 +63,23 @@
     padding: 13px 24px 13px 24px;
 }
 
+.categories_items_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories_item {
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 24px 93px 24px 93px;
+}
+
+.categories_item_inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .icon_circle_place {
     width: 100px;
     height: 100px;
