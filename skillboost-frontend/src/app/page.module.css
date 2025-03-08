@@ -163,6 +163,7 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 8px;
+    margin: 0px 4px 0px 4px;
 }
 
 .courses_item_info_inside {
