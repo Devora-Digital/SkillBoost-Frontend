@@ -6,11 +6,16 @@ import { LucideCode } from "lucide-react";
 import { LucideBriefcase } from "lucide-react";
 import { LucideAtom } from "lucide-react";
 import TopCoursesImage from "../../public/Homepage/TopCoursesImage_01.jpeg"
+import TopInstructorsImage from "../../public/Homepage/InstructorImage_01.png"
 import styles from "./page.module.css";
 
 export default function Home() {
     const imageStyleFirst = {
         borderRadius: '8px'
+    }
+    const lineStyleFirst = {
+        width: '100%',
+        border: '1px solid #E2E8F0'
     }
   return (
     <RootLayoutClient>
@@ -178,21 +183,96 @@ export default function Home() {
                   <p className={styles.instructors_title}>Top Instructors</p>
                   <button className={styles.all_instructors_button}>See All</button>
               </div>
-              <div>
-                <div>
-                    <div></div>
+              <div className={styles.mentors_items_block}>
+                <div className={styles.mentors_item}>
+                    <div className={styles.mentors_item_inside}>
+                        <Image src={TopInstructorsImage} width={177} height={132} style={imageStyleFirst} alt="Top Mentor 01" />
+                        <div className={styles.mentors_item_info}>
+                            <div className={styles.mentors_item_info_first_block}>
+                                <p className={styles.mentors_item_title}>Ronald Richards</p>
+                                <p className={styles.mentors_item_post}>UI/UX Designer</p>
+                            </div>
+                            <hr style={lineStyleFirst} />
+                            <div className={styles.mentors_item_info_second_block}>
+                                <div>
+                                    <p className={styles.mentors_item_rating}>4.9</p>
+                                </div>
+                                <p className={styles.mentors_item_students_count}>2400 Students</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <div></div>
+                <div className={styles.mentors_item}>
+                    <div className={styles.mentors_item_inside}>
+                        <Image src={TopInstructorsImage} width={177} height={132} style={imageStyleFirst} alt="Top Mentor 01" />
+                        <div className={styles.mentors_item_info}>
+                            <div className={styles.mentors_item_info_first_block}>
+                                <p className={styles.mentors_item_title}>Ronald Richards</p>
+                                <p className={styles.mentors_item_post}>UI/UX Designer</p>
+                            </div>
+                            <hr style={lineStyleFirst} />
+                            <div className={styles.mentors_item_info_second_block}>
+                                <div>
+                                    <p className={styles.mentors_item_rating}>4.9</p>
+                                </div>
+                                <p className={styles.mentors_item_students_count}>2400 Students</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <div></div>
+                <div className={styles.mentors_item}>
+                    <div className={styles.mentors_item_inside}>
+                        <Image src={TopInstructorsImage} width={177} height={132} style={imageStyleFirst} alt="Top Mentor 01" />
+                        <div className={styles.mentors_item_info}>
+                            <div className={styles.mentors_item_info_first_block}>
+                                <p className={styles.mentors_item_title}>Ronald Richards</p>
+                                <p className={styles.mentors_item_post}>UI/UX Designer</p>
+                            </div>
+                            <hr style={lineStyleFirst} />
+                            <div className={styles.mentors_item_info_second_block}>
+                                <div>
+                                    <p className={styles.mentors_item_rating}>4.9</p>
+                                </div>
+                                <p className={styles.mentors_item_students_count}>2400 Students</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <div></div>
+                <div className={styles.mentors_item}>
+                    <div className={styles.mentors_item_inside}>
+                        <Image src={TopInstructorsImage} width={177} height={132} style={imageStyleFirst} alt="Top Mentor 01" />
+                        <div className={styles.mentors_item_info}>
+                            <div className={styles.mentors_item_info_first_block}>
+                                <p className={styles.mentors_item_title}>Ronald Richards</p>
+                                <p className={styles.mentors_item_post}>UI/UX Designer</p>
+                            </div>
+                            <hr style={lineStyleFirst} />
+                            <div className={styles.mentors_item_info_second_block}>
+                                <div>
+                                    <p className={styles.mentors_item_rating}>4.9</p>
+                                </div>
+                                <p className={styles.mentors_item_students_count}>2400 Students</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <div></div>
+                <div className={styles.mentors_item}>
+                    <div className={styles.mentors_item_inside}>
+                        <Image src={TopInstructorsImage} width={177} height={132} style={imageStyleFirst} alt="Top Mentor 01" />
+                        <div className={styles.mentors_item_info}>
+                            <div className={styles.mentors_item_info_first_block}>
+                                <p className={styles.mentors_item_title}>Ronald Richards</p>
+                                <p className={styles.mentors_item_post}>UI/UX Designer</p>
+                            </div>
+                            <hr style={lineStyleFirst} />
+                            <div className={styles.mentors_item_info_second_block}>
+                                <div>
+                                    <p className={styles.mentors_item_rating}>4.9</p>
+                                </div>
+                                <p className={styles.mentors_item_students_count}>2400 Students</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
               </div>
           </div>
