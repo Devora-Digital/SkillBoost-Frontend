@@ -9,6 +9,9 @@ import TopCoursesImage from "../../public/Homepage/TopCoursesImage_01.jpeg"
 import styles from "./page.module.css";
 
 export default function Home() {
+    const imageStyleFirst = {
+        borderRadius: '8px'
+    }
   return (
     <RootLayoutClient>
       <div className={styles.page}>
@@ -91,79 +94,83 @@ export default function Home() {
                   <p className={styles.courses_title}>Top Courses</p>
                   <button className={styles.all_courses_button}>See All</button>
               </div>
-              <div>
-                    <div>
-                        <div>
-                            <Image src={TopCoursesImage} width={266} height={139} alt="Top Course 01"/>
-                            <div>
-                                <div>
-                                    <div>
-                                        <p>Beginners Guide to Design</p>
-                                        <p>By Ronald Richards</p>
-                                    </div>
-                                    <div>
-                                        <p>(1200 Ratings)</p>
-                                    </div>
-                                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+              <div className={styles.courses_items_block}>
+                <div className={styles.courses_item}>
+                    <div className={styles.courses_item_inside}>
+                        <Image src={TopCoursesImage} width={266} height={139} style={imageStyleFirst} alt="Top Course 01"/>
+                        <div className={styles.courses_item_info}>
+                            <div className={styles.courses_item_info_inside}>
+                                <div className={styles.courses_item_info_first_block}>
+                                    <p className={styles.courses_item_title}>Beginners Guide to Design</p>
+                                    <p className={styles.courses_item_author}>By Ronald Richards</p>
                                 </div>
-                                <p>$149.9</p>
+                                <div className={styles.courses_item_info_second_block}>
+                                    <div></div>
+                                    <p className={styles.courses_item_rating}>(1200 Ratings)</p>
+                                </div>
+                                <p className={styles.courses_item_hours}>22 Total Hours. 155 Lectures. Beginner</p>
                             </div>
+                            <p className={styles.courses_item_price}>$149.9</p>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <Image src={TopCoursesImage} width={266} height={139} alt="Top Course 01"/>
-                            <div>
-                                <div>
-                                    <div>
-                                        <p>Beginners Guide to Design</p>
-                                        <p>By Ronald Richards</p>
-                                    </div>
-                                    <div>
-                                        <p>(1200 Ratings)</p>
-                                    </div>
-                                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                </div>
+                <div className={styles.courses_item}>
+                    <div className={styles.courses_item_inside}>
+                        <Image src={TopCoursesImage} width={266} height={139} style={imageStyleFirst} alt="Top Course 01"/>
+                        <div className={styles.courses_item_info}>
+                            <div className={styles.courses_item_info_inside}>
+                                <div className={styles.courses_item_info_first_block}>
+                                    <p className={styles.courses_item_title}>Beginners Guide to Design</p>
+                                    <p className={styles.courses_item_author}>By Ronald Richards</p>
                                 </div>
-                                <p>$149.9</p>
+                                <div className={styles.courses_item_info_second_block}>
+                                    <div></div>
+                                    <p className={styles.courses_item_rating}>(1200 Ratings)</p>
+                                </div>
+                                <p className={styles.courses_item_hours}>22 Total Hours. 155 Lectures. Beginner</p>
                             </div>
+                            <p className={styles.courses_item_price}>$149.9</p>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <Image src={TopCoursesImage} width={266} height={139} alt="Top Course 01"/>
-                            <div>
-                                <div>
-                                    <div>
-                                        <p>Beginners Guide to Design</p>
-                                        <p>By Ronald Richards</p>
-                                    </div>
-                                    <div>
-                                        <p>(1200 Ratings)</p>
-                                    </div>
-                                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                </div>
+                <div className={styles.courses_item}>
+                    <div className={styles.courses_item_inside}>
+                        <Image src={TopCoursesImage} width={266} height={139} style={imageStyleFirst} alt="Top Course 01"/>
+                        <div className={styles.courses_item_info}>
+                            <div className={styles.courses_item_info_inside}>
+                                <div className={styles.courses_item_info_first_block}>
+                                    <p className={styles.courses_item_title}>Beginners Guide to Design</p>
+                                    <p className={styles.courses_item_author}>By Ronald Richards</p>
                                 </div>
-                                <p>$149.9</p>
+                                <div className={styles.courses_item_info_second_block}>
+                                    <div></div>
+                                    <p className={styles.courses_item_rating}>(1200 Ratings)</p>
+                                </div>
+                                <p className={styles.courses_item_hours}>22 Total Hours. 155 Lectures. Beginner</p>
                             </div>
+                            <p className={styles.courses_item_price}>$149.9</p>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <Image src={TopCoursesImage} width={266} height={139} alt="Top Course 01"/>
-                            <div>
-                                <div>
-                                    <div>
-                                        <p>Beginners Guide to Design</p>
-                                        <p>By Ronald Richards</p>
-                                    </div>
-                                    <div>
-                                        <p>(1200 Ratings)</p>
-                                    </div>
-                                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                </div>
+                <div className={styles.courses_item}>
+                    <div className={styles.courses_item_inside}>
+                        <Image src={TopCoursesImage} width={266} height={139} style={imageStyleFirst} alt="Top Course 01"/>
+                        <div className={styles.courses_item_info}>
+                            <div className={styles.courses_item_info_inside}>
+                                <div className={styles.courses_item_info_first_block}>
+                                    <p className={styles.courses_item_title}>Beginners Guide to Design</p>
+                                    <p className={styles.courses_item_author}>By Ronald Richards</p>
                                 </div>
-                                <p>$149.9</p>
+                                <div className={styles.courses_item_info_second_block}>
+                                    <div></div>
+                                    <p className={styles.courses_item_rating}>(1200 Ratings)</p>
+                                </div>
+                                <p className={styles.courses_item_hours}>22 Total Hours. 155 Lectures. Beginner</p>
                             </div>
+                            <p className={styles.courses_item_price}>$149.9</p>
                         </div>
                     </div>
+                </div>
               </div>
           </div>
           <div className={styles.instructors_block}>

@@ -135,6 +135,91 @@
     padding: 13px 24px 13px 24px;
 }
 
+.courses_items_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses_item {
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
+    padding: 16px;
+}
+
+.courses_item_inside {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.courses_item_image_block {
+    border-radius: 8px;
+}
+
+.courses_item_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.courses_item_info_inside {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.courses_item_info_first_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.courses_item_title {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.courses_item_author {
+    font-family: 'Inter', sans-serif;
+    color: #334155;
+    padding: 0;
+    margin: 0;
+}
+
+.courses_item_info_second_block {
+    display: flex;
+    gap: 8px;
+}
+
+.courses_item_rating {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    margin: 2.5px 0px 2.5px 0px;
+}
+
+.courses_item_hours {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: #334155;
+    padding: 0;
+    margin: 0;
+}
+
+.courses_item_price {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
 /*Instructors styles*/
 .instructors_block {
     display: flex;
