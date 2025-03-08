@@ -1,9 +1,11 @@
 
 import RootLayoutClient from "../app/layoutClient";
+import Image from "next/image";
 import { LucideTelescope } from "lucide-react";
 import { LucideCode } from "lucide-react";
 import { LucideBriefcase } from "lucide-react";
 import { LucideAtom } from "lucide-react";
+import TopCoursesImage from "../../public/Homepage/TopCoursesImage_01.jpeg"
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -89,7 +91,80 @@ export default function Home() {
                   <p className={styles.courses_title}>Top Courses</p>
                   <button className={styles.all_courses_button}>See All</button>
               </div>
-              <div></div>
+              <div>
+                    <div>
+                        <div>
+                            <Image src={TopCoursesImage} width={266} height={139} alt="Top Course 01"/>
+                            <div>
+                                <div>
+                                    <div>
+                                        <p>Beginners Guide to Design</p>
+                                        <p>By Ronald Richards</p>
+                                    </div>
+                                    <div>
+                                        <p>(1200 Ratings)</p>
+                                    </div>
+                                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                                </div>
+                                <p>$149.9</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <Image src={TopCoursesImage} width={266} height={139} alt="Top Course 01"/>
+                            <div>
+                                <div>
+                                    <div>
+                                        <p>Beginners Guide to Design</p>
+                                        <p>By Ronald Richards</p>
+                                    </div>
+                                    <div>
+                                        <p>(1200 Ratings)</p>
+                                    </div>
+                                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                                </div>
+                                <p>$149.9</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <Image src={TopCoursesImage} width={266} height={139} alt="Top Course 01"/>
+                            <div>
+                                <div>
+                                    <div>
+                                        <p>Beginners Guide to Design</p>
+                                        <p>By Ronald Richards</p>
+                                    </div>
+                                    <div>
+                                        <p>(1200 Ratings)</p>
+                                    </div>
+                                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                                </div>
+                                <p>$149.9</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <Image src={TopCoursesImage} width={266} height={139} alt="Top Course 01"/>
+                            <div>
+                                <div>
+                                    <div>
+                                        <p>Beginners Guide to Design</p>
+                                        <p>By Ronald Richards</p>
+                                    </div>
+                                    <div>
+                                        <p>(1200 Ratings)</p>
+                                    </div>
+                                    <p>22 Total Hours. 155 Lectures. Beginner</p>
+                                </div>
+                                <p>$149.9</p>
+                            </div>
+                        </div>
+                    </div>
+              </div>
           </div>
           <div className={styles.instructors_block}>
               <div className={styles.instructors_control_block}>
