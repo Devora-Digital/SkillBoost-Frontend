@@ -178,7 +178,23 @@ export default function Home() {
                   <p className={styles.instructors_title}>Top Instructors</p>
                   <button className={styles.all_instructors_button}>See All</button>
               </div>
-              <div></div>
+              <div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                </div>
+              </div>
           </div>
           <div>Promotions</div>
       </div>
