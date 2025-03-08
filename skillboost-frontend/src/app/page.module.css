@@ -310,10 +310,16 @@
     align-items: center;
 }
 
+.mentors_item_rating_block {
+    display: flex;
+    gap: 4px;
+}
+
 .mentors_item_rating {
     font-size: 12px;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
+    margin: 2.5px 0px 2.5px 0px;
 }
 
 .mentors_item_students_count {

@@ -194,7 +194,7 @@ export default function Home() {
                             </div>
                             <hr style={lineStyleFirst} />
                             <div className={styles.mentors_item_info_second_block}>
-                                <div>
+                                <div className={styles.mentors_item_rating_block}>
                                     <p className={styles.mentors_item_rating}>4.9</p>
                                 </div>
                                 <p className={styles.mentors_item_students_count}>2400 Students</p>
@@ -212,7 +212,7 @@ export default function Home() {
                             </div>
                             <hr style={lineStyleFirst} />
                             <div className={styles.mentors_item_info_second_block}>
-                                <div>
+                                <div className={styles.mentors_item_rating_block}>
                                     <p className={styles.mentors_item_rating}>4.9</p>
                                 </div>
                                 <p className={styles.mentors_item_students_count}>2400 Students</p>
@@ -230,7 +230,7 @@ export default function Home() {
                             </div>
                             <hr style={lineStyleFirst} />
                             <div className={styles.mentors_item_info_second_block}>
-                                <div>
+                                <div className={styles.mentors_item_rating_block}>
                                     <p className={styles.mentors_item_rating}>4.9</p>
                                 </div>
                                 <p className={styles.mentors_item_students_count}>2400 Students</p>
@@ -248,7 +248,7 @@ export default function Home() {
                             </div>
                             <hr style={lineStyleFirst} />
                             <div className={styles.mentors_item_info_second_block}>
-                                <div>
+                                <div className={styles.mentors_item_rating_block}>
                                     <p className={styles.mentors_item_rating}>4.9</p>
                                 </div>
                                 <p className={styles.mentors_item_students_count}>2400 Students</p>
@@ -266,7 +266,7 @@ export default function Home() {
                             </div>
                             <hr style={lineStyleFirst} />
                             <div className={styles.mentors_item_info_second_block}>
-                                <div>
+                                <div className={styles.mentors_item_rating_block}>
                                     <p className={styles.mentors_item_rating}>4.9</p>
                                 </div>
                                 <p className={styles.mentors_item_students_count}>2400 Students</p>
