@@ -1,0 +1,109 @@
+@import '@/shared/styles/mixins.scss';
+
+.SocialsLine {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+}
+
+.SignWith {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 45px;
+}
+
+.SignWith__line {
+    width: 290px;
+    height: 0;
+    border: 1px solid rgb(148, 163, 184);
+}
+
+.SignWith__text {
+    color: rgb(148, 163, 184);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.Social {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(178, 181, 196);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 220px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+
+.Button {
+    width: 183px;
+    height: 48px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    margin-top: 24px;
+}
+
+
+.Input {
+    align-items: center;
+    display: flex;
+    width: 690px;
+    height: 58px;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    outline: none;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 400;
+
+    .Input-placeholder {
+        color: rgb(148, 163, 184);
+    }
+}
+
+
+.H5 {
+    @include heading_5;
+    margin-bottom: 6px;
+}
+
+.H2 {
+    text-align: center;
+    margin-top: 213px;
+    @include heading_2
+}
+
+.Container {
+    gap: 42px;
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+}
+
+.Image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.Form {
+    width: 60%;
+}

@@ -1,8 +1,43 @@
-@import '@/shared/styles/variables';
+@import '@/shared/styles/variables.scss';
 
 @mixin HeaderText {
     font-family: 'Inter';
     font-weight: 500;
     line-height: 19px;
     color: $header-text-color;
+}
+
+@mixin FooterText {
+    color: $footer-secondary-text;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin heading_2 {
+    color: $black-color;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+
+@mixin heading_5 {
+    color: $black-color;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0%;
+}
+
+@mixin small_text {
+    color: $grey-color;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
 }

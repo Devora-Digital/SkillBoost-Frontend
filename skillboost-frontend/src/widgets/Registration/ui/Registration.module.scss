@@ -1,0 +1,111 @@
+@import '@/shared/styles/mixins.scss';
+
+.SignUp {
+    display: flex;
+    gap: 40px;
+
+    .RightSide {
+        .H5 {
+            @include heading_5;
+            margin-bottom: 6px;
+        }
+
+        .H2 {
+            @include heading_2;
+            text-align: center;
+            margin-bottom: 25px;
+            margin-top: 94px;
+        }
+
+        .Line {
+            gap: 30px;
+            display: flex;
+        }
+
+
+        .Flex {
+            gap: 30px;
+            display: flex;
+        }
+
+        .SocialsLine {
+            margin-top: 24px;
+            display: flex;
+            gap: 16px;
+        }
+
+        .SignWith {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-top: 45px;
+        }
+
+        .SignWith__line {
+            width: 290px;
+            height: 0;
+            border: 1px solid rgb(148, 163, 184);
+        }
+
+        .SignWith__text {
+            color: rgb(148, 163, 184);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+}
+
+.inputs {
+    height: 600px;
+}
+
+.Input {
+    align-items: center;
+    display: flex;
+    width: 330px;
+    height: 58px;
+    border: 1px solid rgb(226, 232, 240);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    outline: none;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 400;
+
+    .Input-placeholder {
+        color: rgb(148, 163, 184);
+    }
+}
+
+.Button {
+    width: 183px;
+    height: 48px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+.Social {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(178, 181, 196);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    width: 220px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
