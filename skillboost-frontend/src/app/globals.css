@@ -68,5 +68,5 @@ img {
 }
 
 [aria-hidden='true'] {
-  visibility: hidden;
+  visibility: visible;
 }
