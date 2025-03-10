@@ -204,6 +204,7 @@ export default function Home() {
                             <hr style={lineStyleFirst} />
                             <div className={styles.mentors_item_info_second_block}>
                                 <div className={styles.mentors_item_rating_block}>
+                                    <Rating name="mentor-rating" max={1} readOnly />
                                     <p className={styles.mentors_item_rating}>4.9</p>
                                 </div>
                                 <p className={styles.mentors_item_students_count}>2400 Students</p>
@@ -222,6 +223,7 @@ export default function Home() {
                             <hr style={lineStyleFirst} />
                             <div className={styles.mentors_item_info_second_block}>
                                 <div className={styles.mentors_item_rating_block}>
+                                    <Rating name="mentor-rating" max={1} readOnly />
                                     <p className={styles.mentors_item_rating}>4.9</p>
                                 </div>
                                 <p className={styles.mentors_item_students_count}>2400 Students</p>
@@ -240,6 +242,7 @@ export default function Home() {
                             <hr style={lineStyleFirst} />
                             <div className={styles.mentors_item_info_second_block}>
                                 <div className={styles.mentors_item_rating_block}>
+                                    <Rating name="mentor-rating" max={1} readOnly />
                                     <p className={styles.mentors_item_rating}>4.9</p>
                                 </div>
                                 <p className={styles.mentors_item_students_count}>2400 Students</p>
@@ -258,6 +261,7 @@ export default function Home() {
                             <hr style={lineStyleFirst} />
                             <div className={styles.mentors_item_info_second_block}>
                                 <div className={styles.mentors_item_rating_block}>
+                                    <Rating name="mentor-rating" max={1} readOnly />
                                     <p className={styles.mentors_item_rating}>4.9</p>
                                 </div>
                                 <p className={styles.mentors_item_students_count}>2400 Students</p>
@@ -276,6 +280,7 @@ export default function Home() {
                             <hr style={lineStyleFirst} />
                             <div className={styles.mentors_item_info_second_block}>
                                 <div className={styles.mentors_item_rating_block}>
+                                    <Rating name="mentor-rating" max={1} readOnly />
                                     <p className={styles.mentors_item_rating}>4.9</p>
                                 </div>
                                 <p className={styles.mentors_item_students_count}>2400 Students</p>

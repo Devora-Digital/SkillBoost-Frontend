@@ -313,6 +313,7 @@
 
 .mentors_item_rating_block {
     display: flex;
+    align-items: center;
     gap: 4px;
 }
 
