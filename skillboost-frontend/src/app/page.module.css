@@ -197,6 +197,7 @@
 
 .courses_item_info_second_block {
     display: flex;
+    align-items: center;
     gap: 8px;
 }
 
