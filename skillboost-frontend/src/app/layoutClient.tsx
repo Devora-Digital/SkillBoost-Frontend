@@ -14,10 +14,10 @@ export default function RootLayoutClient({
   return (
     <div>
       <Provider store={store}>
-        <Header isAuthenticated={false} />
+        {/* <Header isAuthenticated={false} /> */}
         <Header isAuthenticated={true} />
         <main>{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </Provider>
     </div>
   )

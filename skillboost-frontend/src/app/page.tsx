@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <RootLayoutClient>
       <div className={styles.page}>
-        <h1>Home page</h1>
+        {/* <h1>Home page</h1> */}
       </div>
     </RootLayoutClient>
   )
