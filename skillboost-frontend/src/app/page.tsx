@@ -1,6 +1,7 @@
 
 import RootLayoutClient from "../app/layoutClient";
 import Image from "next/image";
+import { Rating } from "@mui/material";
 import { LucideTelescope } from "lucide-react";
 import { LucideCode } from "lucide-react";
 import { LucideBriefcase } from "lucide-react";
@@ -110,7 +111,9 @@ export default function Home() {
                                     <p className={styles.courses_item_author}>By Ronald Richards</p>
                                 </div>
                                 <div className={styles.courses_item_info_second_block}>
-                                    <div></div>
+                                    <div>
+                                        <Rating name="course-rating" defaultValue={2.5} />
+                                    </div>
                                     <p className={styles.courses_item_rating}>(1200 Ratings)</p>
                                 </div>
                                 <p className={styles.courses_item_hours}>22 Total Hours. 155 Lectures. Beginner</p>
@@ -129,7 +132,9 @@ export default function Home() {
                                     <p className={styles.courses_item_author}>By Ronald Richards</p>
                                 </div>
                                 <div className={styles.courses_item_info_second_block}>
-                                    <div></div>
+                                    <div>
+                                        <Rating name="course-rating" defaultValue={2.5} />
+                                    </div>
                                     <p className={styles.courses_item_rating}>(1200 Ratings)</p>
                                 </div>
                                 <p className={styles.courses_item_hours}>22 Total Hours. 155 Lectures. Beginner</p>
@@ -148,7 +153,9 @@ export default function Home() {
                                     <p className={styles.courses_item_author}>By Ronald Richards</p>
                                 </div>
                                 <div className={styles.courses_item_info_second_block}>
-                                    <div></div>
+                                    <div>
+                                        <Rating name="course-rating" defaultValue={2.5} />
+                                    </div>
                                     <p className={styles.courses_item_rating}>(1200 Ratings)</p>
                                 </div>
                                 <p className={styles.courses_item_hours}>22 Total Hours. 155 Lectures. Beginner</p>
@@ -167,7 +174,9 @@ export default function Home() {
                                     <p className={styles.courses_item_author}>By Ronald Richards</p>
                                 </div>
                                 <div className={styles.courses_item_info_second_block}>
-                                    <div></div>
+                                    <div>
+                                        <Rating name="course-rating" defaultValue={2.5} />
+                                    </div>
                                     <p className={styles.courses_item_rating}>(1200 Ratings)</p>
                                 </div>
                                 <p className={styles.courses_item_hours}>22 Total Hours. 155 Lectures. Beginner</p>
