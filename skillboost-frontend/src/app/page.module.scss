@@ -333,11 +333,11 @@
 
 /**/
 .quotes_block {
-    
+    background: #F8FAFC;
 }
 
 .quotes_block_header {
-
+    display: flex;
 }
 
 .quotes_block_header_title {
@@ -345,10 +345,13 @@
     font-weight: 600;
     font-family: 'Inter', sans-serif;
     width: 308px;
+    margin: 0px 0px 24px 0px;
 }
 
 .quotes_block_header_buttons_block {
-
+    display: flex;
+    gap: 24px;
+    margin: 0px 0px 38px 0px;
 }
 
 .quotes_block_quotes_item {

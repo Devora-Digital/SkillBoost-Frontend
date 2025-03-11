@@ -6,6 +6,8 @@ import { LucideTelescope } from "lucide-react";
 import { LucideCode } from "lucide-react";
 import { LucideBriefcase } from "lucide-react";
 import { LucideAtom } from "lucide-react";
+import { LucideChevronLeft } from "lucide-react";
+import { LucideChevronRight } from "lucide-react";
 import TopCoursesImage from "../../public/Homepage/TopCoursesImage_01.jpeg"
 import TopInstructorsImage from "../../public/Homepage/InstructorImage_01.png"
 import DesignerPhoto from "../../public/Homepage/Designer_image_01.jpeg"
@@ -296,8 +298,8 @@ export default function Home() {
             <div className={styles.quotes_block_header}>
                 <p className={styles.quotes_block_header_title}>What Our Customer Say About Us</p>
                 <div className={styles.quotes_block_header_buttons_block}>
-                    <button></button>
-                    <button></button>
+                    <button><LucideChevronLeft /></button>
+                    <button><LucideChevronRight /></button>
                 </div>
             </div>
             <div className={styles.quotes_block_quotes}>
