@@ -8,8 +8,11 @@ import { LucideBriefcase } from "lucide-react";
 import { LucideAtom } from "lucide-react";
 import { LucideChevronLeft } from "lucide-react";
 import { LucideChevronRight } from "lucide-react";
+import { LucideArrowRight } from "lucide-react";
+import { LucideArrowLeft } from "lucide-react";
 import TopCoursesImage from "../../public/Homepage/TopCoursesImage_01.jpeg"
 import TopInstructorsImage from "../../public/Homepage/InstructorImage_01.png"
+import OfferImageFirst from "../../public/Homepage/Offer_image_01.png"
 import DesignerPhoto from "../../public/Homepage/Designer_image_01.jpeg"
 import QuoteMarkIcon from "../../public/Homepage/ri_double-quotes-l.svg"
 import styles from "./page.module.scss";
@@ -338,7 +341,23 @@ export default function Home() {
                 </div>
             </div>
           </div>
-          <div>Promotions</div>
+          <div className={styles.offers_block}>
+                <div className={styles.offers_block_wrapper}>
+                    <div className={styles.offers_block_wrapper_first}>
+                        <Image className={styles.offers_block_first_image} src={OfferImageFirst} alt="Offer image №1" />
+                        <div className={styles.offers_block_first_control}>
+                            <div className={styles.offers_block_first_text_block}>
+                                <p className={styles.offers_block_first_title}>Become an Instructor</p>
+                                <p className={styles.offers_block_first_description}>Instructors from around the world teach millions of students on Byway. We provide the tools and skills to teach what you love.</p>
+                            </div>
+                            <button className={styles.offers_block_first_button}>Start Your Instructor Journey<LucideArrowRight/></button>
+                        </div>
+                    </div>
+                    <div className={styles.offers_block_wrapper_second}>
+
+                    </div>
+                </div>
+          </div>
       </div>
     </RootLayoutClient>
   );

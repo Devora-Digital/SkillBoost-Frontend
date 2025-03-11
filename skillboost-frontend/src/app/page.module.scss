@@ -341,7 +341,7 @@
     margin: 2.5px 0px 2.5px 0px;
 }
 
-/**/
+/*Quotes*/
 .quotes_block {
     background: #F8FAFC;
 }
@@ -424,3 +424,67 @@
     font-family: 'Inter', sans-serif;
     margin: 0;
 }
+
+/*Offer №1*/
+.offers_block {
+
+}
+
+.offers_block_wrapper {
+
+}
+
+.offers_block_wrapper_first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offers_block_first_image {
+    width: 400px;
+    height: 425px;
+}
+
+.offers_block_first_control {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 174px;
+}
+
+.offers_block_first_text_block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 549px;
+}
+
+.offers_block_first_title {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.offers_block_first_description {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.offers_block_first_button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    padding: 13px 24px 13px 24px;
+    width: 273px;
+    color: #FFF;
+    background: #020617;
+}
+
+/*Offer №2*/
+
+
