@@ -346,18 +346,25 @@
     font-weight: 600;
     font-family: 'Inter', sans-serif;
     width: 308px;
-    margin: 80px 0px 24px 0px;
+    margin: 80px 0px 24px 80px;
 }
 
 .quotes_block_header_buttons_block {
     display: flex;
     gap: 24px;
-    margin: 94px 0px 38px 0px;
+    margin: 94px 72px 38px 0px;
+}
+
+.quotes_navigation_block {
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    background: #94A3B8;
 }
 
 .quotes_block_quotes {
     display: flex;
     gap: 16px;
+    margin: 0px 0px 64px 80px;
 }
 
 .quotes_block_quotes_item {
@@ -366,6 +373,7 @@
     gap: 8px;
     border: 1px solid #E2E8F0;
     border-radius: 16px;
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
     padding: 24px;
     width: 432px;
 }

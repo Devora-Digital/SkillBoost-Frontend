@@ -298,8 +298,8 @@ export default function Home() {
             <div className={styles.quotes_block_header}>
                 <p className={styles.quotes_block_header_title}>What Our Customer Say About Us</p>
                 <div className={styles.quotes_block_header_buttons_block}>
-                    <button><LucideChevronLeft /></button>
-                    <button><LucideChevronRight /></button>
+                    <button className={styles.quotes_navigation_block}><LucideChevronLeft /></button>
+                    <button className={styles.quotes_navigation_block}><LucideChevronRight /></button>
                 </div>
             </div>
             <div className={styles.quotes_block_quotes}>
