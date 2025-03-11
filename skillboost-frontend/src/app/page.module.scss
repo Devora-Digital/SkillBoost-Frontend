@@ -331,3 +331,66 @@
     margin: 2.5px 0px 2.5px 0px;
 }
 
+/**/
+.quotes_block {
+    
+}
+
+.quotes_block_header {
+
+}
+
+.quotes_block_header_title {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    width: 308px;
+}
+
+.quotes_block_header_buttons_block {
+
+}
+
+.quotes_block_quotes_item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.quotes_block_quote_text {
+    font-family: 'Inter', sans-serif;
+    width: 384px;
+}
+
+.quotes_block_author {
+    display: flex;
+    gap: 8px;
+}
+
+.quotes_block_author_photo {
+    width: 60px;
+    height: 60px;
+}
+
+.quotes_block_author_inside {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px 5px 0px;
+}
+
+.quotes_block_author_name {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    height: 29px;
+    margin: 0;
+}
+
+.quotes_block_author_post {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
