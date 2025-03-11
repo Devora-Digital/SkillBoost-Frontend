@@ -8,7 +8,9 @@ import { LucideBriefcase } from "lucide-react";
 import { LucideAtom } from "lucide-react";
 import TopCoursesImage from "../../public/Homepage/TopCoursesImage_01.jpeg"
 import TopInstructorsImage from "../../public/Homepage/InstructorImage_01.png"
-import styles from "./page.module.css";
+import DesignerPhoto from "../../public/Homepage/Designer_image_01.jpeg"
+import QuoteMarkIcon from "../../public/Homepage/ri_double-quotes-l.svg"
+import styles from "./page.module.scss";
 
 export default function Home() {
     const imageStyleFirst = {
@@ -289,6 +291,28 @@ export default function Home() {
                     </div>
                 </div>
               </div>
+          </div>
+          <div className={styles.quotes_block}>
+            <div className={styles.quotes_block_header}>
+                <p className={styles.quotes_block_header_title}>What Our Customer Say About Us</p>
+                <div className={styles.quotes_block_header_buttons_block}>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+            <div className={styles.quotes_block_quotes}>
+                <div className={styles.quotes_block_quotes_item}>
+                    <Image src={QuoteMarkIcon} alt="Quote mark icon" />
+                    <p className={styles.quotes_block_quote_text}>&quot;Byway&apos;s tech courses are top-notch! As someone who&apos;s always looking to stay ahead in the rapidly evolving tech world, I appreciate the up-to-date content and engaging multimedia.</p>
+                    <div className={styles.quotes_block_author}>
+                        <Image src={DesignerPhoto} className={styles.quotes_block_author_photo} alt="Designer photo"/>
+                        <div className={styles.quotes_block_author_inside}>
+                            <p className={styles.quotes_block_author_name}>Jane Doe</p>
+                            <p className={styles.quotes_block_author_post}>Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </div>
           <div>Promotions</div>
       </div>
