@@ -4,12 +4,16 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+    /**/
+    align-items: center;
 }
 
 .statistic_block {
     display: flex;
     align-items: center;
     background: #F8FAFC;
+    /**/
+    width: 1440px;
 }
 
 .inside_block {
@@ -45,6 +49,8 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    /**/
+    width: 1280px;
 }
 
 .categories_control_block {
@@ -114,6 +120,8 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    /**/
+    width: 1280px;
 }
 
 .courses_control_block {
@@ -231,6 +239,8 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    /**/
+    width: 1280px;
 }
 
 .instructors_control_block {
