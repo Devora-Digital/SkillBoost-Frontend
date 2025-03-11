@@ -358,11 +358,13 @@
     border: 1px solid #E2E8F0;
     border-radius: 16px;
     padding: 24px;
+    width: 432px;
 }
 
 .quotes_block_quote_text {
     font-family: 'Inter', sans-serif;
     width: 384px;
+    margin: 0;
 }
 
 .quotes_block_author {
@@ -373,6 +375,7 @@
 .quotes_block_author_photo {
     width: 60px;
     height: 60px;
+    border-radius: 50%;
 }
 
 .quotes_block_author_inside {
