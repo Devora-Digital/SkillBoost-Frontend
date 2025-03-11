@@ -9,7 +9,6 @@ import { LucideAtom } from "lucide-react";
 import { LucideChevronLeft } from "lucide-react";
 import { LucideChevronRight } from "lucide-react";
 import { LucideArrowRight } from "lucide-react";
-import { LucideArrowLeft } from "lucide-react";
 import TopCoursesImage from "../../public/Homepage/TopCoursesImage_01.jpeg"
 import TopInstructorsImage from "../../public/Homepage/InstructorImage_01.png"
 import OfferImageFirst from "../../public/Homepage/Offer_image_01.png"
@@ -347,14 +346,21 @@ export default function Home() {
                         <Image className={styles.offers_block_first_image} src={OfferImageFirst} alt="Offer image №1" />
                         <div className={styles.offers_block_first_control}>
                             <div className={styles.offers_block_first_text_block}>
-                                <p className={styles.offers_block_first_title}>Become an Instructor</p>
-                                <p className={styles.offers_block_first_description}>Instructors from around the world teach millions of students on Byway. We provide the tools and skills to teach what you love.</p>
+                                <p className={styles.offers_block_title}>Become an Instructor</p>
+                                <p className={styles.offers_block_description}>Instructors from around the world teach millions of students on Byway. We provide the tools and skills to teach what you love.</p>
                             </div>
                             <button className={styles.offers_block_first_button}>Start Your Instructor Journey<LucideArrowRight/></button>
                         </div>
                     </div>
                     <div className={styles.offers_block_wrapper_second}>
-
+                        <div className={styles.offers_block_second_control}>
+                            <div className={styles.offers_block_second_text_block}>
+                                <p className={styles.offers_block_title}>Transform your life through education</p>
+                                <p className={styles.offers_block_description}>Learners around the world are launching new careers, advancing in their fields, and enriching their lives.</p>
+                            </div>
+                            <button className={styles.offers_block_first_button}>Checkout Courses<LucideArrowRight/></button>
+                        </div>
+                        <Image className={styles.offers_block_first_image} src={OfferImageFirst} alt="Offer image №2" />
                     </div>
                 </div>
           </div>
