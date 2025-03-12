@@ -431,7 +431,9 @@
 }
 
 .offers_block_wrapper {
-
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .offers_block_wrapper_first {
@@ -487,4 +489,36 @@
 
 /*Offer №2*/
 
+.offers_block_wrapper_second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.offers_block_second_control {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-right: 140.5px;
+}
+
+.offers_block_second_text_block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 549px;
+}
+
+.offers_block_second_button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    padding: 13px 24px 13px 24px;
+    width: 202px;
+    color: #FFF;
+    background: #020617;
+}

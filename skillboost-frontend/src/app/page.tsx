@@ -12,6 +12,7 @@ import { LucideArrowRight } from "lucide-react";
 import TopCoursesImage from "../../public/Homepage/TopCoursesImage_01.jpeg"
 import TopInstructorsImage from "../../public/Homepage/InstructorImage_01.png"
 import OfferImageFirst from "../../public/Homepage/Offer_image_01.png"
+import OfferImageSecond from "../../public/Homepage/Offer_Image_02.png"
 import DesignerPhoto from "../../public/Homepage/Designer_image_01.jpeg"
 import QuoteMarkIcon from "../../public/Homepage/ri_double-quotes-l.svg"
 import styles from "./page.module.scss";
@@ -358,9 +359,9 @@ export default function Home() {
                                 <p className={styles.offers_block_title}>Transform your life through education</p>
                                 <p className={styles.offers_block_description}>Learners around the world are launching new careers, advancing in their fields, and enriching their lives.</p>
                             </div>
-                            <button className={styles.offers_block_first_button}>Checkout Courses<LucideArrowRight/></button>
+                            <button className={styles.offers_block_second_button}>Checkout Courses<LucideArrowRight/></button>
                         </div>
-                        <Image className={styles.offers_block_first_image} src={OfferImageFirst} alt="Offer image №2" />
+                        <Image className={styles.offers_block_first_image} src={OfferImageSecond} alt="Offer image №2" />
                     </div>
                 </div>
           </div>
