@@ -9,6 +9,9 @@ import { LucideAtom } from "lucide-react";
 import { LucideChevronLeft } from "lucide-react";
 import { LucideChevronRight } from "lucide-react";
 import { LucideArrowRight } from "lucide-react";
+import BannerImageFirst from "../../public/Homepage/Banner_Image_01.png"
+import BannerImageSecond from "../../public/Homepage/Banner_Image_02.png"
+import BannerImageThird from "../../public/Homepage/Banner_Image_03.png"
 import TopCoursesImage from "../../public/Homepage/TopCoursesImage_01.jpeg"
 import TopInstructorsImage from "../../public/Homepage/InstructorImage_01.png"
 import OfferImageFirst from "../../public/Homepage/Offer_image_01.png"
@@ -33,7 +36,17 @@ export default function Home() {
                 </div>
                 <button className={styles.banner_block_button}>Start your instructor journey</button>
             </div>
-            <div className={styles.banner_block_inside_block_second}></div>
+            <div className={styles.banner_block_inside_block_second}>
+                <div className={styles.banner_circle_first}>
+                    <Image className={styles.banner_image_first} src={BannerImageFirst} alt="Banner image 01" width={183.62} height={260.32} />
+                </div>
+                <div className={styles.banner_circle_second}>
+                    <Image className={styles.banner_image_second} src={BannerImageSecond} alt="Banner image 02" width={173.88} height={165.19} />
+                </div>
+                <div className={styles.banner_circle_third}>
+                    <Image className={styles.banner_image_third} src={BannerImageThird} alt="Banner image 03" width={331.64} height={221.09} />
+                </div>
+            </div>
           </div>
           <div className={styles.statistic_block}>
               <div className={styles.inside_block}>

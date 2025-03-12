@@ -10,6 +10,10 @@
 }
 
 /*Banner block*/
+.banner_block {
+    display: flex;
+}
+
 .banner_block_inside_block_first {
     display: flex;
     flex-direction: column;
@@ -46,6 +50,44 @@
     background: #3B82F6;
     border-radius: 8px;
     padding: 13px 24px 13px 24px;
+}
+
+.banner_block_inside_block_second {
+
+}
+
+.banner_circle_first {
+    width: 204.54px;
+    height: 204.54px;
+    border-radius: 50%;
+    background: #F87171;
+}
+
+.banner_circle_second {
+    width: 217.35px;
+    height: 217.35px;
+    border-radius: 50%;
+    background: #60A5FA;
+}
+
+.banner_circle_third {
+    width: 222px;
+    height: 222px;
+    border-radius: 50%;
+    background: #FACC15;
+}
+
+.banner_image_first {
+    position: absolute;
+    top: -55.78px;
+}
+
+.banner_image_second {
+
+}
+
+.banner_image_third {
+    
 }
 
 /*Statistic block*/
