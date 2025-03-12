@@ -162,7 +162,7 @@
     gap: 16px;
 }
 
-.courses_item_image_block {
+.course_item_picture {
     border-radius: 8px;
 }
 
@@ -280,6 +280,10 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.mentor_item_picture {
+    border-radius: 8px;
 }
 
 .mentors_item_info {

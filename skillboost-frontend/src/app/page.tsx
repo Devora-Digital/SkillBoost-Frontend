@@ -18,9 +18,6 @@ import QuoteMarkIcon from "../../public/Homepage/ri_double-quotes-l.svg"
 import styles from "./page.module.scss";
 
 export default function Home() {
-    const imageStyleFirst = {
-        borderRadius: '8px'
-    }
     const lineStyleFirst = {
         width: '100%',
         border: '1px solid #E2E8F0'
@@ -110,7 +107,7 @@ export default function Home() {
               <div className={styles.courses_items_block}>
                 <div className={styles.courses_item}>
                     <div className={styles.courses_item_inside}>
-                        <Image src={TopCoursesImage} width={266} height={139} style={imageStyleFirst} alt="Top Course 01"/>
+                        <Image className={styles.course_item_picture} src={TopCoursesImage} width={266} height={139} alt="Top Course 01"/>
                         <div className={styles.courses_item_info}>
                             <div className={styles.courses_item_info_inside}>
                                 <div className={styles.courses_item_info_first_block}>
@@ -131,7 +128,7 @@ export default function Home() {
                 </div>
                 <div className={styles.courses_item}>
                     <div className={styles.courses_item_inside}>
-                        <Image src={TopCoursesImage} width={266} height={139} style={imageStyleFirst} alt="Top Course 01"/>
+                        <Image className={styles.course_item_picture} src={TopCoursesImage} width={266} height={139} alt="Top Course 01"/>
                         <div className={styles.courses_item_info}>
                             <div className={styles.courses_item_info_inside}>
                                 <div className={styles.courses_item_info_first_block}>
@@ -152,7 +149,7 @@ export default function Home() {
                 </div>
                 <div className={styles.courses_item}>
                     <div className={styles.courses_item_inside}>
-                        <Image src={TopCoursesImage} width={266} height={139} style={imageStyleFirst} alt="Top Course 01"/>
+                        <Image className={styles.course_item_picture} src={TopCoursesImage} width={266} height={139} alt="Top Course 01"/>
                         <div className={styles.courses_item_info}>
                             <div className={styles.courses_item_info_inside}>
                                 <div className={styles.courses_item_info_first_block}>
@@ -173,7 +170,7 @@ export default function Home() {
                 </div>
                 <div className={styles.courses_item}>
                     <div className={styles.courses_item_inside}>
-                        <Image src={TopCoursesImage} width={266} height={139} style={imageStyleFirst} alt="Top Course 01"/>
+                        <Image className={styles.course_item_picture} src={TopCoursesImage} width={266} height={139} alt="Top Course 01"/>
                         <div className={styles.courses_item_info}>
                             <div className={styles.courses_item_info_inside}>
                                 <div className={styles.courses_item_info_first_block}>
@@ -202,7 +199,7 @@ export default function Home() {
               <div className={styles.mentors_items_block}>
                 <div className={styles.mentors_item}>
                     <div className={styles.mentors_item_inside}>
-                        <Image src={TopInstructorsImage} width={177} height={132} style={imageStyleFirst} alt="Top Mentor 01" />
+                        <Image className={styles.mentor_item_picture} src={TopInstructorsImage} width={177} height={132} alt="Top Mentor 01" />
                         <div className={styles.mentors_item_info}>
                             <div className={styles.mentors_item_info_first_block}>
                                 <p className={styles.mentors_item_title}>Ronald Richards</p>
@@ -221,7 +218,7 @@ export default function Home() {
                 </div>
                 <div className={styles.mentors_item}>
                     <div className={styles.mentors_item_inside}>
-                        <Image src={TopInstructorsImage} width={177} height={132} style={imageStyleFirst} alt="Top Mentor 01" />
+                        <Image className={styles.mentor_item_picture} src={TopInstructorsImage} width={177} height={132} alt="Top Mentor 01" />
                         <div className={styles.mentors_item_info}>
                             <div className={styles.mentors_item_info_first_block}>
                                 <p className={styles.mentors_item_title}>Ronald Richards</p>
@@ -240,7 +237,7 @@ export default function Home() {
                 </div>
                 <div className={styles.mentors_item}>
                     <div className={styles.mentors_item_inside}>
-                        <Image src={TopInstructorsImage} width={177} height={132} style={imageStyleFirst} alt="Top Mentor 01" />
+                        <Image className={styles.mentor_item_picture} src={TopInstructorsImage} width={177} height={132} alt="Top Mentor 01" />
                         <div className={styles.mentors_item_info}>
                             <div className={styles.mentors_item_info_first_block}>
                                 <p className={styles.mentors_item_title}>Ronald Richards</p>
@@ -259,7 +256,7 @@ export default function Home() {
                 </div>
                 <div className={styles.mentors_item}>
                     <div className={styles.mentors_item_inside}>
-                        <Image src={TopInstructorsImage} width={177} height={132} style={imageStyleFirst} alt="Top Mentor 01" />
+                        <Image className={styles.mentor_item_picture} src={TopInstructorsImage} width={177} height={132} alt="Top Mentor 01" />
                         <div className={styles.mentors_item_info}>
                             <div className={styles.mentors_item_info_first_block}>
                                 <p className={styles.mentors_item_title}>Ronald Richards</p>
@@ -278,7 +275,7 @@ export default function Home() {
                 </div>
                 <div className={styles.mentors_item}>
                     <div className={styles.mentors_item_inside}>
-                        <Image src={TopInstructorsImage} width={177} height={132} style={imageStyleFirst} alt="Top Mentor 01" />
+                        <Image className={styles.mentor_item_picture} src={TopInstructorsImage} width={177} height={132} alt="Top Mentor 01" />
                         <div className={styles.mentors_item_info}>
                             <div className={styles.mentors_item_info_first_block}>
                                 <p className={styles.mentors_item_title}>Ronald Richards</p>
