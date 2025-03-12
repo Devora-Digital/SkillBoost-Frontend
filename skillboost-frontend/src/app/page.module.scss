@@ -1,4 +1,5 @@
 
+/*Page*/
 .page {
     width: 1440px;
     display: flex;
@@ -8,6 +9,46 @@
     align-items: center;
 }
 
+/*Banner block*/
+.banner_block_inside_block_first {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.banner_block_text_block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.banner_block_title {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    width: 483px;
+    margin: 0;
+}
+
+.banner_block_description {
+    font-family: 'Inter', sans-serif;
+    width: 592px;
+    color: #334155;
+    margin: 0;
+}
+
+.banner_block_button {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    width: 238px;
+    color: #FFF;
+    background: #3B82F6;
+    border-radius: 8px;
+    padding: 13px 24px 13px 24px;
+}
+
+/*Statistic block*/
 .statistic_block {
     display: flex;
     align-items: center;
