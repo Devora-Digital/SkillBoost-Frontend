@@ -53,7 +53,7 @@
 }
 
 .banner_block_inside_block_second {
-
+    display: flex;
 }
 
 .banner_circle_first {
@@ -80,14 +80,20 @@
 .banner_image_first {
     position: absolute;
     top: -55.78px;
+    // top: -28.78px;
 }
 
 .banner_image_second {
-
+    position: absolute;
+    top: -44.56px;
+    // top: 304.56px;
+    // right: 780px;
 }
 
 .banner_image_third {
-    
+    position: absolute;
+    top: 11px;
+    // left: 840px;
 }
 
 /*Statistic block*/
