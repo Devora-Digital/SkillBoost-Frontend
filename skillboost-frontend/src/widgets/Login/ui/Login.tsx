@@ -1,48 +1,64 @@
+import { ArrowRight } from 'lucide-react'
 import styles from './Login.module.scss'
 
 const Login = () => {
   return (
-    <div className={styles.Container}>
-      <form className={styles.Form}>
-        <h2 className={styles.H2}>Sign in to your account</h2>
+    <div className={styles.container}>
+      <form className={styles.containerForm}>
+        <h2 className={styles.formTitle}>Sign in to your account</h2>
         <div>
-          <h5 className={styles.H5}>Email</h5>
+          <h5 className={styles.formSection}>Email</h5>
           <input
-            className={styles.Input}
+            className={styles.formInput}
             type='text'
             placeholder='Username or Email ID'
           />
         </div>
         <div>
-          <h5 className={styles.H5}>Password</h5>
+          <h5 className={styles.formSection}>Password</h5>
           <input
-            className={styles.Input}
-            type='text'
+            className={styles.formInput}
+            type='password'
             placeholder='Enter Password'
           />
         </div>
-        <button className={styles.Button}>Sign In</button>
+        <button type='submit' className={styles.formButton}>
+          <span>Sign In</span>
+          <ArrowRight />
+        </button>
 
-        <div className={styles.SignWith}>
-          <div className={styles.SignWith__line}></div>
-          <p className={styles.SignWith__text}>Sign up with</p>
-          <div className={styles.SignWith__line}></div>
+        <div className={styles.signWith}>
+          <div className={styles.signWith__line}></div>
+          <p className={styles.signWith__text}>Sign up with</p>
+          <div className={styles.signWith__line}></div>
         </div>
 
-        <div className={styles.SocialsLine}>
-          <div className={styles.Social}>
-            <img src='/icons/icon-fb.svg' alt='Facebook' />
+        <ul className={styles.socialsBox}>
+          <li className={styles.social}>
+            <img
+              src='/icons/icon-fb.svg'
+              alt='Facebook'
+              className={styles.socialIcon}
+            />
             <p style={{ color: '#0866FF' }}>Facebook</p>
-          </div>
-          <div className={styles.Social}>
-            <img src='/icons/icon-google.svg' alt='Google' />
+          </li>
+          <li className={styles.social}>
+            <img
+              src='/icons/icon-google.svg'
+              alt='Google'
+              className={styles.socialIcon}
+            />
             <p style={{ color: '#EA4335' }}>Google</p>
-          </div>
-          <div className={styles.Social}>
-            <img src='/icons/icon-microsoft.svg' alt='Microsoft' />
+          </li>
+          <li className={styles.social}>
+            <img
+              src='/icons/icon-microsoft.svg'
+              alt='Microsoft'
+              className={styles.socialIcon}
+            />
             <p style={{ color: '#000000' }}>Microsoft</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </form>
       <img
         className={styles.Image}
