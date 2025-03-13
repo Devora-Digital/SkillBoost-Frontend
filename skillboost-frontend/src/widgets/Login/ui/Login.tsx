@@ -28,9 +28,9 @@ const Login = () => {
         </button>
 
         <div className={styles.signWith}>
-          <div className={styles.signWith__line}></div>
-          <p className={styles.signWith__text}>Sign up with</p>
-          <div className={styles.signWith__line}></div>
+          <div className={styles.signWithLine}></div>
+          <p className={styles.signWithText}>Sign up with</p>
+          <div className={styles.signWithLine}></div>
         </div>
 
         <ul className={styles.socialsBox}>

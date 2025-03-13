@@ -1,26 +1,26 @@
+import { ArrowRight } from 'lucide-react'
 import styles from './Registration.module.scss'
 
 export default function Registration() {
   return (
     <div className='container'>
       <div className={styles.SignUp}>
-        <div className={styles.LeftSide}>
+        <div className={styles.Image}>
           <img src='/assets/img-signup.png' alt='SkillBoost' />
         </div>
-        <div className={styles.RightSide}>
-          <h2 className={styles.H2}>Create Your Account</h2>
-
-          <div className={styles.Line}>
-            <div className={styles.Block}>
-              <h5 className={styles.H5}>Full Name</h5>
-              <div className={styles.Flex}>
+        <div className={styles.container}>
+          <h2 className={styles.containerTitle}>Create Your Account</h2>
+          <div className={styles.containerLine}>
+            <div className={styles.block}>
+              <h5 className={styles.blockTitle}>Full Name</h5>
+              <div className={styles.blockFlex}>
                 <input
-                  className={styles.Input}
+                  className={styles.blockInput}
                   type='text'
                   placeholder='First Name'
                 />
                 <input
-                  className={styles.Input}
+                  className={styles.blockInput}
                   type='text'
                   placeholder='Last Name'
                 />
@@ -28,67 +28,80 @@ export default function Registration() {
             </div>
           </div>
 
-          <div className={styles.Block}>
-            <h5 className={styles.H5}>Username</h5>
+          <div className={styles.block}>
+            <h5 className={styles.blockTitle}>Username</h5>
             <input
               type='text'
               placeholder='Username'
-              className={styles.Input}
+              className={styles.blockInput}
             />
           </div>
 
-          <div className={styles.Block}>
-            <h5 className={styles.H5}>Email</h5>
+          <div className={styles.block}>
+            <h5 className={styles.blockTitle}>Email</h5>
             <input
               type='email'
               placeholder='Email ID'
-              className={styles.Input}
+              className={styles.blockInput}
             />
           </div>
 
-          <div className={styles.Line}>
-            <div className={styles.Block}>
-              <h5 className={styles.H5}>Password</h5>
+          <div className={styles.containerLine}>
+            <div className={styles.block}>
+              <h5 className={styles.blockTitle}>Password</h5>
               <input
-                className={styles.Input}
+                className={styles.blockInput}
                 type='password'
                 placeholder='Enter Password'
               />
             </div>
-            <div className={styles.Block}>
-              <h5 className={styles.H5}>Confirm Password</h5>
+            <div className={styles.block}>
+              <h5 className={styles.blockTitle}>Confirm Password</h5>
               <input
-                className={styles.Input}
+                className={styles.blockInput}
                 type='password'
                 placeholder='Confirm Password'
               />
             </div>
           </div>
 
-          <div style={{ marginTop: '24px' }}>
-            <button className={styles.Button}>Create Account</button>
+          <button type='submit' className={styles.Button}>
+            <span>Sign Up</span>
+            <ArrowRight />
+          </button>
+
+          <div className={styles.signWith}>
+            <div className={styles.signWithLine}></div>
+            <p className={styles.signWithText}>Sign up with</p>
+            <div className={styles.signWithLine}></div>
           </div>
 
-          <div className={styles.SignWith}>
-            <div className={styles.SignWith__line}></div>
-            <p className={styles.SignWith__text}>Sign up with</p>
-            <div className={styles.SignWith__line}></div>
-          </div>
-
-          <div className={styles.SocialsLine}>
-            <div className={styles.Social}>
-              <img src='/icons/icon-fb.svg' alt='Facebook' />
+          <ul className={styles.socialsLine}>
+            <li className={styles.social}>
+              <img
+                src='/icons/icon-fb.svg'
+                alt='Facebook'
+                className={styles.socialIcon}
+              />
               <p style={{ color: '#0866FF' }}>Facebook</p>
-            </div>
-            <div className={styles.Social}>
-              <img src='/icons/icon-google.svg' alt='Google' />
+            </li>
+            <li className={styles.social}>
+              <img
+                src='/icons/icon-google.svg'
+                alt='Google'
+                className={styles.socialIcon}
+              />
               <p style={{ color: '#EA4335' }}>Google</p>
-            </div>
-            <div className={styles.Social}>
-              <img src='/icons/icon-microsoft.svg' alt='Microsoft' />
+            </li>
+            <li className={styles.social}>
+              <img
+                src='/icons/icon-microsoft.svg'
+                alt='Microsoft'
+                className={styles.socialIcon}
+              />
               <p style={{ color: '#000000' }}>Microsoft</p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
