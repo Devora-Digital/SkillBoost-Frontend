@@ -1,4 +1,5 @@
-@import '@/shared/styles/mixins.scss';
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
 
 .SignUp {
     display: flex;
@@ -37,7 +38,7 @@
                 height: 58px;
                 border: 1px solid #e2e8f0;
                 border-radius: 8px;
-                background: rgb(255, 255, 255);
+                background: $white-color;
                 box-sizing: border-box;
                 outline: none;
                 color: black;

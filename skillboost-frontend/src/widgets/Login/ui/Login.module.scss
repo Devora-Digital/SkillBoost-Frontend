@@ -1,4 +1,5 @@
-@import '@/shared/styles/mixins.scss';
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
 
 .container {
     display: flex;
