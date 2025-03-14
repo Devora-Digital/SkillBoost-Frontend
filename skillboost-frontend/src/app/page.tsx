@@ -37,14 +37,20 @@ export default function Home() {
                 <button className={styles.banner_block_button}>Start your instructor journey</button>
             </div>
             <div className={styles.banner_block_inside_block_second}>
-                <div className={styles.banner_circle_first}>
-                    <Image className={styles.banner_image_first} src={BannerImageFirst} alt="Banner image 01" width={183.62} height={260.32} />
+                <div>
+                    <div className={styles.banner_circle_first}>
+                        <Image className={styles.banner_image_first} src={BannerImageFirst} alt="Banner image 01" width={183.62} height={260.32} />
+                    </div>
                 </div>
-                <div className={styles.banner_circle_second}>
-                    <Image className={styles.banner_image_second} src={BannerImageSecond} alt="Banner image 02" width={173.88} height={165.19} />
+                <div>
+                    <div className={styles.banner_circle_second}>
+                        <Image className={styles.banner_image_second} src={BannerImageSecond} alt="Banner image 02" width={173.88} height={165.19} />
+                    </div>
                 </div>
-                <div className={styles.banner_circle_third}>
-                    <Image className={styles.banner_image_third} src={BannerImageThird} alt="Banner image 03" width={331.64} height={221.09} />
+                <div>
+                    <div className={styles.banner_circle_third}>
+                        <Image className={styles.banner_image_third} src={BannerImageThird} alt="Banner image 03" width={331.64} height={221.09} />
+                    </div>
                 </div>
             </div>
           </div>
