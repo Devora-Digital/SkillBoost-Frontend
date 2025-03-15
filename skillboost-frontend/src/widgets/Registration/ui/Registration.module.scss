@@ -3,9 +3,12 @@
 
 .SignUp {
     display: flex;
-    gap: 40px;
+    gap: 0;
 
     .container {
+        flex: 1;
+        padding: 0 64px;
+
         .blockTitle {
             @include heading_5;
             margin-bottom: 6px;
@@ -24,7 +27,8 @@
         }
 
         .block {
-            margin-top: 22px;
+            margin-top: 20px;
+            width: 100%;
 
             .blockFlex {
                 gap: 30px;
@@ -34,7 +38,7 @@
             .blockInput {
                 align-items: center;
                 display: flex;
-                width: 330px;
+                width: 100%;
                 height: 58px;
                 border: 1px solid #e2e8f0;
                 border-radius: 8px;
@@ -59,14 +63,14 @@
             margin-top: 45px;
 
             .signWithLine {
-                max-width: 290px;
-                width: 100%;
+                flex: 1;
                 height: 0;
                 border: 1px solid $login-color;
             }
 
             .signWithText {
                 @include small_text;
+                white-space: nowrap;
             }
         }
 
@@ -85,6 +89,8 @@
             font-family: 'Inter';
             font-size: 14px;
             font-weight: 500;
+            width: auto;
+            min-width: 120px;
 
             &:hover {
                 background-color: #000000da;
@@ -94,7 +100,10 @@
         .socialsLine {
             margin-top: 24px;
             display: flex;
+            justify-content: space-between;
             gap: 16px;
+            padding: 0;
+            list-style: none;
         }
 
         .social {
@@ -103,16 +112,17 @@
             justify-content: center;
             gap: 10px;
             padding: 15px 61px;
+            flex: 1;
             box-sizing: border-box;
             border: 1px solid #b2b5c4;
             border-radius: 8px;
             font-size: 14px;
             font-weight: 400;
             cursor: pointer;
+            background-color: transparent;
 
-            .socialIcon {
-                width: 24px;
-                height: 24px;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.03);
             }
         }
     }
