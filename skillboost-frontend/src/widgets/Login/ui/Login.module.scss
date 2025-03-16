@@ -1,0 +1,113 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+
+.SignIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .container {
+        flex: 1;
+        padding: 0 64px;
+        max-width: 690px;
+        width: 100%;
+        margin: 0 auto;
+
+        .containerTitle {
+            text-align: center;
+            @include heading_2
+        }
+
+        .containerSection {
+            @include heading_5;
+            margin-top: 24px;
+        }
+
+        .containerButton {
+            padding: 13px 32px;
+            background: $black-color;
+            color: $white-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            border: none;
+            margin-top: 24px;
+            font-family: 'Inter';
+            font-size: 14px;
+            font-weight: 500;
+
+            &:hover {
+                background-color: #000000da;
+            }
+        }
+
+
+        .containerInput {
+            align-items: center;
+            display: flex;
+            width: 100%;
+            margin-top: 10px;
+            padding: 16px;
+            outline: none;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            background: $white-color;
+            color: $black-color;
+            font-size: 16px;
+            font-weight: 400;
+
+            &::placeholder {
+                color: $login-color;
+            }
+        }
+
+        .signWith {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-top: 45px;
+
+            .signWithLine {
+                max-width: 228px;
+                width: 100%;
+                height: 0;
+                border: 1px solid $login-color;
+            }
+
+            .signWithText {
+                @include small_text;
+            }
+        }
+
+
+        .socialsBox {
+            margin-top: 24px;
+            display: flex;
+            gap: 15px;
+
+            .social {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 15px 61px;
+                box-sizing: border-box;
+                border: 1px solid #b2b5c4;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 400;
+                cursor: pointer;
+                background-color: transparent;
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.03);
+                }
+            }
+
+        }
+    }
+}

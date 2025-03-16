@@ -1,5 +1,5 @@
-@import '@/shared/styles/mixins';
-
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
 
 .headerContainer {
     display: flex;
@@ -110,6 +110,7 @@
                 @include HeaderText;
                 padding: 10px;
                 background: $header-secondary-color;
+                border: none;
                 color: #ffffff;
                 font-size: 14px;
 

@@ -1,0 +1,129 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+
+.SignUp {
+    display: flex;
+    gap: 0;
+
+    .container {
+        flex: 1;
+        padding: 0 64px;
+
+        .blockTitle {
+            @include heading_5;
+            margin-bottom: 6px;
+        }
+
+        .containerTitle {
+            @include heading_2;
+            text-align: center;
+            margin-bottom: 25px;
+            margin-top: 94px;
+        }
+
+        .containerLine {
+            gap: 30px;
+            display: flex;
+        }
+
+        .block {
+            margin-top: 20px;
+            width: 100%;
+
+            .blockFlex {
+                gap: 30px;
+                display: flex;
+            }
+
+            .blockInput {
+                align-items: center;
+                display: flex;
+                width: 100%;
+                height: 58px;
+                border: 1px solid #e2e8f0;
+                border-radius: 8px;
+                background: $white-color;
+                box-sizing: border-box;
+                outline: none;
+                color: black;
+                padding: 16px;
+                font-size: 16px;
+                font-weight: 400;
+
+                &::placeholder {
+                    color: #94a3b8;
+                }
+            }
+        }
+
+        .signWith {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-top: 45px;
+
+            .signWithLine {
+                flex: 1;
+                height: 0;
+                border: 1px solid $login-color;
+            }
+
+            .signWithText {
+                @include small_text;
+                white-space: nowrap;
+            }
+        }
+
+        .Button {
+            padding: 13px 32px;
+            background: $black-color;
+            color: $white-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            border: none;
+            margin-top: 24px;
+            font-family: 'Inter';
+            font-size: 14px;
+            font-weight: 500;
+            width: auto;
+            min-width: 120px;
+
+            &:hover {
+                background-color: #000000da;
+            }
+        }
+
+        .socialsLine {
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 61px;
+            flex: 1;
+            box-sizing: border-box;
+            border: 1px solid #b2b5c4;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 400;
+            cursor: pointer;
+            background-color: transparent;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.03);
+            }
+        }
+    }
+}
