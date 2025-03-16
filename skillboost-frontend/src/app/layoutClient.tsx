@@ -18,8 +18,8 @@ export default function RootLayoutClient({
         {/* <Header isAuthenticated={false} /> */}
         <Header isAuthenticated={true} />
         <NotFound />
-        <main>{children}</main>
-        {/* <Footer /> */}
+        {/* <main>{children}</main> */}
+        <Footer />
       </Provider>
     </div>
   )
