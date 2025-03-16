@@ -2,6 +2,7 @@ import { Bell, Heart, Search, ShoppingCart } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import styles from './Header.module.scss'
+import Image from 'next/image'
 interface HeaderProps {
   isAuthenticated: boolean
 }
@@ -11,12 +12,14 @@ const Header: React.FC<HeaderProps> = ({ isAuthenticated }) => {
     <header>
       <div className={styles.headerContainer}>
         <div className={styles.headerLogo}>
-          <img
+          <Image
             className={styles.headerLogoIcon}
-            src='/icons/icon-logo.png'
-            alt='Byway'
+            src='/assets/icon-logo.png'
+            alt='SkillBoost'
+            width={20}
+            height={30}
           />
-          <p className={styles.headerLogoText}>Byway</p>
+          <p className={styles.headerLogoText}>SkillBoost</p>
         </div>
         <nav className={styles.headerNav}>
           <Link className={styles.headerNavLink} href='/categories'>
@@ -34,7 +37,9 @@ const Header: React.FC<HeaderProps> = ({ isAuthenticated }) => {
             />
           </label>
         </div>
-        <span className={styles.headerTeach}>Teach on Byway</span>
+        <Link href='/mentors' className={styles.headerTeach}>
+          Teach on SkillBoost
+        </Link>
         <div className={styles.headerActions}>
           {isAuthenticated ? (
             <div className={styles.headerIcons}>
