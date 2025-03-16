@@ -14,8 +14,7 @@
     "next": "^15.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-redux": "^9.2.0",
-    "sass": "^1.85.1"
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -25,6 +24,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
     "prettier": "3.5.2",
+    "sass": "^1.85.1",
     "typescript": "^5"
   }
 }

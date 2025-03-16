@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import { store } from '@/store/store'
 import { Header } from '@/widgets/Header'
 import { Footer } from '@/widgets/Footer'
+import { NotFound } from '@/widgets/NotFound'
 
 export default function RootLayoutClient({
   children
@@ -14,9 +15,10 @@ export default function RootLayoutClient({
   return (
     <div>
       <Provider store={store}>
-        <Header isAuthenticated={false} />
+        {/* <Header isAuthenticated={false} /> */}
         <Header isAuthenticated={true} />
-        <main>{children}</main>
+        <NotFound />
+        {/* <main>{children}</main> */}
         <Footer />
       </Provider>
     </div>
