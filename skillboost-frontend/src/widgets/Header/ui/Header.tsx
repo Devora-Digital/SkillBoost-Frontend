@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ isAuthenticated }) => {
         <div className={styles.headerLogo}>
           <Image
             className={styles.headerLogoIcon}
-            src='/icons/icon-logo.png'
+            src='/assets/icon-logo.png'
             alt='SkillBoost'
             width={20}
             height={30}
@@ -37,7 +37,9 @@ const Header: React.FC<HeaderProps> = ({ isAuthenticated }) => {
             />
           </label>
         </div>
-        <span className={styles.headerTeach}>Teach on Byway</span>
+        <Link href='/mentors' className={styles.headerTeach}>
+          Teach on SkillBoost
+        </Link>
         <div className={styles.headerActions}>
           {isAuthenticated ? (
             <div className={styles.headerIcons}>
