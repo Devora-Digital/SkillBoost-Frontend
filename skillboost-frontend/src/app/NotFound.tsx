@@ -1,10 +1,10 @@
-import { NotFound } from "@/widgets/NotFound"
+// import { NotFound } from "@/widgets/NotFound"
 
 
 export default function NotFound() {
   return (
       <>
-        <NotFound />
+        {/* <NotFound /> */}
       </>
   )
 }
