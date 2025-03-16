@@ -77,7 +77,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                color: #ffffff;
+                color: $white-color;
                 font-family: 'Inter', sans-serif;
                 font-size: 16px;
                 font-weight: 500;
@@ -93,7 +93,7 @@
             align-items: center;
 
             .headerAuthLogin {
-                background-color: #ffffff;
+                background-color: $white-color;
                 border: 1px solid $header-secondary-color;
                 padding: 10px;
                 color: #64748b;

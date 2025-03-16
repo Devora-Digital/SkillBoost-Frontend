@@ -1,15 +1,18 @@
 import Link from 'next/link'
 import styles from './Footer.module.scss'
+import Image from 'next/image'
 const Footer = () => {
   return (
     <footer>
       <div className={styles.footerContainer}>
         <div className={styles.footerColumn}>
           <div className={styles.footerLogo}>
-            <img
+            <Image
               className={styles.footerLogoIcon}
               src='/icons/icon-logo.png'
-              alt='SKILLBOOST'
+              alt='SkillBoost'
+              width={20}
+              height={30}
             />
             <p className={styles.footerLogoText}>SkillBoost</p>
           </div>
@@ -58,46 +61,56 @@ const Footer = () => {
           <ul className={styles.footerColumnSoc}>
             <li className={styles.footerSocIcon}>
               <a href='#'>
-                <img
+                <Image
                   src='/icons/icon-fb.svg'
-                  alt='SKILLBOOST'
+                  alt='SkillBoost'
                   className={styles.footerSocImg}
+                  width={40}
+                  height={40}
                 />
               </a>
             </li>
             <li className={styles.footerSocIcon}>
               <a href='#'>
-                <img
+                <Image
                   src='/icons/icon-github.svg'
-                  alt='SKILLBOOST'
+                  alt='SkillBoost'
                   className={styles.footerSocImg}
+                  width={40}
+                  height={40}
                 />
               </a>
             </li>
             <li className={styles.footerSocIcon}>
               <a href='#'>
-                <img
+                <Image
                   src='/icons/icon-google.svg'
-                  alt='SKILLBOOST'
+                  alt='SkillBoost'
                   className={styles.footerSocImg}
+                  width={40}
+                  height={40}
                 />
               </a>
             </li>
             <li className={styles.footerSocIcon}>
               <a href='#'>
-                <img
+                <Image
                   src='/icons/icon-x.svg'
-                  alt='SKILLBOOST'
+                  alt='SkillBoost'
                   className={styles.footerSocImg}
+                  width={40}
+                  height={40}
                 />
               </a>
             </li>
             <li className={styles.footerSocIcon}>
               <a href='#'>
-                <img
+                <Image
                   src='/icons/icon-microsoft.svg'
                   alt='SKILLBOOST'
                   className={styles.footerSocImg}
+                  width={40}
+                  height={40}
                 />
               </a>
             </li>
