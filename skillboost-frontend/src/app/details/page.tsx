@@ -5,18 +5,14 @@ const breadcrumbs = [
     title: 'HomePage',
     href: '/'
   },
+  { title: 'Categories', href: '/categories' },
   {
-    title: 'Categories',
+    title: 'Details',
     color: '#2563EB',
     arrow: true
   }
 ]
 
 export default function CategoriesPage() {
-  return (
-    <>
-      <Breadcrumbs items={breadcrumbs} />
-      <a href='/details'>Go to details page</a>
-    </>
-  )
+  return <Breadcrumbs items={breadcrumbs} />
 }

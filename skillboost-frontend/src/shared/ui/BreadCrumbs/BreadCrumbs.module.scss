@@ -1,0 +1,19 @@
+.link {
+    color: rgb(15, 23, 42);
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+.container {
+    display: flex;
+    gap: 2px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+
+}
