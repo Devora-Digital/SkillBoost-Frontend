@@ -1,5 +1,4 @@
-import { Breadcrumbs } from "@/shared/ui/breadcrumbs/ui/Breadcrumbs"
-
+import { Breadcrumbs } from '@/shared/ui/BreadCrumbs/BreadCrumbs'
 const breadcrumbs = [
   {
     title: 'HomePage',

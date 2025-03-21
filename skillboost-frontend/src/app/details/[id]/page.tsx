@@ -1,4 +1,3 @@
 export default function DetailsPage({ params }: { params: { id: string } }) {
-    return <h1>Category: {params.id}</h1>
-  }
-  
+  return <h1>Detail: {params.id}</h1>
+}
