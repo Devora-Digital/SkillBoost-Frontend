@@ -88,36 +88,25 @@
     position: absolute;
     top: 39.78px;
     left: 920px;
-    // left: 930px;
     width: auto;
     height: auto;
-    // border-bottom-left-radius: 38%;
     border-bottom-left-radius: 44%;
     border-bottom-right-radius: 50%;
 }
 
 .banner_image_third {
     position: absolute;
-    top: 11px;
+    // top: 50px;
+    top: 70px;
+    // left: 1090px;
+    left: 1080px;
     transform: scaleX(-1);
+    border-radius: 0 0 210% 180%;
+    // border-radius: 0 0 110% 160%;
+    // border-radius: 0 0 50% 50%;
+    // border-bottom-left-radius: 310%;
+    // border-bottom-right-radius: 550%;
 }
-
-// .banner_image_first {
-//     position: absolute;
-//     border-bottom-right-radius: 28%;
-//     border-bottom-left-radius: 42%;
-//     top: 16.78px;
-// }
-
-// .banner_image_second {
-//     position: absolute;
-//     top: 114.56px;
-// }
-
-// .banner_image_third {
-//     position: absolute;
-//     top: 11px;
-// }
 
 /*Statistic block*/
 .statistic_block {
