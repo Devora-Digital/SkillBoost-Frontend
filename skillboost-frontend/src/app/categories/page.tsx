@@ -1,5 +1,4 @@
 import { Breadcrumbs } from '@/shared/ui/BreadCrumbs/BreadCrumbs'
-
 const breadcrumbs = [
   {
     title: 'HomePage',
@@ -15,8 +14,8 @@ const breadcrumbs = [
 export default function CategoriesPage() {
   return (
     <>
-      <Breadcrumbs items={breadcrumbs} />
-      <a href='/details'>Go to details page</a>
+        <Breadcrumbs items={breadcrumbs}/>
+        <a href="/details">Go to details page</a>
     </>
   )
 }
