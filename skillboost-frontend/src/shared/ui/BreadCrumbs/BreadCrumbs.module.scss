@@ -9,23 +9,21 @@
 .container {
     display: flex;
     align-items: center;
-    gap: 8px; // Increased gap between items
+    gap: 8px;
 }
 
 .breadcrumb {
     display: flex;
     align-items: center;
-    gap: 8px; // Added gap between label and chevron
+    gap: 8px;
 }
 
-// Add styling for the last breadcrumb (blue color)
 .breadcrumb:last-child .link {
     color: #3b82f6;
 }
 
-// Style for the chevron icon
 .breadcrumb svg {
     width: 16px;
     height: 16px;
-    color: #64748b; // Chevron color
+    color: #64748b;
 }
