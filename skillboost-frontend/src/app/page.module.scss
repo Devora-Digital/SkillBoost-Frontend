@@ -86,21 +86,20 @@
 
 .banner_image_second {
     position: absolute;
-    // top: 26.78px;
     top: 39.78px;
-    left: 930px;
-    // top: 16.78px;
-    // top: -52.56px;
+    left: 920px;
+    // left: 930px;
     width: auto;
     height: auto;
-    border-bottom-left-radius: 38%;
+    // border-bottom-left-radius: 38%;
+    border-bottom-left-radius: 44%;
     border-bottom-right-radius: 50%;
-    // border-bottom-right-radius: 52%;
 }
 
 .banner_image_third {
     position: absolute;
     top: 11px;
+    transform: scaleX(-1);
 }
 
 // .banner_image_first {
