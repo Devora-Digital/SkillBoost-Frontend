@@ -21,18 +21,18 @@ export const BreadcrumbItem = ({
   ...props
 }: BreadcrumbItemProps) => {
   return (
-    <>
-      <div className={styles.breadcrumb}>
-        {href ? (
-          <Link href={href} className={styles.link} {...props}>
-            {title}{' '}
-          </Link>
-        ) : (
-          <span style={{ color: color }}>{title}</span>
-        )}
-        {arrow ? <div></div> : <ChevronRight />}
-      </div>
-    </>
+    <div className={styles.breadcrumb}>
+      {href ? (
+        <Link href={href} className={styles.link} {...props}>
+          {title}
+        </Link>
+      ) : (
+        <span className={styles.link} style={{ color: color }}>
+          {title}
+        </span>
+      )}
+      {arrow ? <div></div> : <ChevronRight />}
+    </div>
   )
 }
 
