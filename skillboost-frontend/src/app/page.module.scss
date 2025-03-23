@@ -56,15 +56,32 @@
     // display: flex;
 }
 
+.wrapper_circle_first {
+    /**/
+    position: absolute;
+    top: 16.78px;
+    overflow: visible;
+}
+
+.wrapper_circle_second {
+    /**/
+    // position: absolute;
+    top: 39.78px;
+    left: 920px;
+}
+
+.wrapper_circle_third {
+    /**/
+    position: absolute;
+    top: 70px;
+    left: 1250px;
+}
+
 .banner_circle_first {
     width: 204.54px;
     height: 204.54px;
     border-radius: 50%;
     background: #F87171;
-    /**/
-    position: absolute;
-    top: 16.78px;
-    overflow: visible;
 }
 
 .banner_circle_second {
@@ -72,10 +89,6 @@
     height: 217.35px;
     border-radius: 50%;
     background: #60A5FA;
-    /**/
-    // position: absolute;
-    top: 39.78px;
-    left: 920px;
 }
 
 .banner_circle_third {
@@ -84,10 +97,6 @@
     border-radius: 50%;
     background: #FACC15;
     overflow: hidden;
-    /**/
-    position: absolute;
-    top: 70px;
-    left: 1250px;
 }
 
 .banner_image_first {
