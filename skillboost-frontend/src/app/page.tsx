@@ -44,7 +44,7 @@ export default function Home() {
                 </div>
                 <div className={styles.wrapper_circle_second}>
                     <div className={styles.banner_circle_second}>
-                    <Image className={styles.banner_image_second} src={BannerImageSecond} alt="Banner image 02" width={174} height={165} />
+                    <Image className={styles.banner_image_second} src={BannerImageSecond} alt="Banner image 02" width={217} height={289} />
                         {/* <Image className={styles.banner_image_second} src={BannerImageSecond} alt="Banner image 02" /> */}
                         {/* <Image className={styles.banner_image_second} src={BannerImageSecond} alt="Banner image 02" width={173.88} height={165.19} /> */}
                     </div>
