@@ -6,6 +6,7 @@ import { store } from '@/store/store'
 import { Header } from '@/widgets/Header'
 import { Footer } from '@/widgets/Footer'
 import { NotFound } from '@/widgets/NotFound'
+import { Profile } from '@/widgets/Profile'
 
 export default function RootLayoutClient({
   children
@@ -17,8 +18,9 @@ export default function RootLayoutClient({
       <Provider store={store}>
         {/* <Header isAuthenticated={false} /> */}
         <Header isAuthenticated={true} />
-        <NotFound />
-        {/* <main>{children}</main> */}
+        {/* <NotFound /> */}
+        <main>{children}</main>
+        <Profile />
         <Footer />
       </Provider>
     </div>
