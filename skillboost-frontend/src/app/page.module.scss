@@ -12,6 +12,7 @@
 /*Banner block*/
 .banner_block {
     display: flex;
+    height: 600px;
 }
 
 .banner_block_inside_block_first {
@@ -56,67 +57,23 @@
     // display: flex;
 }
 
-.wrapper_circle_first {
-    /**/
-    position: absolute;
-    top: 16.78px;
-    overflow: visible;
-}
-
-.wrapper_circle_second {
-    /**/
-    // position: absolute;
-    top: 39.78px;
-    left: 920px;
-}
-
-.wrapper_circle_third {
-    /**/
-    position: absolute;
-    top: 70px;
-    left: 1250px;
-}
-
-.banner_circle_first {
-    width: 204.54px;
-    height: 204.54px;
-    border-radius: 50%;
-    background: #F87171;
-}
-
-.banner_circle_second {
-    width: 217.35px;
-    height: 217.35px;
-    border-radius: 50%;
-    background: #60A5FA;
-}
-
-.banner_circle_third {
-    width: 222px;
-    height: 222px;
-    border-radius: 50%;
-    background: #FACC15;
-    overflow: hidden;
-}
-
 .banner_image_first {
-    border-bottom-right-radius: 28%;
-    border-bottom-left-radius: 42%;
-    /**/
     position: absolute;
-    height: auto;
-    transform: translateX(50%);
+    top: 202.78px;
 }
 
 .banner_image_second {
-    width: 174px;
-    height: 165px;
-    object-fit: cover;
+    position: absolute;
+    top: 84.56px;
+    left: 1275px;
+    // left: 33.66px;
 }
 
 .banner_image_third {
-    transform: scaleX(-1);
-    border-radius: 0 0 210% 180%;
+    position: absolute;
+    top: 337px;
+    left: 1275px;
+    // left: 19.74px;
 }
 
 /*Statistic block*/
