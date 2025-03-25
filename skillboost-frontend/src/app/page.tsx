@@ -40,6 +40,11 @@ export default function Home() {
                 <button className={styles.banner_block_button}>Start your instructor journey</button>
             </div>
             <div className={styles.banner_block_inside_block_second}>
+                <div className={styles.banner_center_circle}>
+                    {/* <div className={styles.banner_center_circle_square_wrapper}> */}
+                        <div className={styles.banner_center_circle_square}></div>
+                    {/* </div> */}
+                </div>
                 <Image className={styles.banner_image_first} src={BannerImageFirst} alt="Banner Image 01"/>
                 <Image className={styles.banner_image_second} src={BannerImageSecond} alt="Banner Image 02"/>
                 <Image className={styles.banner_image_third} src={BannerImageThird} alt="Banner Image 03"/>

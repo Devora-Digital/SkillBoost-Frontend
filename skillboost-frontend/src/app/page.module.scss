@@ -62,24 +62,41 @@
 
 .banner_image_first {
     position: absolute;
-    // top: 202.78px;
     top: 272.78px;
     left: 840.78px;
 }
 
 .banner_image_second {
     position: absolute;
-    top: 84.56px;
-    // left: 1275px;
+    // top: 84.56px;
+    top: 134px;
     left: 1050px;
 }
 
 .banner_image_third {
     position: absolute;
-    // top: 337px;
-    top: 390px;
-    // left: 1275px;
-    left: 1050px;
+    // top: 390px;
+    top: 395px;
+    // left: 1050px;
+    left: 1070px;
+}
+
+.banner_center_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: #0F172A;
+    border-radius: 50%;
+}
+
+.banner_center_circle_square {
+    width: 19px;
+    height: 19px;
+    background: #FFF;
+    transform: rotate(45deg);
+    object-fit: cover;
 }
 
 /*Statistic block*/
