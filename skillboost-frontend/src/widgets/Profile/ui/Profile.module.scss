@@ -18,6 +18,7 @@
         flex-direction: column;
         color: $login-color-title;
         font-family: 'Inter';
+        height: fit-content;
 
         .asidePerson {
             display: flex;
@@ -93,8 +94,5 @@
 
     .containerContent {
         flex: 1;
-        box-sizing: border-box;
-        border: 1px solid $profile-grey-color;
-        border-radius: 16px;
     }
 }

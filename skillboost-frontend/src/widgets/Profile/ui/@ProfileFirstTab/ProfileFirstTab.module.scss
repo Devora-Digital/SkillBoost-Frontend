@@ -1,0 +1,50 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+
+.containerTab {
+    display: flex;
+    gap: 27px;
+    flex-direction: column;
+
+    .tab {
+        box-sizing: border-box;
+        border: 1px solid $profile-grey-color;
+        border-radius: 16px;
+        padding: 24px;
+
+        &Title {
+            color: $login-color-title;
+            font-family: 'Inter';
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        &.tabMain {
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+
+            .blockFlex {
+                gap: 30px;
+                display: flex;
+            }
+
+            .headlineInput {
+                width: 70%;
+            }
+
+            .selectBlock {
+                .selectTitle {
+                    @include small_text;
+                    color: $login-color-title;
+                    margin-bottom: 6px;
+                }
+            }
+        }
+
+        &.tabLinks {}
+
+        &.tabImage {}
+    }
+}

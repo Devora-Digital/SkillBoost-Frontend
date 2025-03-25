@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Share2 } from 'lucide-react'
 import styles from './Profile.module.scss'
 import Image from 'next/image'
+import ProfileFirstTab from './@ProfileFirstTab/ProfileFirstTab'
 
 const tabs = [
   { name: 'Profile', key: 'profile' },
@@ -59,7 +60,11 @@ const Profile = () => {
   )
 }
 
-const ProfileTab = () => <div>Profile Content</div>
+const ProfileTab = () => (
+  <div>
+    <ProfileFirstTab />
+  </div>
+)
 const CoursesTab = () => <div>Courses Content</div>
 const TeachersTab = () => <div>Teachers Content</div>
 const MessagesTab = () => <div>Messages Content</div>
