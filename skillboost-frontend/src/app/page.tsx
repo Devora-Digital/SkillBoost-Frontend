@@ -9,12 +9,10 @@ import { LucideAtom } from "lucide-react";
 import { LucideChevronLeft } from "lucide-react";
 import { LucideChevronRight } from "lucide-react";
 import { LucideArrowRight } from "lucide-react";
-// import BannerImageFirst from "../../public/Homepage/Banner_Image_01.png"
-// import BannerImageSecond from "../../public/Homepage/Banner_Image_02.png"
-// import BannerImageThird from "../../public/Homepage/Banner_Image_03.png"
 import BannerImageFirst from "../../public/Homepage/BannerCircleRed.png"
 import BannerImageSecond from "../../public/Homepage/BannerCircleBlue.png"
 import BannerImageThird from "../../public/Homepage/BannerCircleYellow.png"
+import StudentsCommunityAvatars from "../../public/Homepage/Students_community_avatars.svg"
 import TopCoursesImage from "../../public/Homepage/TopCoursesImage_01.jpeg"
 import TopInstructorsImage from "../../public/Homepage/InstructorImage_01.png"
 import OfferImageFirst from "../../public/Homepage/Offer_image_01.png"
@@ -44,6 +42,7 @@ export default function Home() {
                     <div className={styles.banner_center_circle_square}></div>
                 </div>
                 <div className={styles.students_community_banner}>
+                    <Image className={styles.students_community_banner_avatars} src={StudentsCommunityAvatars} alt="Students community avatars" />
                     <p className={styles.students_community_text}>Join our community of 1200+ Students</p>
                 </div>
                 <Image className={styles.banner_image_first} src={BannerImageFirst} alt="Banner Image 01"/>

@@ -99,11 +99,28 @@
     transform-origin: center;
 }
 
+.students_community_banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px 0px #0000001F;
+    background: #FFF;
+    padding: 12px;
+    /**/
+    position: absolute;
+    top: 495px;
+    left: 990px;
+    z-index: 20;
+}
+
 .students_community_text {
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 600;
     color: #020617;
+    width: 143px;
+    margin: 10px 0px 0px 0px;
 }
 
 /*Statistic block*/
