@@ -89,6 +89,10 @@
     height: 35px;
     background: #0F172A;
     border-radius: 50%;
+    /**/
+    position: absolute;
+    top: 360px;
+    left: 1070px;
 }
 
 .banner_center_circle_square {
@@ -96,7 +100,7 @@
     height: 19px;
     background: #FFF;
     transform: rotate(45deg);
-    object-fit: cover;
+    transform-origin: center;
 }
 
 /*Statistic block*/
