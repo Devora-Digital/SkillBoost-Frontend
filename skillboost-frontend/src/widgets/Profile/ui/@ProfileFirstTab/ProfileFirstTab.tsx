@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './ProfileFirstTab.module.scss'
-import { Box } from '@mui/material'
+import { Box, Button, TextField } from '@mui/material'
 import MenuItem from '@mui/material/MenuItem'
 import FormControl from '@mui/material/FormControl'
 import Select, { SelectChangeEvent } from '@mui/material/Select'
@@ -10,6 +10,20 @@ export default function ProfileFirstTab() {
 
   const handleChange = (event: SelectChangeEvent) => {
     setLang(event.target.value as string)
+  }
+  const [image, setImage] = useState<string | null>(null)
+  const [imageName, setImageName] = useState<string>('')
+
+  const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0]
+    if (file) {
+      const reader = new FileReader()
+      reader.onload = () => {
+        setImage(reader.result as string)
+      }
+      reader.readAsDataURL(file)
+      setImageName(file.name)
+    }
   }
   return (
     <div className={styles.containerTab}>
@@ -63,6 +77,55 @@ export default function ProfileFirstTab() {
       </div>
       <div className={`${styles.tabImage} ${styles.tab}`}>
         <h3 className={styles.tabTitle}>Image Preview</h3>
+        <Box>
+          <Box
+            sx={{
+              width: 425,
+              maxHeight: 255,
+              height: '100%',
+              borderRadius: 3,
+              border: '1px solid #ddd',
+              p: '16px'
+            }}
+          >
+            {image ? (
+              <img
+                src={image}
+                alt='Uploaded'
+                style={{ maxHeight: '100%', maxWidth: '100%' }}
+              />
+            ) : (
+              <p className={styles.imageText}>No image selected</p>
+            )}
+          </Box>
+
+          <h3 className={styles.tabTitle}>Add/Change Image</h3>
+          <Box sx={{ display: 'flex', gap: 1, mt: 1, alignItems: 'center' }}>
+            <TextField
+              size='small'
+              fullWidth
+              variant='outlined'
+              value={imageName}
+              placeholder='Image'
+              disabled
+            />
+            <button className={styles.uploadButton}>
+              <label>
+                Upload Image
+                <input
+                  type='file'
+                  hidden
+                  onChange={handleImageChange}
+                  accept='image/*'
+                />
+              </label>
+            </button>
+          </Box>
+
+          <button disabled={!image} className={styles.imageButton}>
+            Save Image
+          </button>
+        </Box>
       </div>
       <div className={`${styles.tabLinks} ${styles.tab}`}>
         <h3 className={styles.tabTitle}>Links</h3>

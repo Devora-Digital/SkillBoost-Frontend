@@ -20,15 +20,9 @@
         background: $white-color;
         box-sizing: border-box;
         outline: none;
-        color: black;
         padding: 16px;
-        font-size: 16px;
-        font-weight: 400;
         margin-bottom: 16px;
-
-        &::placeholder {
-            color: #94a3b8;
-        }
+        @include InputText;
     }
 
     .descriptionTextarea {

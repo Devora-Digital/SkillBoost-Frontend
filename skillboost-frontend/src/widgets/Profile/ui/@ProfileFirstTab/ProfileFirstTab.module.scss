@@ -43,8 +43,56 @@
             }
         }
 
-        &.tabLinks {}
+        &.tabImage {
 
-        &.tabImage {}
+            .imageText {
+                font-family: 'Inter';
+                font-size: 16px;
+                font-weight: 400;
+                color: #94a3b8;
+            }
+
+            .imageButton {
+                color: $white-color;
+                border-radius: 8px;
+                background: $login-color-title;
+                border: none;
+                cursor: pointer;
+                font-family: 'Inter';
+                font-size: 14px;
+                font-weight: 500;
+                padding: 15px 24px;
+                margin-top: 8px;
+
+                &:disabled {
+                    background-color: $footer-secondary-text;
+                    cursor: not-allowed;
+                }
+            }
+
+
+            .tabTitle {
+                margin-top: 16px;
+            }
+
+            .uploadButton {
+                padding: 10px 24px 10px 24px;
+                box-sizing: border-box;
+                border: 1px solid $login-color-title;
+                border-radius: 8px;
+                background-color: $white-color;
+                cursor: pointer;
+                display: inline-block;
+            }
+
+            .uploadButton label {
+                cursor: pointer;
+            }
+
+            .uploadButton input {
+                display: none;
+            }
+
+        }
     }
 }
