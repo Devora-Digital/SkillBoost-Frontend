@@ -41,9 +41,10 @@ export default function Home() {
             </div>
             <div className={styles.banner_block_inside_block_second}>
                 <div className={styles.banner_center_circle}>
-                    {/* <div className={styles.banner_center_circle_square_wrapper}> */}
-                        <div className={styles.banner_center_circle_square}></div>
-                    {/* </div> */}
+                    <div className={styles.banner_center_circle_square}></div>
+                </div>
+                <div className={styles.students_community_banner}>
+                    <p className={styles.students_community_text}>Join our community of 1200+ Students</p>
                 </div>
                 <Image className={styles.banner_image_first} src={BannerImageFirst} alt="Banner Image 01"/>
                 <Image className={styles.banner_image_second} src={BannerImageSecond} alt="Banner Image 02"/>

@@ -56,10 +56,6 @@
     padding: 13px 24px 13px 24px;
 }
 
-.banner_block_inside_block_second {
-    // display: flex;
-}
-
 .banner_image_first {
     position: absolute;
     top: 272.78px;
@@ -101,6 +97,13 @@
     background: #FFF;
     transform: rotate(45deg);
     transform-origin: center;
+}
+
+.students_community_text {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #020617;
 }
 
 /*Statistic block*/
