@@ -9,6 +9,8 @@ import { LucideAtom } from "lucide-react";
 import { LucideChevronLeft } from "lucide-react";
 import { LucideChevronRight } from "lucide-react";
 import { LucideArrowRight } from "lucide-react";
+import FirstMiniCircles from "../../public/Homepage/mini_circles_1.svg"
+import SecondMiniCircles from "../../public/Homepage/mini_circles_2.svg"
 import BannerImageFirst from "../../public/Homepage/BannerCircleRed.png"
 import BannerImageSecond from "../../public/Homepage/BannerCircleBlue.png"
 import BannerImageThird from "../../public/Homepage/BannerCircleYellow.png"
@@ -38,6 +40,8 @@ export default function Home() {
                 <button className={styles.banner_block_button}>Start your instructor journey</button>
             </div>
             <div className={styles.banner_block_inside_block_second}>
+                <Image className={styles.first_mini_circle} src={FirstMiniCircles} alt="First mini circles" />
+                <Image className={styles.second_mini_circle} src={SecondMiniCircles} alt="Second mini circles" />
                 <div className={styles.banner_center_circle}>
                     <div className={styles.banner_center_circle_square}></div>
                 </div>
