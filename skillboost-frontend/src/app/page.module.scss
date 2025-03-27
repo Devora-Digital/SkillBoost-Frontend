@@ -2,8 +2,10 @@
 $primary-white-color: #FFF;
 $primary-white-color-2: #E2E8F0;
 $primary-gap: 16px;
+$primary-gap-2: 24px;
 $primary-border-radius: 16px;
 $primary-padding: 13px 24px 13px 24px;
+$primary-font-size: 14px;
 
 /*Page*/
 .page {
@@ -24,7 +26,7 @@ $primary-padding: 13px 24px 13px 24px;
 .banner_block_inside_block_first {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: $primary-gap-2;
     margin-top: 168.5px;
     margin-left: 80px;
 }
@@ -51,7 +53,7 @@ $primary-padding: 13px 24px 13px 24px;
 }
 
 .banner_block_button {
-    font-size: 14px;
+    font-size: $primary-font-size;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     width: 238px;
@@ -179,7 +181,7 @@ $primary-padding: 13px 24px 13px 24px;
 }
 
 .description_section {
-    font-size: 14px;
+    font-size: $primary-font-size;
     font-family: 'Inter', sans-serif;
     width: 192px;
 }
@@ -193,7 +195,7 @@ $primary-padding: 13px 24px 13px 24px;
 .categories_block {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: $primary-gap-2;
     width: 1280px;
 }
 
@@ -263,7 +265,7 @@ $primary-padding: 13px 24px 13px 24px;
 .courses_block {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: $primary-gap-2;
     width: 1280px;
 }
 
@@ -360,7 +362,7 @@ $primary-padding: 13px 24px 13px 24px;
 }
 
 .courses_item_hours {
-    font-size: 14px;
+    font-size: $primary-font-size;
     font-family: 'Inter', sans-serif;
     color: #334155;
     height: 21px;
@@ -381,7 +383,7 @@ $primary-padding: 13px 24px 13px 24px;
 .instructors_block {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: $primary-gap-2;
     width: 1280px;
 }
 
@@ -507,7 +509,7 @@ $primary-padding: 13px 24px 13px 24px;
 
 .quotes_block_header_buttons_block {
     display: flex;
-    gap: 24px;
+    gap: $primary-gap-2;
     margin: 94px 72px 38px 0px;
 }
 
@@ -566,7 +568,7 @@ $primary-padding: 13px 24px 13px 24px;
 }
 
 .quotes_block_author_post {
-    font-size: 14px;
+    font-size: $primary-font-size;
     font-family: 'Inter', sans-serif;
     margin: 0;
 }
@@ -620,7 +622,7 @@ $primary-padding: 13px 24px 13px 24px;
     align-items: center;
     gap: 6px;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: $primary-font-size;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     padding: $primary-padding;
@@ -656,7 +658,7 @@ $primary-padding: 13px 24px 13px 24px;
     align-items: center;
     gap: 6px;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: $primary-font-size;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     padding: $primary-padding;
