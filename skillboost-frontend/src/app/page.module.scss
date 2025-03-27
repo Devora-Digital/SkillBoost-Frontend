@@ -1,11 +1,16 @@
 
+$primary-white-color: #FFF;
+$primary-white-color-2: #E2E8F0;
+$primary-gap: 16px;
+$primary-border-radius: 16px;
+$primary-padding: 13px 24px 13px 24px;
+
 /*Page*/
 .page {
     width: 1440px;
     display: flex;
     flex-direction: column;
     gap: 60px;
-    /**/
     align-items: center;
 }
 
@@ -27,7 +32,7 @@
 .banner_block_text_block {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: $primary-gap;
 }
 
 .banner_block_title {
@@ -50,10 +55,10 @@
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     width: 238px;
-    color: #FFF;
+    color: $primary-white-color;
     background: #3B82F6;
     border-radius: 8px;
-    padding: 13px 24px 13px 24px;
+    padding: $primary-padding;
 }
 
 .banner_image_first {
@@ -112,7 +117,6 @@
     height: 35px;
     background: #0F172A;
     border-radius: 50%;
-    /**/
     position: absolute;
     top: 360px;
     left: 1070px;
@@ -121,7 +125,7 @@
 .banner_center_circle_square {
     width: 19px;
     height: 19px;
-    background: #FFF;
+    background: $primary-white-color;
     transform: rotate(45deg);
     transform-origin: center;
 }
@@ -132,9 +136,8 @@
     justify-content: center;
     border-radius: 8px;
     box-shadow: 0px 4px 16px 0px #0000001F;
-    background: #FFF;
+    background: $primary-white-color;
     padding: 12px;
-    /**/
     position: absolute;
     top: 495px;
     left: 990px;
@@ -155,7 +158,6 @@
     display: flex;
     align-items: center;
     background: #F8FAFC;
-    /**/
     width: 1440px;
 }
 
@@ -183,7 +185,7 @@
 }
 
 .vertical_line {
-    border-left: 4px solid #E2E8F0;
+    border-left: 4px solid $primary-white-color-2;
     height: 55px;
 }
 
@@ -192,7 +194,6 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    /**/
     width: 1280px;
 }
 
@@ -211,7 +212,7 @@
 .all_categories_button {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    background: #FFF;
+    background: $primary-white-color;
     color: #3B82F6;
     padding: 10px 24px 10px 24px;
 }
@@ -222,9 +223,9 @@
 }
 
 .categories_item {
-    border: 1px solid #E2E8F0;
+    border: 1px solid $primary-white-color-2;
     box-shadow: 0px 0px 8px 0px #3B82F61F;
-    border-radius: 16px;
+    border-radius: $primary-border-radius;
     padding: 24px 93px 24px 93px;
 }
 
@@ -263,7 +264,6 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    /**/
     width: 1280px;
 }
 
@@ -282,9 +282,9 @@
 .all_courses_button {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    background: #FFF;
+    background: $primary-white-color;
     color: #3B82F6;
-    padding: 13px 24px 13px 24px;
+    padding: $primary-padding;
 }
 
 .courses_items_block {
@@ -293,8 +293,8 @@
 }
 
 .courses_item {
-    border: 1px solid #E2E8F0;
-    border-radius: 16px;
+    border: 1px solid $primary-white-color-2;
+    border-radius: $primary-border-radius;
     box-shadow: 0px 0px 8px 0px #3B82F61F;
     padding: 16px;
 }
@@ -302,7 +302,7 @@
 .courses_item_inside {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: $primary-gap;
 }
 
 .course_item_picture {
@@ -382,7 +382,6 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    /**/
     width: 1280px;
 }
 
@@ -401,9 +400,9 @@
 .all_instructors_button {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    background: #FFF;
+    background: $primary-white-color;
     color: #3B82F6;
-    padding: 13px 24px 13px 24px;
+    padding: $primary-padding;
 }
 
 .mentors_items_block {
@@ -414,15 +413,15 @@
 .mentors_item {
     display: flex;
     flex-direction: column;
-    border: 1px solid #E2E8F0;
-    border-radius: 16px;
+    border: 1px solid $primary-white-color-2;
+    border-radius: $primary-border-radius;
     padding: 16px;
 }
 
 .mentors_item_inside {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: $primary-gap;
 }
 
 .mentor_item_picture {
@@ -432,7 +431,7 @@
 .mentors_item_info {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: $primary-gap;
 }
 
 .mentors_item_info_first_block {
@@ -520,7 +519,7 @@
 
 .quotes_block_quotes {
     display: flex;
-    gap: 16px;
+    gap: $primary-gap;
     margin: 0px 0px 64px 80px;
 }
 
@@ -528,8 +527,8 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border: 1px solid #E2E8F0;
-    border-radius: 16px;
+    border: 1px solid $primary-white-color-2;
+    border-radius: $primary-border-radius;
     box-shadow: 0px 0px 8px 0px #3B82F61F;
     padding: 24px;
     width: 432px;
@@ -593,7 +592,7 @@
 .offers_block_first_control {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: $primary-gap;
     margin-left: 174px;
 }
 
@@ -624,9 +623,9 @@
     font-size: 14px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
-    padding: 13px 24px 13px 24px;
+    padding: $primary-padding;
     width: 273px;
-    color: #FFF;
+    color: $primary-white-color;
     background: #020617;
 }
 
@@ -641,7 +640,7 @@
 .offers_block_second_control {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: $primary-gap;
     margin-right: 140.5px;
 }
 
@@ -660,8 +659,8 @@
     font-size: 14px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
-    padding: 13px 24px 13px 24px;
+    padding: $primary-padding;
     width: 202px;
-    color: #FFF;
+    color: $primary-white-color;
     background: #020617;
 }
