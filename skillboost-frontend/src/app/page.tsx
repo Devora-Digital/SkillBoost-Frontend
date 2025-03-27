@@ -14,6 +14,9 @@ import SecondMiniCircles from "../../public/Homepage/mini_circles_2.svg"
 import BannerImageFirst from "../../public/Homepage/BannerCircleRed.png"
 import BannerImageSecond from "../../public/Homepage/BannerCircleBlue.png"
 import BannerImageThird from "../../public/Homepage/BannerCircleYellow.png"
+import BannerEllipseFirst from "../../public/Homepage/BannerEllipseFirst.svg"
+import BannerEllipseSecond from "../../public/Homepage/BannerEllipseSecond.svg"
+import BannerEllipseThird from "../../public/Homepage/BannerEllipseThird.svg"
 import StudentsCommunityAvatars from "../../public/Homepage/Students_community_avatars.svg"
 import TopCoursesImage from "../../public/Homepage/TopCoursesImage_01.jpeg"
 import TopInstructorsImage from "../../public/Homepage/InstructorImage_01.png"
@@ -52,6 +55,9 @@ export default function Home() {
                 <Image className={styles.banner_image_first} src={BannerImageFirst} alt="Banner Image 01"/>
                 <Image className={styles.banner_image_second} src={BannerImageSecond} alt="Banner Image 02"/>
                 <Image className={styles.banner_image_third} src={BannerImageThird} alt="Banner Image 03"/>
+                <Image className={styles.banner_image_ellipse_first} src={BannerEllipseFirst} alt="Banner ellipse first" />
+                <Image className={styles.banner_image_ellipse_second} src={BannerEllipseSecond} alt="Banner ellipse second" />
+                <Image className={styles.banner_image_ellipse_third} src={BannerEllipseThird} alt="Banner ellipse third" />
             </div>
           </div>
           <div className={styles.statistic_block}>
