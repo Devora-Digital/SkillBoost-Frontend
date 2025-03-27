@@ -6,6 +6,8 @@ $primary-gap-2: 24px;
 $primary-border-radius: 16px;
 $primary-padding: 13px 24px 13px 24px;
 $primary-font-size: 14px;
+$primary-medium-font-weight: 500;
+$primary-semi-bold-font-weight: 600;
 
 /*Page*/
 .page {
@@ -54,7 +56,7 @@ $primary-font-size: 14px;
 
 .banner_block_button {
     font-size: $primary-font-size;
-    font-weight: 500;
+    font-weight: $primary-medium-font-weight;
     font-family: 'Inter', sans-serif;
     width: 238px;
     color: $primary-white-color;
@@ -149,7 +151,7 @@ $primary-font-size: 14px;
 .students_community_text {
     font-family: 'Inter', sans-serif;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     color: #020617;
     width: 143px;
     margin: 10px 0px 0px 0px;
@@ -175,7 +177,7 @@ $primary-font-size: 14px;
 
 .numbers_section {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-family: 'Inter', sans-serif;
     margin: 0;
 }
@@ -206,14 +208,14 @@ $primary-font-size: 14px;
 
 .categories_title {
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-size: 24px;
     margin: 7px 0px 7px 0px;
 }
 
 .all_categories_button {
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: $primary-medium-font-weight;
     background: $primary-white-color;
     color: #3B82F6;
     padding: 10px 24px 10px 24px;
@@ -250,7 +252,7 @@ $primary-font-size: 14px;
 
 .category_item_title {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-family: 'Inter', sans-serif;
     margin: 0px 3px 0px 3px;
 }
@@ -276,14 +278,14 @@ $primary-font-size: 14px;
 
 .courses_title {
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-size: 24px;
     margin: 7px 0px 7px 0px;
 }
 
 .all_courses_button {
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: $primary-medium-font-weight;
     background: $primary-white-color;
     color: #3B82F6;
     padding: $primary-padding;
@@ -334,7 +336,7 @@ $primary-font-size: 14px;
 
 .courses_item_title {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-family: 'Inter', sans-serif;
     height: 29px;
     padding: 0;
@@ -356,7 +358,7 @@ $primary-font-size: 14px;
 
 .courses_item_rating {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-family: 'Inter', sans-serif;
     margin: 2.5px 0px 2.5px 0px;
 }
@@ -372,7 +374,7 @@ $primary-font-size: 14px;
 
 .courses_item_price {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-family: 'Inter', sans-serif;
     height: 30px;
     padding: 0;
@@ -394,14 +396,14 @@ $primary-font-size: 14px;
 
 .instructors_title {
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-size: 24px;
     margin: 7px 0px 7px 0px;
 }
 
 .all_instructors_button {
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: $primary-medium-font-weight;
     background: $primary-white-color;
     color: #3B82F6;
     padding: $primary-padding;
@@ -445,7 +447,7 @@ $primary-font-size: 14px;
 
 .mentors_item_title {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-family: 'Inter', sans-serif;
     height: 29px;
     padding: 0;
@@ -477,14 +479,14 @@ $primary-font-size: 14px;
 
 .mentors_item_rating {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-family: 'Inter', sans-serif;
     margin: 2.5px 0px 2.5px 0px;
 }
 
 .mentors_item_students_count {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-family: 'Inter', sans-serif;
     margin: 2.5px 0px 2.5px 0px;
 }
@@ -501,7 +503,7 @@ $primary-font-size: 14px;
 
 .quotes_block_header_title {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-family: 'Inter', sans-serif;
     width: 308px;
     margin: 80px 0px 24px 80px;
@@ -561,7 +563,7 @@ $primary-font-size: 14px;
 
 .quotes_block_author_name {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-family: 'Inter', sans-serif;
     height: 29px;
     margin: 0;
@@ -607,7 +609,7 @@ $primary-font-size: 14px;
 
 .offers_block_title {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: $primary-semi-bold-font-weight;
     font-family: 'Inter', sans-serif;
     margin: 0;
 }
@@ -623,7 +625,7 @@ $primary-font-size: 14px;
     gap: 6px;
     border-radius: 8px;
     font-size: $primary-font-size;
-    font-weight: 500;
+    font-weight: $primary-medium-font-weight;
     font-family: 'Inter', sans-serif;
     padding: $primary-padding;
     width: 273px;
@@ -659,7 +661,7 @@ $primary-font-size: 14px;
     gap: 6px;
     border-radius: 8px;
     font-size: $primary-font-size;
-    font-weight: 500;
+    font-weight: $primary-medium-font-weight;
     font-family: 'Inter', sans-serif;
     padding: $primary-padding;
     width: 202px;
