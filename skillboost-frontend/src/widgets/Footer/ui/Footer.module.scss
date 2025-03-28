@@ -16,6 +16,7 @@
         max-width: 416px;
         gap: 8px;
         @include FooterText;
+        line-height: 150%;
 
         .footerLogo {
             display: flex;

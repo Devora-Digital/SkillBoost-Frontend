@@ -6,12 +6,14 @@
     line-height: 19px;
     color: $header-text-color;
 }
+
 @mixin FooterText {
     color: $footer-secondary-text;
     font-family: 'Inter';
     font-size: 14px;
     font-weight: 400;
 }
+
 @mixin heading_2 {
     color: $login-color-title;
     font-family: 'Inter';
@@ -20,6 +22,7 @@
     line-height: 130%;
 
 }
+
 @mixin heading_5 {
     color: $login-color-title;
     font-family: 'Inter';
@@ -27,10 +30,21 @@
     font-weight: 600;
     line-height: 160%;
 }
+
 @mixin small_text {
     color: $login-color;
     font-family: 'Inter';
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
+}
+
+@mixin InputText {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+
+    &::placeholder {
+        color: #94a3b8;
+    }
 }
