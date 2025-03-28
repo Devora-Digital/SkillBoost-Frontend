@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styles from './NotFound.module.scss'
 import { ArrowLeft } from 'lucide-react'
 
-const NotFound = () => {
+export default function NotFound() {
   return (
     <div className={styles.Error}>
       <h1 className={styles.LargeTitle}>404</h1>
@@ -17,5 +17,3 @@ const NotFound = () => {
     </div>
   )
 }
-
-export default NotFound

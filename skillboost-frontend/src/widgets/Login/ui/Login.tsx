@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react'
 import styles from './Login.module.scss'
 import Image from 'next/image'
 
-const Login = () => {
+export default function Login() {
   return (
     <div className={styles.SignIn}>
       <div className={styles.container}>
@@ -80,5 +80,3 @@ const Login = () => {
     </div>
   )
 }
-
-export default Login

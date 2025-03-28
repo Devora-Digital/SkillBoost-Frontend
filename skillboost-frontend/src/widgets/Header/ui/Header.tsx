@@ -7,7 +7,7 @@ interface HeaderProps {
   isAuthenticated: boolean
 }
 
-const Header: React.FC<HeaderProps> = ({ isAuthenticated }) => {
+export default function Header({ isAuthenticated }: HeaderProps) {
   return (
     <header>
       <div className={styles.headerContainer}>
@@ -64,5 +64,3 @@ const Header: React.FC<HeaderProps> = ({ isAuthenticated }) => {
     </header>
   )
 }
-
-export default Header

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from './Footer.module.scss'
 import Image from 'next/image'
-const Footer = () => {
+export default function Footer() {
   return (
     <footer>
       <div className={styles.footerContainer}>
@@ -120,4 +120,3 @@ const Footer = () => {
     </footer>
   )
 }
-export default Footer
