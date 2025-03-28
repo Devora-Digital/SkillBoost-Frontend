@@ -5,10 +5,12 @@ $primary-gap: 16px;
 $primary-gap-2: 24px;
 $primary-border-radius: 16px;
 $primary-padding: 13px 24px 13px 24px;
-$primary-font-size: 14px;
+$font-size-14: 14px;
+$font-size-24: 24px;
 $primary-medium-font-weight: 500;
 $primary-semi-bold-font-weight: 600;
 $primary-font-family: 'Inter', sans-serif;
+
 
 /*Page*/
 .page {
@@ -56,7 +58,7 @@ $primary-font-family: 'Inter', sans-serif;
 }
 
 .banner_block_button {
-    font-size: $primary-font-size;
+    font-size: $font-size-14;
     font-weight: $primary-medium-font-weight;
     font-family: $primary-font-family;
     width: 238px;
@@ -184,7 +186,7 @@ $primary-font-family: 'Inter', sans-serif;
 }
 
 .description_section {
-    font-size: $primary-font-size;
+    font-size: $font-size-14;
     font-family: $primary-font-family;
     width: 192px;
 }
@@ -210,7 +212,7 @@ $primary-font-family: 'Inter', sans-serif;
 .categories_title {
     font-family: $primary-font-family;
     font-weight: $primary-semi-bold-font-weight;
-    font-size: 24px;
+    font-size: $font-size-24;
     margin: 7px 0px 7px 0px;
 }
 
@@ -280,7 +282,7 @@ $primary-font-family: 'Inter', sans-serif;
 .courses_title {
     font-family: $primary-font-family;
     font-weight: $primary-semi-bold-font-weight;
-    font-size: 24px;
+    font-size: $font-size-24;
     margin: 7px 0px 7px 0px;
 }
 
@@ -365,7 +367,7 @@ $primary-font-family: 'Inter', sans-serif;
 }
 
 .courses_item_hours {
-    font-size: $primary-font-size;
+    font-size: $font-size-14;
     font-family: $primary-font-family;
     color: #334155;
     height: 21px;
@@ -398,7 +400,7 @@ $primary-font-family: 'Inter', sans-serif;
 .instructors_title {
     font-family: $primary-font-family;
     font-weight: $primary-semi-bold-font-weight;
-    font-size: 24px;
+    font-size: $font-size-24;
     margin: 7px 0px 7px 0px;
 }
 
@@ -503,7 +505,7 @@ $primary-font-family: 'Inter', sans-serif;
 }
 
 .quotes_block_header_title {
-    font-size: 24px;
+    font-size: $font-size-24;
     font-weight: $primary-semi-bold-font-weight;
     font-family: $primary-font-family;
     width: 308px;
@@ -571,7 +573,7 @@ $primary-font-family: 'Inter', sans-serif;
 }
 
 .quotes_block_author_post {
-    font-size: $primary-font-size;
+    font-size: $font-size-14;
     font-family: $primary-font-family;
     margin: 0;
 }
@@ -625,7 +627,7 @@ $primary-font-family: 'Inter', sans-serif;
     align-items: center;
     gap: 6px;
     border-radius: 8px;
-    font-size: $primary-font-size;
+    font-size: $font-size-14;
     font-weight: $primary-medium-font-weight;
     font-family: $primary-font-family;
     padding: $primary-padding;
@@ -661,7 +663,7 @@ $primary-font-family: 'Inter', sans-serif;
     align-items: center;
     gap: 6px;
     border-radius: 8px;
-    font-size: $primary-font-size;
+    font-size: $font-size-14;
     font-weight: $primary-medium-font-weight;
     font-family: $primary-font-family;
     padding: $primary-padding;
