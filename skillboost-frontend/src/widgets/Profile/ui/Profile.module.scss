@@ -1,13 +1,11 @@
 @use '@/shared/styles/variables' as *;
 
 .container {
-    padding: 40px 0;
+    padding: 40px 80px;
     display: flex;
     gap: 40px;
     width: 100%;
     box-sizing: border-box;
-    max-width: 1440px;
-    margin: 0 auto;
 
     .containerAside {
         max-width: 290px;
