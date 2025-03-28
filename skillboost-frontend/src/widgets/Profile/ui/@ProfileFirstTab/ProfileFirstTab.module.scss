@@ -75,22 +75,43 @@
                 margin-top: 16px;
             }
 
-            .uploadButton {
-                padding: 10px 24px 10px 24px;
-                box-sizing: border-box;
-                border: 1px solid $login-color-title;
+            .boxImage {
+                max-width: 425px;
+                width: 100%;
+                max-height: 255px;
+                height: 100%;
                 border-radius: 8px;
-                background-color: $white-color;
-                cursor: pointer;
-                display: inline-block;
+                border: 1px solid #ddd;
+                padding: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
             }
 
-            .uploadButton label {
-                cursor: pointer;
-            }
+            .tabUpload {
+                display: flex;
+                margin-top: 12px;
+                align-items: center;
 
-            .uploadButton input {
-                display: none;
+
+                .uploadButton {
+                    padding: 10px 24px 10px 24px;
+                    box-sizing: border-box;
+                    border: 1px solid $login-color-title;
+                    border-radius: 8px;
+                    background-color: $white-color;
+                    cursor: pointer;
+                    display: inline-block;
+                }
+
+                .uploadButton label {
+                    cursor: pointer;
+                }
+
+                .uploadButton input {
+                    display: none;
+                }
             }
 
         }

@@ -1,36 +1,66 @@
 import React, { useState } from 'react'
 import styles from './ProfileFirstTab.module.scss'
-import { Box, Button, TextField } from '@mui/material'
+import { Box, TextField } from '@mui/material'
 import MenuItem from '@mui/material/MenuItem'
 import FormControl from '@mui/material/FormControl'
 import Select, { SelectChangeEvent } from '@mui/material/Select'
 import { InputField, TextareaField } from '@/shared/ui/Input/Input'
+
 export default function ProfileFirstTab() {
   const [lang, setLang] = React.useState('')
+  const [image, setImage] = useState<string | null>(null)
+  const [imageName, setImageName] = useState<string>('')
+  const [imageError, setImageError] = useState<string>('')
 
   const handleChange = (event: SelectChangeEvent) => {
     setLang(event.target.value as string)
   }
-  const [image, setImage] = useState<string | null>(null)
-  const [imageName, setImageName] = useState<string>('')
 
   const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0]
-    if (file) {
-      const reader = new FileReader()
-      reader.onload = () => {
-        setImage(reader.result as string)
-      }
-      reader.readAsDataURL(file)
-      setImageName(file.name)
+    setImageError('')
+
+    if (!file) {
+      setImageError('Please select an image')
+      return
     }
+    const validTypes = ['image/jpeg', 'image/png', 'image/gif']
+    if (!validTypes.includes(file.type)) {
+      setImageError('Only JPG, PNG or GIF images are allowed')
+      return
+    }
+
+    const reader = new FileReader()
+    reader.onload = () => {
+      setImage(reader.result as string)
+    }
+    reader.readAsDataURL(file)
+    setImageName(file.name)
   }
+
+  const handleSaveImage = () => {
+    if (!image) {
+      setImageError('Please select an image first')
+      return
+    }
+    console.log('Image saved:', image)
+    alert('Image saved successfully!')
+  }
+
   return (
     <div className={styles.containerTab}>
       <div className={`${styles.tabMain} ${styles.tab}`}>
         <div className={styles.blockFlex}>
-          <InputField label='Full Name' placeholder='First Name' />
-          <InputField label='Last Name' placeholder='Last Name' />
+          <InputField
+            label='Full Name'
+            placeholder='First Name'
+            required={true}
+          />
+          <InputField
+            label='Last Name'
+            placeholder='Last Name'
+            required={true}
+          />
         </div>
         <InputField
           label='Headline'
@@ -77,30 +107,25 @@ export default function ProfileFirstTab() {
       </div>
       <div className={`${styles.tabImage} ${styles.tab}`}>
         <h3 className={styles.tabTitle}>Image Preview</h3>
-        <Box>
-          <Box
-            sx={{
-              width: 425,
-              maxHeight: 255,
-              height: '100%',
-              borderRadius: 3,
-              border: '1px solid #ddd',
-              p: '16px'
-            }}
-          >
+        <div>
+          <div className={styles.boxImage}>
             {image ? (
               <img
                 src={image}
-                alt='Uploaded'
-                style={{ maxHeight: '100%', maxWidth: '100%' }}
+                alt='Uploaded preview'
+                style={{
+                  maxHeight: '100%',
+                  maxWidth: '100%',
+                  objectFit: 'contain'
+                }}
               />
             ) : (
               <p className={styles.imageText}>No image selected</p>
             )}
-          </Box>
+          </div>
 
           <h3 className={styles.tabTitle}>Add/Change Image</h3>
-          <Box sx={{ display: 'flex', gap: 1, mt: 1, alignItems: 'center' }}>
+          <div className={styles.tabUpload}>
             <TextField
               size='small'
               fullWidth
@@ -108,24 +133,30 @@ export default function ProfileFirstTab() {
               value={imageName}
               placeholder='Image'
               disabled
+              error={!!imageError}
+              helperText={imageError}
             />
             <button className={styles.uploadButton}>
-              <label>
+              <label style={{ cursor: 'pointer' }}>
                 Upload Image
                 <input
                   type='file'
                   hidden
                   onChange={handleImageChange}
-                  accept='image/*'
+                  accept='image/jpeg, image/png, image/gif'
                 />
               </label>
             </button>
-          </Box>
+          </div>
 
-          <button disabled={!image} className={styles.imageButton}>
+          <button
+            onClick={handleSaveImage}
+            disabled={!image || !!imageError}
+            className={`${styles.imageButton} ${!image || imageError ? styles.disabledButton : ''}`}
+          >
             Save Image
           </button>
-        </Box>
+        </div>
       </div>
       <div className={`${styles.tabLinks} ${styles.tab}`}>
         <h3 className={styles.tabTitle}>Links</h3>
