@@ -9,7 +9,7 @@ $font-size-14: 14px;
 $font-size-24: 24px;
 $primary-medium-font-weight: 500;
 $primary-semi-bold-font-weight: 600;
-$primary-font-family: 'Inter', sans-serif;
+$font-family-main: 'Inter', sans-serif;
 
 
 /*Page*/
@@ -45,13 +45,13 @@ $primary-font-family: 'Inter', sans-serif;
 .banner_block_title {
     font-size: 40px;
     font-weight: 700;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     width: 483px;
     margin: 0;
 }
 
 .banner_block_description {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     width: 592px;
     color: #334155;
     margin: 0;
@@ -60,7 +60,7 @@ $primary-font-family: 'Inter', sans-serif;
 .banner_block_button {
     font-size: $font-size-14;
     font-weight: $primary-medium-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     width: 238px;
     color: $primary-white-color;
     background: #3B82F6;
@@ -152,7 +152,7 @@ $primary-font-family: 'Inter', sans-serif;
 }
 
 .students_community_text {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     font-size: 12px;
     font-weight: $primary-semi-bold-font-weight;
     color: #020617;
@@ -181,13 +181,13 @@ $primary-font-family: 'Inter', sans-serif;
 .numbers_section {
     font-size: 32px;
     font-weight: $primary-semi-bold-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     margin: 0;
 }
 
 .description_section {
     font-size: $font-size-14;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     width: 192px;
 }
 
@@ -210,14 +210,14 @@ $primary-font-family: 'Inter', sans-serif;
 }
 
 .categories_title {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     font-weight: $primary-semi-bold-font-weight;
     font-size: $font-size-24;
     margin: 7px 0px 7px 0px;
 }
 
 .all_categories_button {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     font-weight: $primary-medium-font-weight;
     background: $primary-white-color;
     color: #3B82F6;
@@ -256,12 +256,12 @@ $primary-font-family: 'Inter', sans-serif;
 .category_item_title {
     font-size: 20px;
     font-weight: $primary-semi-bold-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     margin: 0px 3px 0px 3px;
 }
 
 .category_item_count {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     color: #334155;
     margin: 0px 9px 0px 9px;
 }
@@ -280,14 +280,14 @@ $primary-font-family: 'Inter', sans-serif;
 }
 
 .courses_title {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     font-weight: $primary-semi-bold-font-weight;
     font-size: $font-size-24;
     margin: 7px 0px 7px 0px;
 }
 
 .all_courses_button {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     font-weight: $primary-medium-font-weight;
     background: $primary-white-color;
     color: #3B82F6;
@@ -340,14 +340,14 @@ $primary-font-family: 'Inter', sans-serif;
 .courses_item_title {
     font-size: 18px;
     font-weight: $primary-semi-bold-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     height: 29px;
     padding: 0;
     margin: 0;
 }
 
 .courses_item_author {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     color: #334155;
     padding: 0;
     margin: 0;
@@ -362,13 +362,13 @@ $primary-font-family: 'Inter', sans-serif;
 .courses_item_rating {
     font-size: 12px;
     font-weight: $primary-semi-bold-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     margin: 2.5px 0px 2.5px 0px;
 }
 
 .courses_item_hours {
     font-size: $font-size-14;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     color: #334155;
     height: 21px;
     padding: 0;
@@ -378,7 +378,7 @@ $primary-font-family: 'Inter', sans-serif;
 .courses_item_price {
     font-size: 20px;
     font-weight: $primary-semi-bold-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     height: 30px;
     padding: 0;
     margin: 0;
@@ -398,14 +398,14 @@ $primary-font-family: 'Inter', sans-serif;
 }
 
 .instructors_title {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     font-weight: $primary-semi-bold-font-weight;
     font-size: $font-size-24;
     margin: 7px 0px 7px 0px;
 }
 
 .all_instructors_button {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     font-weight: $primary-medium-font-weight;
     background: $primary-white-color;
     color: #3B82F6;
@@ -451,14 +451,14 @@ $primary-font-family: 'Inter', sans-serif;
 .mentors_item_title {
     font-size: 18px;
     font-weight: $primary-semi-bold-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     height: 29px;
     padding: 0;
     margin: 0;
 }
 
 .mentors_item_post {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     color: #334155;
     padding: 0;
     margin: 0;
@@ -483,14 +483,14 @@ $primary-font-family: 'Inter', sans-serif;
 .mentors_item_rating {
     font-size: 12px;
     font-weight: $primary-semi-bold-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     margin: 2.5px 0px 2.5px 0px;
 }
 
 .mentors_item_students_count {
     font-size: 12px;
     font-weight: $primary-semi-bold-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     margin: 2.5px 0px 2.5px 0px;
 }
 
@@ -507,7 +507,7 @@ $primary-font-family: 'Inter', sans-serif;
 .quotes_block_header_title {
     font-size: $font-size-24;
     font-weight: $primary-semi-bold-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     width: 308px;
     margin: 80px 0px 24px 80px;
 }
@@ -542,7 +542,7 @@ $primary-font-family: 'Inter', sans-serif;
 }
 
 .quotes_block_quote_text {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     width: 384px;
     margin: 0;
 }
@@ -567,14 +567,14 @@ $primary-font-family: 'Inter', sans-serif;
 .quotes_block_author_name {
     font-size: 18px;
     font-weight: $primary-semi-bold-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     height: 29px;
     margin: 0;
 }
 
 .quotes_block_author_post {
     font-size: $font-size-14;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     margin: 0;
 }
 
@@ -613,12 +613,12 @@ $primary-font-family: 'Inter', sans-serif;
 .offers_block_title {
     font-size: 20px;
     font-weight: $primary-semi-bold-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     margin: 0;
 }
 
 .offers_block_description {
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     margin: 0;
 }
 
@@ -629,7 +629,7 @@ $primary-font-family: 'Inter', sans-serif;
     border-radius: 8px;
     font-size: $font-size-14;
     font-weight: $primary-medium-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     padding: $primary-padding;
     width: 273px;
     color: $primary-white-color;
@@ -665,7 +665,7 @@ $primary-font-family: 'Inter', sans-serif;
     border-radius: 8px;
     font-size: $font-size-14;
     font-weight: $primary-medium-font-weight;
-    font-family: $primary-font-family;
+    font-family: $font-family-main;
     padding: $primary-padding;
     width: 202px;
     color: $primary-white-color;
