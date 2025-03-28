@@ -1,0 +1,50 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.h1 {
+  @include heading_1;
+  margin-top: 60px;
+}
+
+.h3 {
+  @include heading_3;
+  margin-top: 24px;
+}
+
+.line {
+  gap: 15px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter {
+  gap: 6px;
+  border: 1px solid rgb(15, 23, 42);
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 10px 24px 10px 24px;
+}
+
+
+.option__div { 
+  border: 1px solid rgb(15, 23, 42);
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  padding: 10px 12px 10px 12px;
+}
+
+.option {
+  text-align: center;
+  appearance: none;
+  border: none;
+}
