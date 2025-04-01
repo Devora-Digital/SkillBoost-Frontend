@@ -1,3 +1,5 @@
+import { Login } from '@/widgets/Login'
+
 export default function CartPage() {
-  return <h1>Login</h1>
+  return <Login />
 }
