@@ -14,9 +14,7 @@
 
         &Title {
             color: $login-color-title;
-            font-family: 'Inter';
-            font-size: 18px;
-            font-weight: 600;
+            @include heading_5;
             margin-bottom: 16px;
         }
 
@@ -46,10 +44,8 @@
         &.tabImage {
 
             .imageText {
-                font-family: 'Inter';
-                font-size: 16px;
-                font-weight: 400;
-                color: #94a3b8;
+                @include InputText;
+                color: $login-color;
             }
 
             .imageButton {
@@ -58,9 +54,8 @@
                 background: $login-color-title;
                 border: none;
                 cursor: pointer;
-                font-family: 'Inter';
-                font-size: 14px;
-                font-weight: 500;
+                @include small_text;
+                color: $white-color;
                 padding: 15px 24px;
                 margin-top: 8px;
 
@@ -81,13 +76,12 @@
                 max-height: 255px;
                 height: 100%;
                 border-radius: 8px;
-                border: 1px solid #ddd;
+                border: 1px solid $profile-border;
                 padding: 16px;
                 display: flex;
-                ;
                 justify-content: center;
                 align-items: center;
-                background-color: #fff;
+                background-color: $white-color;
             }
 
             .tabUpload {

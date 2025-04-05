@@ -11,13 +11,12 @@
         max-width: 290px;
         width: 100%;
         border-radius: 16px;
-        background: #f8fafc;
+        background: $profile-aside;
         padding: 24px 0 0;
         display: flex;
         justify-content: center;
         flex-direction: column;
         color: $login-color-title;
-        font-family: 'Inter';
         height: fit-content;
 
         .asidePerson {
@@ -65,8 +64,7 @@
             .asideMenu li button {
                 background: none;
                 border: none;
-                color: #334155;
-                font-family: 'Inter';
+                color: $profile-aside-button;
                 font-size: 14px;
                 font-weight: 400;
                 cursor: pointer;
@@ -82,8 +80,8 @@
 
 
             .asideMenu li button.active {
-                color: #fff;
-                background: #1e293b;
+                color: $white-color;
+                background: $footer-background;
             }
 
             .asideMenu li:last-child button {

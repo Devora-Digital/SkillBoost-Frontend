@@ -1,3 +1,4 @@
+'use client'
 import styles from './Input.module.scss'
 import { useState } from 'react'
 
@@ -20,7 +21,7 @@ export const InputField: React.FC<InputFieldProps> = ({
 
   return (
     <div className={`${styles.mainBlock} ${className}`}>
-      <h5 className={styles.inputTitle}>{label}</h5>
+      <h5 className={`${styles.inputTitle} ${styles.blockTitle}`}>{label}</h5>
       <input
         className={`${styles.blockInput} ${className} ${touched && required ? styles.errorInput : ''}`}
         type={type}

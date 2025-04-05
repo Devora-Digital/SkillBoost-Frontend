@@ -36,7 +36,6 @@
             cursor: pointer;
             border: none;
             margin-top: 24px;
-            font-family: 'Inter';
             font-size: 14px;
             font-weight: 500;
 
@@ -96,7 +95,7 @@
                 gap: 10px;
                 padding: 15px 61px;
                 box-sizing: border-box;
-                border: 1px solid #b2b5c4;
+                border: 1px solid $login-social-border;
                 border-radius: 8px;
                 font-size: 14px;
                 font-weight: 400;
@@ -104,7 +103,7 @@
                 background-color: transparent;
 
                 &:hover {
-                    background-color: rgba(0, 0, 0, 0.03);
+                    background-color: #00000008;
                 }
             }
 

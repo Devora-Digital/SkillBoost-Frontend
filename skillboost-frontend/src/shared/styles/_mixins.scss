@@ -1,7 +1,6 @@
 @use '@/shared/styles/variables' as *;
 
 @mixin HeaderText {
-    font-family: 'Inter';
     font-weight: 500;
     line-height: 19px;
     color: $header-text-color;
@@ -9,14 +8,12 @@
 
 @mixin FooterText {
     color: $footer-secondary-text;
-    font-family: 'Inter';
     font-size: 14px;
     font-weight: 400;
 }
 
 @mixin heading_2 {
     color: $login-color-title;
-    font-family: 'Inter';
     font-size: 32px;
     font-weight: 600;
     line-height: 130%;
@@ -25,7 +22,6 @@
 
 @mixin heading_5 {
     color: $login-color-title;
-    font-family: 'Inter';
     font-size: 18px;
     font-weight: 600;
     line-height: 160%;
@@ -33,7 +29,6 @@
 
 @mixin small_text {
     color: $login-color;
-    font-family: 'Inter';
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
@@ -42,9 +37,9 @@
 @mixin InputText {
     font-size: 16px;
     font-weight: 400;
-    color: #000000;
+    color: $black-color;
 
     &::placeholder {
-        color: #94a3b8;
+        color: $login-color;
     }
 }
