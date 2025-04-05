@@ -8,6 +8,7 @@ interface InputFieldProps {
   type?: string
   className?: string
   required?: boolean
+  headerClassName?: string
 }
 
 export const InputField: React.FC<InputFieldProps> = ({
@@ -15,13 +16,18 @@ export const InputField: React.FC<InputFieldProps> = ({
   placeholder,
   type = 'text',
   className = '',
-  required = false
+  required = false,
+  headerClassName = ''
 }) => {
   const [touched, setTouched] = useState(false)
 
   return (
     <div className={`${styles.mainBlock} ${className}`}>
-      <h5 className={`${styles.inputTitle} ${styles.blockTitle}`}>{label}</h5>
+      <h5
+        className={`${styles.inputTitle} ${styles.blockTitle} ${headerClassName}`}
+      >
+        {label}
+      </h5>{' '}
       <input
         className={`${styles.blockInput} ${className} ${touched && required ? styles.errorInput : ''}`}
         type={type}

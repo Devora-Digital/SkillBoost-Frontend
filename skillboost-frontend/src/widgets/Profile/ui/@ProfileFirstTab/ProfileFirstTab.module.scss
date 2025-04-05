@@ -32,6 +32,7 @@
                 width: 70%;
             }
 
+
             .selectBlock {
                 .selectTitle {
                     @include small_text;
@@ -111,5 +112,12 @@
             }
 
         }
+
+        .inputTitle {
+            @include small_text;
+            color: $login-color-title;
+            margin-bottom: 9px;
+        }
     }
+
 }
