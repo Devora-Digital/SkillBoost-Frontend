@@ -71,19 +71,23 @@ $font-family-main: 'Inter', sans-serif;
 .banner_image_first {
     position: absolute;
     top: 272.78px;
-    left: 840.78px;
+    left: 1040.78px;
+    /* top: 272.78px;
+    left: 840.78px; */
 }
 
 .banner_image_second {
     position: absolute;
     top: 134px;
-    left: 1050px;
+    left: 1260px;
+    // left: 1250px;
 }
 
 .banner_image_third {
     position: absolute;
     top: 395px;
-    left: 1070px;
+    left: 1290px;
+    // left: 1270px;
 }
 
 .first_mini_circle {
@@ -100,20 +104,23 @@ $font-family-main: 'Inter', sans-serif;
 
 .banner_image_ellipse_first {
     position: absolute;
-    top: 380px;
-    left: 824px;
+    top: 385px;
+    // top: 380px;
+    left: 1024px;
 }
 
 .banner_image_ellipse_second {
     position: absolute;
     top: 115px;
-    left: 1130px;
+    left: 1345px;
+    // left: 1330px;
 }
 
 .banner_image_ellipse_third {
     position: absolute;
     top: 420px;
-    left: 1163px;
+    left: 1383px;
+    // left: 1363px;
 }
 
 .banner_center_circle {
@@ -147,7 +154,8 @@ $font-family-main: 'Inter', sans-serif;
     padding: 12px;
     position: absolute;
     top: 495px;
-    left: 990px;
+    left: 1220px;
+    // left: 990px;
     z-index: 20;
 }
 
