@@ -9,21 +9,21 @@ import { LucideAtom } from "lucide-react";
 import { LucideChevronLeft } from "lucide-react";
 import { LucideChevronRight } from "lucide-react";
 import { LucideArrowRight } from "lucide-react";
-import FirstMiniCircles from "../../public/Homepage/mini_circles_1.svg"
-import SecondMiniCircles from "../../public/Homepage/mini_circles_2.svg"
-import BannerImageFirst from "../../public/Homepage/BannerCircleRed.png"
-import BannerImageSecond from "../../public/Homepage/BannerCircleBlue.png"
-import BannerImageThird from "../../public/Homepage/BannerCircleYellow.png"
-import BannerEllipseFirst from "../../public/Homepage/BannerEllipseFirst.svg"
-import BannerEllipseSecond from "../../public/Homepage/BannerEllipseSecond.svg"
-import BannerEllipseThird from "../../public/Homepage/BannerEllipseThird.svg"
-import StudentsCommunityAvatars from "../../public/Homepage/Students_community_avatars.svg"
-import TopCoursesImage from "../../public/Homepage/TopCoursesImage_01.jpeg"
-import TopInstructorsImage from "../../public/Homepage/InstructorImage_01.png"
-import OfferImageFirst from "../../public/Homepage/Offer_image_01.png"
-import OfferImageSecond from "../../public/Homepage/Offer_Image_02.png"
-import DesignerPhoto from "../../public/Homepage/Designer_image_01.jpeg"
-import QuoteMarkIcon from "../../public/Homepage/ri_double-quotes-l.svg"
+import FirstMiniCircles from "../../public/icons/mini_circles_1.svg"
+import SecondMiniCircles from "../../public/icons/mini_circles_2.svg"
+import BannerImageFirst from "../../public/assets/BannerCircleRed.png"
+import BannerImageSecond from "../../public/assets/BannerCircleBlue.png"
+import BannerImageThird from "../../public/assets/BannerCircleYellow.png"
+import BannerEllipseFirst from "../../public/icons/BannerEllipseFirst.svg"
+import BannerEllipseSecond from "../../public/icons/BannerEllipseSecond.svg"
+import BannerEllipseThird from "../../public/icons/BannerEllipseThird.svg"
+import StudentsCommunityAvatars from "../../public/icons/Students_community_avatars.svg"
+import TopCoursesImage from "../../public/assets/TopCoursesImage_01.jpeg"
+import TopInstructorsImage from "../../public/assets/InstructorImage_01.png"
+import OfferImageFirst from "../../public/assets/Offer_image_01.png"
+import OfferImageSecond from "../../public/assets/Offer_Image_02.png"
+import DesignerPhoto from "../../public/assets/Designer_image_01.jpeg"
+import QuoteMarkIcon from "../../public/icons/ri_double-quotes-l.svg"
 import styles from "./page.module.scss";
 
 export default function Home() {
