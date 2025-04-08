@@ -314,6 +314,7 @@ $font-family-main: 'Inter', sans-serif;
 
 .course_item_picture {
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .courses_item_info {
@@ -433,6 +434,8 @@ $font-family-main: 'Inter', sans-serif;
 
 .mentor_item_picture {
     border-radius: 8px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .mentors_item_info {
@@ -556,6 +559,7 @@ $font-family-main: 'Inter', sans-serif;
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .quotes_block_author_inside {
@@ -594,6 +598,7 @@ $font-family-main: 'Inter', sans-serif;
 .offers_block_first_image {
     width: 400px;
     height: 425px;
+    object-fit: contain;
 }
 
 .offers_block_first_control {
