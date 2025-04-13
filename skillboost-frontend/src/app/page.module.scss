@@ -1,15 +1,5 @@
 
-$primary-white-color: #FFF;
-$primary-white-color-2: #E2E8F0;
-$primary-gap: 16px;
-$primary-gap-2: 24px;
-$primary-border-radius: 16px;
-$primary-padding: 13px 24px 13px 24px;
-$font-size-14: 14px;
-$font-size-24: 24px;
-$primary-medium-font-weight: 500;
-$primary-semi-bold-font-weight: 600;
-$font-family-main: 'Inter', sans-serif;
+@use '@/shared/styles/_variables.scss' as *;
 
 
 /*Page*/
@@ -63,7 +53,7 @@ $font-family-main: 'Inter', sans-serif;
     font-weight: $primary-medium-font-weight;
     font-family: $font-family-main;
     width: 238px;
-    color: $primary-white-color;
+    color: $white-color;
     background: #3B82F6;
     border-radius: 8px;
     padding: $primary-padding;
@@ -139,7 +129,7 @@ $font-family-main: 'Inter', sans-serif;
 .banner_center_circle_square {
     width: 19px;
     height: 19px;
-    background: $primary-white-color;
+    background: $white-color;
     transform: rotate(45deg);
     transform-origin: center;
 }
@@ -150,7 +140,7 @@ $font-family-main: 'Inter', sans-serif;
     justify-content: center;
     border-radius: 8px;
     box-shadow: 0px 4px 16px 0px #0000001F;
-    background: $primary-white-color;
+    background: $white-color;
     padding: 12px;
     position: absolute !important;
     top: 495px;
@@ -202,7 +192,7 @@ $font-family-main: 'Inter', sans-serif;
 }
 
 .vertical_line {
-    border-left: 4px solid $primary-white-color-2;
+    border-left: 4px solid $white-color;
     height: 55px;
 }
 
@@ -229,7 +219,7 @@ $font-family-main: 'Inter', sans-serif;
 .all_categories_button {
     font-family: $font-family-main;
     font-weight: $primary-medium-font-weight;
-    background: $primary-white-color;
+    background: $white-color;
     color: #3B82F6;
     padding: 10px 24px 10px 24px;
 }
@@ -240,7 +230,7 @@ $font-family-main: 'Inter', sans-serif;
 }
 
 .categories_item {
-    border: 1px solid $primary-white-color-2;
+    border: 1px solid $white-color-2;
     box-shadow: 0px 0px 8px 0px #3B82F61F;
     border-radius: $primary-border-radius;
     padding: 24px 93px 24px 93px;
@@ -301,7 +291,7 @@ $font-family-main: 'Inter', sans-serif;
 .all_courses_button {
     font-family: $font-family-main;
     font-weight: $primary-medium-font-weight;
-    background: $primary-white-color;
+    background: $white-color;
     color: #3B82F6;
     padding: $primary-padding;
 }
@@ -312,7 +302,7 @@ $font-family-main: 'Inter', sans-serif;
 }
 
 .courses_item {
-    border: 1px solid $primary-white-color-2;
+    border: 1px solid $white-color-2;
     border-radius: $primary-border-radius;
     box-shadow: 0px 0px 8px 0px #3B82F61F;
     padding: 16px;
@@ -420,7 +410,7 @@ $font-family-main: 'Inter', sans-serif;
 .all_instructors_button {
     font-family: $font-family-main;
     font-weight: $primary-medium-font-weight;
-    background: $primary-white-color;
+    background: $white-color;
     color: #3B82F6;
     padding: $primary-padding;
 }
@@ -433,7 +423,7 @@ $font-family-main: 'Inter', sans-serif;
 .mentors_item {
     display: flex;
     flex-direction: column;
-    border: 1px solid $primary-white-color-2;
+    border: 1px solid $white-color-2;
     border-radius: $primary-border-radius;
     padding: 16px;
 }
@@ -550,7 +540,7 @@ $font-family-main: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border: 1px solid $primary-white-color-2;
+    border: 1px solid $white-color-2;
     border-radius: $primary-border-radius;
     box-shadow: 0px 0px 8px 0px #3B82F61F;
     padding: 24px;
@@ -655,7 +645,7 @@ $font-family-main: 'Inter', sans-serif;
     font-family: $font-family-main;
     padding: $primary-padding;
     width: 273px;
-    color: $primary-white-color;
+    color: $white-color;
     background: #020617;
 }
 
@@ -690,6 +680,6 @@ $font-family-main: 'Inter', sans-serif;
     font-family: $font-family-main;
     padding: $primary-padding;
     width: 202px;
-    color: $primary-white-color;
+    color: $white-color;
     background: #020617;
 }
