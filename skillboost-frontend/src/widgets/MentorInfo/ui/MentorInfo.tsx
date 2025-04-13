@@ -26,7 +26,8 @@ export default function MentorInfo() {
                         width={200}
                         height={200}
                         />
-                </div>
+            </div>
+            <p>hello</p>
                 <div></div>
             </div>
     )
