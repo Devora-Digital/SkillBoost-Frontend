@@ -588,12 +588,14 @@ $font-family-main: 'Inter', sans-serif;
     font-family: $font-family-main;
     height: 29px;
     margin: 0;
+    line-height: 160%;
 }
 
 .quotes_block_author_post {
     font-size: $font-size-14;
     font-family: $font-family-main;
     margin: 0;
+    line-height: 150%;
 }
 
 /*Offer №1*/
@@ -634,6 +636,7 @@ $font-family-main: 'Inter', sans-serif;
     font-weight: $primary-semi-bold-font-weight;
     font-family: $font-family-main;
     margin: 0;
+    line-height: 150%;
 }
 
 .offers_block_description {
