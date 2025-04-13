@@ -55,6 +55,7 @@ $font-family-main: 'Inter', sans-serif;
     width: 592px;
     color: #334155;
     margin: 0;
+    line-height: 160%;
 }
 
 .banner_block_button {
@@ -174,8 +175,9 @@ $font-family-main: 'Inter', sans-serif;
     width: 1440px;
 }
 
-.inside_block {
+.inside_statistic_block {
     display: flex;
+    gap: 6px;
     flex-direction: column;
     align-items: center;
     margin-left: 85.5px;
@@ -189,12 +191,14 @@ $font-family-main: 'Inter', sans-serif;
     font-weight: $primary-semi-bold-font-weight;
     font-family: $font-family-main;
     margin: 0;
+    line-height: 130%;
 }
 
 .description_section {
     font-size: $font-size-14;
     font-family: $font-family-main;
     width: 192px;
+    line-height: 150%;
 }
 
 .vertical_line {
@@ -264,12 +268,14 @@ $font-family-main: 'Inter', sans-serif;
     font-weight: $primary-semi-bold-font-weight;
     font-family: $font-family-main;
     margin: 0px 3px 0px 3px;
+    line-height: 150%;
 }
 
 .category_item_count {
     font-family: $font-family-main;
     color: #334155;
     margin: 0px 9px 0px 9px;
+    line-height: 160%;
 }
 
 /*Courses styles*/
@@ -519,6 +525,7 @@ $font-family-main: 'Inter', sans-serif;
     font-family: $font-family-main;
     width: 308px;
     margin: 80px 0px 24px 80px;
+    line-height: 140%;
 }
 
 .quotes_block_header_buttons_block {
@@ -554,6 +561,7 @@ $font-family-main: 'Inter', sans-serif;
     font-family: $font-family-main;
     width: 384px;
     margin: 0;
+    line-height: 160%;
 }
 
 .quotes_block_author {
@@ -631,6 +639,7 @@ $font-family-main: 'Inter', sans-serif;
 .offers_block_description {
     font-family: $font-family-main;
     margin: 0;
+    line-height: 160%;
 }
 
 .offers_block_first_button {

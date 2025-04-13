@@ -61,22 +61,22 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.statistic_block}>
-              <div className={styles.inside_block}>
+              <div className={styles.inside_statistic_block}>
                   <p className={styles.numbers_section}>250+</p>
                   <p className={styles.description_section}>Courses by our best mentors</p>
               </div>
               <div className={styles.vertical_line}></div>
-              <div className={styles.inside_block}>
+              <div className={styles.inside_statistic_block}>
                   <p className={styles.numbers_section}>1000+</p>
                   <p className={styles.description_section}>Courses by our best mentors</p>
               </div>
               <div className={styles.vertical_line}></div>
-              <div className={styles.inside_block}>
+              <div className={styles.inside_statistic_block}>
                   <p className={styles.numbers_section}>15+</p>
                   <p className={styles.description_section}>Courses by our best mentors</p>
               </div>
               <div className={styles.vertical_line}></div>
-              <div className={styles.inside_block}>
+              <div className={styles.inside_statistic_block}>
                   <p className={styles.numbers_section}>2400+</p>
                   <p className={styles.description_section}>Courses by our best mentors</p>
               </div>
