@@ -72,7 +72,6 @@
     .instructorPhoto {
         width: 200px;
         height: 200px;
-
     }
 
 }
@@ -88,7 +87,7 @@
         width: 840px;
 
         .titleAboutInstructor {
-            width: 210px;
+            margin-top: 8px;
             height: 30px;
             font-weight: 600;
             font-size: 20px;
@@ -100,7 +99,7 @@
         }
 
         .titleExpertise {
-            width: 210px;
+            margin-top: 8px;
             height: 30px;
             font-weight: 600;
             font-size: 20px;
@@ -112,14 +111,15 @@
         }
 
         .titleProfExpertise {
-            width: 210px;
+            margin-top: 8px;
             height: 30px;
             font-weight: 600;
             font-size: 20px;
         }
 
         .infoProfExpertise {
-
+            font-weight: 400;
+            font-size: 16px;
         }
 
 
