@@ -1,5 +1,5 @@
 
-import RootLayoutClient from "../app/layoutClient";
+import RootLayoutClient from "@/app/layoutClient";
 import Image from "next/image";
 import { Rating } from "@mui/material";
 import { LucideTelescope } from "lucide-react";
