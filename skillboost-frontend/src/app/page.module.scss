@@ -656,7 +656,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    
+        
+        .offers_block_first_image {
+            width: 400px;
+            height: 425px;
+            object-fit: contain;
+        }
+
         .offers_block_second_control {
             display: flex;
             flex-direction: column;
@@ -668,6 +674,20 @@
                 flex-direction: column;
                 gap: 8px;
                 width: 549px;
+
+                .offers_block_title {
+                    font-size: 20px;
+                    font-weight: $primary-semi-bold-font-weight;
+                    font-family: $font-family-main;
+                    margin: 0;
+                    line-height: 150%;
+                }
+
+                .offers_block_description {
+                    font-family: $font-family-main;
+                    margin: 0;
+                    line-height: 160%;
+                }
             }
             
             .offers_block_second_button {
