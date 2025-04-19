@@ -10,25 +10,18 @@
     position: relative;
     padding: 13px 80px;
     // border-bottom: 1px solid $profile-grey-color;
-    font-style: inter;
 
-    .job {
-        width: 65px;
-        height: 21px;
+    .job { 
         font-weight: 400;
         font-size: 14px;   
     }
 
     .name {
-        width: 250px;
-        height: 42px;
         font-weight: 600;
         font-size: 32px;   
     }
 
     .skills {
-        width: 297px;
-        height: 21px;
         font-weight: 400;
         font-size: 14px;
         margin-bottom: 4px;
@@ -38,40 +31,28 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 272px;
-        height: 55px;
     }
 
         .TotalStudents {
-            width: 96px;
-            height: 21px;
             font-weight: 400;
             font-size: 14px;
         }
 
         .TotalStudentsEquals {
-            width: 60px;
-            height: 34px;
             font-weight: 600;
             font-size: 24px;
         }
 
         .nameReviews {
-            width: 96px;
-            height: 21px;
             font-weight: 400;
             font-size: 14px;
         }
 
         .ReviewsEquals {
-            width: 43px;
-            height: 34px;
             font-weight: 600;
             font-size: 24px;
         }
     .instructorPhoto {
-        width: 200px;
-        height: 200px;
         margin: 10px;
     }
 
@@ -82,10 +63,9 @@
     justify-content: space-between;
     position: relative;
     padding: 13px 80px;
-    font-style: inter;
 
     .containerInfoInstructor {
-        width: 840px;
+        max-width: 840px;
 
         .titleAboutInstructor {
             margin-top: 8px;
@@ -109,6 +89,9 @@
         .listExpertise {
             font-weight: 400;
             font-size: 16px;
+            list-style: disc;
+            margin-left: 20px;
+            padding: 0;
         }
 
         .titleProfExpertise {

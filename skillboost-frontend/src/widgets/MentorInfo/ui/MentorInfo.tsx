@@ -1,5 +1,4 @@
 'use client'
-import { Button } from '@mui/material'
 import styles from './MentorInfo.module.scss'
 import Image from 'next/image'
 
@@ -37,18 +36,16 @@ export default function MentorInfo() {
                     <p className={styles.titleAboutInstructor}>About Ronald Richard</p>
                     <p className={styles.infoAboutInstructor}>Ronald Richard is a highly skilled UX/UI Designer with over a decade of experience in crafting user-centric digital solutions. With a background in graphic design and a keen eye for detail, Ronald specializes in creating intuitive interfaces that delight users and drive business results.</p>
                     <p className={styles.titleExpertise}>Areas of Expertise</p>
-                    <div className={styles.listExpertise}>
-                        <ul >
-                            <li>- User Experience (UX) Design</li>
-                            <li>- User Interface (UI) Design</li>
-                            <li>- Information Architecture</li>
-                            <li>- Interaction Design</li>
-                            <li>- Visual Design</li>
-                            <li>- Usability Testing</li>
-                            <li>- Wireframing and Prototyping</li>
-                            <li>- Design Thinking</li>
-                        </ul>
-                    </div>
+                    <ul className={styles.listExpertise}>
+                        <li>User Experience (UX) Design</li>
+                        <li>User Interface (UI) Design</li>
+                        <li>Information Architecture</li>
+                        <li>Interaction Design</li>
+                        <li>Visual Design</li>
+                        <li>Usability Testing</li>
+                        <li>Wireframing and Prototyping</li>
+                        <li>Design Thinking</li>
+                    </ul>
                     <p className={styles.titleProfExpertise}>Professional Experience</p>
                     <p className={styles.infoProfExpertise}>Ronald Richard has an extensive professional background in UX/UI design, having worked with renowned companies such as [Company Name] and [Company Name]. His portfolio includes a diverse range of projects spanning web applications, mobile apps, and e-commerce platforms.</p>
                 </div>
