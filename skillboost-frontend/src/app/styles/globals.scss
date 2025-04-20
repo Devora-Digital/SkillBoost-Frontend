@@ -214,16 +214,13 @@ section {
 
 .slick-slide {
   display: flex !important;
-  // justify-content: center;
-  // align-items: center;
-  // width: auto !important;
-  // position: relative !important;
   opacity: 1 !important;
   visibility: visible !important;
-  // position: relative !important;
-  // z-index: 2 !important;
 }
 
 .slick-list {
   border: 1px solid #000;
+  width: 100% !important;
+  max-width: 600px;
+  overflow: hidden !important;
 }
