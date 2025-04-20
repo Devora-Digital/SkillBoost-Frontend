@@ -35,6 +35,7 @@ import TopInstructorsImage from "@assets/InstructorImage_01.png"
 import OfferImageFirst from "@assets/Offer_image_01.png"
 import OfferImageSecond from "@assets/Offer_Image_02.png"
 import DesignerPhoto from "@assets/Designer_image_01.jpeg"
+import MainBanner from '@/widgets/MainBanner/ui/MainBanner'
 import styles from './page.module.scss'
 
 export default function Home() {
@@ -45,7 +46,8 @@ export default function Home() {
   return (
     <RootLayoutClient>
       <div className={styles.page}>
-        <div className={styles.banner_block}>
+        <MainBanner />
+        {/* <div className={styles.banner_block}>
           <div className={styles.banner_block_inside_block_first}>
             <div className={styles.banner_block_text_block}>
               <p className={styles.banner_block_title}>
@@ -116,7 +118,7 @@ export default function Home() {
               alt='Banner ellipse third'
             />
           </div>
-        </div>
+        </div> */}
         <div className={styles.statistic_block}>
           <div className={styles.inside_statistic_block}>
             <p className={styles.numbers_section}>250+</p>

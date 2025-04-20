@@ -202,3 +202,28 @@ section {
   width: 100%;
 }
 }
+
+.slick-slider, .slick-track, .slick-slide {
+  all: unset;
+  box-sizing: border-box;
+}
+
+.slick-track {
+  overflow: visible !important;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: auto !important;
+  position: relative !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.slick-list {
+  border: 1px solid #000;
+}
