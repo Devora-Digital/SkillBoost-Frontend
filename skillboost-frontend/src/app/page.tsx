@@ -1,3 +1,4 @@
+
 import RootLayoutClient from '@/app/layoutClient'
 import Image from 'next/image'
 import { Rating } from '@mui/material'
