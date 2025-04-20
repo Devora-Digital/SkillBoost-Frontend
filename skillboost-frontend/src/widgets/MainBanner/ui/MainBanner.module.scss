@@ -1,0 +1,148 @@
+
+@use '@/shared/styles/_variables.scss' as *;
+
+/*Banner block*/
+.banner_block {
+    display: flex;
+    align-self: flex-start;
+    height: 600px;
+
+    .banner_block_inside_block_first {
+        display: flex;
+        flex-direction: column;
+        gap: $primary-gap-2;
+        margin-top: 168.5px;
+        margin-left: 80px;
+
+        .banner_block_text_block {
+            display: flex;
+            flex-direction: column;
+            gap: $primary-gap;
+        }
+        
+        .banner_block_title {
+            font-size: 40px;
+            font-weight: 700;
+            font-family: $font-family-main;
+            width: 483px;
+            margin: 0;
+        }
+        
+        .banner_block_description {
+            font-family: $font-family-main;
+            width: 592px;
+            color: #334155;
+            margin: 0;
+            line-height: 160%;
+        }
+        
+        .banner_block_button {
+            font-size: $font-size-14;
+            font-weight: $primary-medium-font-weight;
+            font-family: $font-family-main;
+            width: 238px;
+            color: $white-color;
+            background: #3B82F6;
+            border-radius: 8px;
+            padding: $primary-padding;
+        }
+    }
+    
+    .banner_image_first {
+        position: absolute !important;
+        top: 272.78px;
+        left: 1040.78px;
+        width: 204.54px;
+        height: 204.54px;
+    }
+    
+    .banner_image_second {
+        position: absolute !important;
+        top: 134px;
+        left: 1260px;
+        width: 217.35px;
+        height: 217.35px;
+    }
+    
+    .banner_image_third {
+        position: absolute !important;
+        top: 395px;
+        left: 1290px;
+        width: 222px;
+        height: 222px;
+    }
+    
+    .first_mini_circle {
+        position: absolute !important;
+        top: 120px;
+        left: 1226px;
+    }
+    
+    .second_mini_circle {
+        position: absolute !important;
+        top: 300px;
+        left: 985px;
+    }
+    
+    .banner_image_ellipse_first {
+        position: absolute !important;
+        top: 382px;
+        left: 1024px;
+    }
+    
+    .banner_image_ellipse_second {
+        position: absolute !important;
+        top: 115px;
+        left: 1345px;
+    }
+    
+    .banner_image_ellipse_third {
+        position: absolute !important;
+        top: 420px;
+        left: 1383px;
+    }
+    
+    .banner_center_circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background: #0F172A;
+        border-radius: 50%;
+        position: absolute !important;
+        top: 365px;
+        left: 1285px;
+
+        .banner_center_circle_square {
+            width: 19px;
+            height: 19px;
+            background: $white-color;
+            transform: rotate(45deg);
+            transform-origin: center;
+        }
+    }
+    
+    .students_community_banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 8px;
+        box-shadow: 0px 4px 16px 0px #0000001F;
+        background: $white-color;
+        padding: 12px;
+        position: absolute !important;
+        top: 495px;
+        left: 1220px;
+        z-index: 20;
+
+        .students_community_text {
+            font-family: $font-family-main;
+            font-size: 12px;
+            font-weight: $primary-semi-bold-font-weight;
+            color: #020617;
+            width: 143px;
+            margin: 10px 0px 0px 0px;
+        }
+    }
+}

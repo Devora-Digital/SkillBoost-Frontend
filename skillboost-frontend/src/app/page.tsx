@@ -36,7 +36,7 @@ import TopInstructorsImage from "@assets/InstructorImage_01.png"
 import OfferImageFirst from "@assets/Offer_image_01.png"
 import OfferImageSecond from "@assets/Offer_Image_02.png"
 import DesignerPhoto from "@assets/Designer_image_01.jpeg"
-import MainBanner from '@/widgets/MainBanner/ui/MainBanner'
+import { MainBanner } from '@/widgets/MainBanner'
 import styles from './page.module.scss'
 
 export default function Home() {
