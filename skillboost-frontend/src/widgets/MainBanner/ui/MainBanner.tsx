@@ -1,11 +1,8 @@
 "use client"
 
-// import dynamic from "next/dynamic";
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-// const Slider = dynamic(() => import('react-slick'), { ssr: false })
 
 export default function MainBanner() {
     const sliderSettings = {
@@ -15,7 +12,8 @@ export default function MainBanner() {
         speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 1,
-        swipe: true
+        swipe: true,
+        draggable: true,
     }
     return (
         <Slider {...sliderSettings}>
