@@ -209,7 +209,8 @@ section {
 }
 
 .slick-track {
-  overflow: visible !important;
+  width: 1440px !important;
+  max-width: 1440px !important;
 }
 
 .slick-slide {
@@ -221,8 +222,7 @@ section {
 
 .slick-list {
   border: 1px solid #000;
-  width: 100% !important;
-  // max-width: 600px;
-  max-width: 1440px;
-  overflow: hidden !important;
+  width: 1440px !important;
+  max-width: 1440px !important;
+  overflow: hidden;
 }

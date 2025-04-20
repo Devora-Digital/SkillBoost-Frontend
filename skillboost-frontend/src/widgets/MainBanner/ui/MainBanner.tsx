@@ -17,7 +17,7 @@ import styles from "./MainBanner.module.scss"
 
 export default function MainBanner() {
     const sliderSettings = {
-        infinite: true,
+        infinite: false,
         autoplay: true,
         autoplaySpeed: 5000,
         speed: 1000,
@@ -25,6 +25,8 @@ export default function MainBanner() {
         slidesToScroll: 1,
         swipe: true,
         draggable: true,
+        vertical: false,
+        adaptiveHeight: false,
     }
     return (
         <Slider {...sliderSettings}>
