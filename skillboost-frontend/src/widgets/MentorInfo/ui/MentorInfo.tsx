@@ -26,8 +26,8 @@ export default function MentorInfo() {
                         className={styles.instructorPhoto}
                         src='/assets/img-profile.png'
                         alt='SkillBoost'
-                        width={100}
-                        height={100}
+                        width={200}
+                        height={200}
                         />
                 </div>
             </div>
