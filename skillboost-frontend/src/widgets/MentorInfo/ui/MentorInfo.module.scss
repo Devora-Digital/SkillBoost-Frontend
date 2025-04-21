@@ -1,0 +1,129 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+
+
+
+.containerNamePhoto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 13px 80px;
+    // border-bottom: 1px solid $profile-grey-color;
+
+    .job { 
+        font-weight: 400;
+        font-size: 14px;   
+    }
+
+    .name {
+        font-weight: 600;
+        font-size: 32px;   
+    }
+
+    .skills {
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .TotalReviews {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .TotalStudents {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .TotalStudentsEquals {
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        .nameReviews {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .ReviewsEquals {
+            font-weight: 600;
+            font-size: 24px;
+        }
+    .instructorPhoto {
+        margin: 10px;
+    }
+
+}
+
+.containerInstructorInfoButtons {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 13px 80px;
+
+    .containerInfoInstructor {
+        max-width: 840px;
+
+        .titleAboutInstructor {
+            margin-top: 8px;
+            height: 30px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .infoAboutInstructor {
+           font-weight: 400;
+           font-size: 16px;
+        }
+
+        .titleExpertise {
+            margin-top: 8px;
+            height: 30px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .listExpertise {
+            font-weight: 400;
+            font-size: 16px;
+            list-style: disc;
+            margin-left: 20px;
+            padding: 0;
+        }
+
+        .titleProfExpertise {
+            margin-top: 8px;
+            height: 30px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .infoProfExpertise {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+    .containerSocialMediaButtons {
+        align-items: center;
+    
+        .socialMediaButton {
+            margin: 8px;
+            padding: 16px;
+            width: 200px;
+            height: 48px;
+            box-sizing: border-box;
+            border: 1px solid $profile-grey-color;
+            border-radius: 8px;
+            background: $white-color;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            
+            
+        }
+    }
+} 
