@@ -142,8 +142,10 @@
         background: #0F172A;
         border-radius: 50%;
         position: absolute !important;
+        // top: 365px;
+        // left: 1285px;
         top: 365px;
-        left: 1285px;
+        left: 1085px;
 
         .banner_center_circle_square {
             width: 19px;
@@ -163,8 +165,10 @@
         background: $white-color;
         padding: 12px;
         position: absolute !important;
+        // top: 495px;
+        // left: 1220px;
         top: 495px;
-        left: 1220px;
+        left: 1020px;
         z-index: 20;
 
         .students_community_text {
