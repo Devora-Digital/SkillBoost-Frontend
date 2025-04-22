@@ -58,6 +58,11 @@
         left: 840.78px;
         width: 204.54px;
         height: 204.54px;
+        /**/
+        background: #F87171;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top;
     }
     
     .banner_image_second {
@@ -65,9 +70,13 @@
         // top: 134px;
         // left: 1260px;
         top: 134px;
-        left: 1260px;
+        left: 1060px;
         width: 217.35px;
         height: 217.35px;
+        /**/
+        background: #60A5FA;
+        border-radius: 50%;
+        object-fit: contain;
     }
     
     .banner_image_third {
@@ -75,9 +84,13 @@
         // top: 395px;
         // left: 1290px;
         top: 395px;
-        left: 1290px;
+        left: 1090px;
         width: 222px;
         height: 222px;
+        /**/
+        background: #FACC15;
+        border-radius: 50%;
+        object-fit: cover;
     }
     
     .first_mini_circle {
@@ -93,7 +106,7 @@
         // top: 300px;
         // left: 985px;
         top: 300px;
-        left: 985px;
+        left: 785px;
     }
     
     .banner_image_ellipse_first {
@@ -109,7 +122,7 @@
         // top: 115px;
         // left: 1345px;
         top: 115px;
-        left: 1345px;
+        left: 1145px;
     }
     
     .banner_image_ellipse_third {
@@ -117,7 +130,7 @@
         // top: 420px;
         // left: 1383px;
         top: 420px;
-        left: 1383px;
+        left: 1183px;
     }
     
     .banner_center_circle {
