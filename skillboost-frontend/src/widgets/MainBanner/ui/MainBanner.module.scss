@@ -76,7 +76,8 @@
         /**/
         background: #60A5FA;
         border-radius: 50%;
-        object-fit: contain;
+        object-fit: cover;
+        object-position: top;
     }
     
     .banner_image_third {
