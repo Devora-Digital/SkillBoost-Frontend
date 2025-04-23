@@ -54,7 +54,7 @@
         position: absolute !important;
         // top: 272.78px;
         // left: 1040.78px;
-        top: 272.78px;
+        top: 172.78px;
         left: 840.78px;
         width: 204.54px;
         height: 204.54px;
@@ -69,7 +69,7 @@
         position: absolute !important;
         // top: 134px;
         // left: 1260px;
-        top: 134px;
+        top: 74px;
         left: 1060px;
         width: 217.35px;
         height: 217.35px;
@@ -84,7 +84,7 @@
         position: absolute !important;
         // top: 395px;
         // left: 1290px;
-        top: 395px;
+        top: 330px;
         left: 1090px;
         width: 222px;
         height: 222px;
@@ -92,13 +92,14 @@
         background: #FACC15;
         border-radius: 50%;
         object-fit: cover;
+        transform: scale(-1, 1);
     }
     
     .first_mini_circle {
         position: absolute !important;
         // top: 120px;
         // left: 1226px;
-        top: 120px;
+        top: 70px;
         left: 1026px;
     }
     
@@ -106,7 +107,7 @@
         position: absolute !important;
         // top: 300px;
         // left: 985px;
-        top: 300px;
+        top: 200px;
         left: 785px;
     }
     
@@ -114,7 +115,7 @@
         position: absolute !important;
         // top: 382px;
         // left: 1024px;
-        top: 382px;
+        top: 282px;
         left: 824px;
     }
     
@@ -122,7 +123,7 @@
         position: absolute !important;
         // top: 115px;
         // left: 1345px;
-        top: 115px;
+        top: 55px;
         left: 1145px;
     }
     
@@ -130,7 +131,7 @@
         position: absolute !important;
         // top: 420px;
         // left: 1383px;
-        top: 420px;
+        top: 360px;
         left: 1183px;
     }
     
@@ -145,7 +146,7 @@
         position: absolute !important;
         // top: 365px;
         // left: 1285px;
-        top: 365px;
+        top: 300px;
         left: 1085px;
 
         .banner_center_circle_square {
@@ -168,8 +169,8 @@
         position: absolute !important;
         // top: 495px;
         // left: 1220px;
-        top: 495px;
-        left: 1020px;
+        top: 422px;
+        left: 1000px;
         z-index: 20;
 
         .students_community_text {
