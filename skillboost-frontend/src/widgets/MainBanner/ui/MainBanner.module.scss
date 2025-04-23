@@ -1,6 +1,20 @@
 
 @use '@/shared/styles/_variables.scss' as *;
 
+/*Embla carousel*/
+.embla {
+    overflow: hidden;
+
+    .embla__container {
+        display: flex;
+
+    .embla__slide {
+        flex: 0 0 100%;
+    }    
+    }
+}
+ 
+
 /*Banner block*/
 .banner_block {
     display: flex;

@@ -14,21 +14,18 @@
     "@mui/icons-material": "^6.4.8",
     "@mui/material": "^6.4.8",
     "@reduxjs/toolkit": "^2.6.0",
+    "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.476.0",
     "next": "^15.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-redux": "^9.2.0",
-    "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1"
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/react-slick": "^0.23.13",
-    "@types/slick-carousel": "^1.6.40",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
     "prettier": "3.5.2",
