@@ -13,8 +13,6 @@
         gap: $primary-gap-2;
         margin-top: 168.5px;
         margin-left: 80px;
-        // margin-top: 0px;
-        // margin-bottom: 0px;
 
         .banner_block_text_block {
             display: flex;
@@ -52,8 +50,6 @@
     
     .banner_image_first {
         position: absolute !important;
-        // top: 272.78px;
-        // left: 1040.78px;
         top: 172.78px;
         left: 840.78px;
         width: 204.54px;
@@ -67,8 +63,6 @@
     
     .banner_image_second {
         position: absolute !important;
-        // top: 134px;
-        // left: 1260px;
         top: 74px;
         left: 1060px;
         width: 217.35px;
@@ -82,8 +76,6 @@
     
     .banner_image_third {
         position: absolute !important;
-        // top: 395px;
-        // left: 1290px;
         top: 330px;
         left: 1090px;
         width: 222px;
@@ -97,40 +89,30 @@
     
     .first_mini_circle {
         position: absolute !important;
-        // top: 120px;
-        // left: 1226px;
         top: 70px;
         left: 1026px;
     }
     
     .second_mini_circle {
         position: absolute !important;
-        // top: 300px;
-        // left: 985px;
         top: 200px;
         left: 785px;
     }
     
     .banner_image_ellipse_first {
         position: absolute !important;
-        // top: 382px;
-        // left: 1024px;
         top: 282px;
         left: 824px;
     }
     
     .banner_image_ellipse_second {
         position: absolute !important;
-        // top: 115px;
-        // left: 1345px;
         top: 55px;
         left: 1145px;
     }
     
     .banner_image_ellipse_third {
         position: absolute !important;
-        // top: 420px;
-        // left: 1383px;
         top: 360px;
         left: 1183px;
     }
@@ -144,8 +126,6 @@
         background: #0F172A;
         border-radius: 50%;
         position: absolute !important;
-        // top: 365px;
-        // left: 1285px;
         top: 300px;
         left: 1085px;
 
@@ -167,8 +147,6 @@
         background: $white-color;
         padding: 12px;
         position: absolute !important;
-        // top: 495px;
-        // left: 1220px;
         top: 422px;
         left: 1000px;
         z-index: 20;
