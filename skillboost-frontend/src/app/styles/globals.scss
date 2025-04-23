@@ -213,13 +213,17 @@ section {
   max-width: 1440px !important;
   /**/
   height: 600px;
+  /**/
+  display: flex !important;
+  flex-direction: row !important;
 }
 
 .slick-slide {
   display: flex !important;
-  // justify-content: center !important;
   opacity: 1 !important;
   visibility: visible !important;
+  /**/
+  position: relative;
 }
 
 .slick-list {
@@ -227,4 +231,8 @@ section {
   width: 1440px !important;
   max-width: 1440px !important;
   overflow: hidden;
+}
+
+.slick-cloned {
+  display: none !important;
 }

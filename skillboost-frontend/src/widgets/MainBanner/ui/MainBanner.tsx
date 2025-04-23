@@ -17,10 +17,10 @@ import styles from "./MainBanner.module.scss"
 
 export default function MainBanner() {
     const sliderSettings = {
-        infinite: false,
+        infinite: true,
         autoplay: true,
         autoplaySpeed: 5000,
-        speed: 1000,
+        speed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1,
         swipe: true,
@@ -102,6 +102,24 @@ export default function MainBanner() {
                         alt='Banner ellipse third'
                         />
                     </div>
+                </div>
+            </div>
+            <div>
+                <div className={styles.banner_block}>
+                    <div className={styles.banner_block_inside_block_first}>
+                            <div className={styles.banner_block_text_block}>
+                                <p className={styles.banner_block_title}>
+                                    Unlock Your Potential with Byway
+                                </p>
+                                <p className={styles.banner_block_description}>
+                                    Welcome to Byway, where learning knows no bounds. We believe
+                                    that education is the key to personal and professional growth,
+                                    and we&apos;re here to guide you on your journey to success.
+                                </p>
+                            </div>
+                            <button className={styles.banner_block_button}>Start your instructor journey</button>
+                    </div>
+                    <div className={styles.banner_block_inside_block_second}></div>
                 </div>
             </div>
         </Slider>
