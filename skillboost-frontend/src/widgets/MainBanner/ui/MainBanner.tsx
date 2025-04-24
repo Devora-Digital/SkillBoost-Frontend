@@ -6,13 +6,17 @@ import useEmblaCarousel from "embla-carousel-react";
 import BannerImageFirst from "@assets/Banner_Image_01.png"
 import BannerImageSecond from "@assets/Banner_Image_02.png"
 import BannerImageThird from "@assets/Banner_Image_03.png"
+import BannerPeopleFirst from "@assets/BannerPeopleFirst.png"
 import FirstMiniCircles from "@icons/mini_circles_1.svg"
 import SecondMiniCircles from '@icons/mini_circles_2.svg'
+import BlueMiniCirclesFirst from "@icons/Blue_mini_circles_first.svg"
 import BannerEllipseFirst from '@icons/BannerEllipseFirst.svg'
 import BannerEllipseSecond from '@icons/BannerEllipseSecond.svg'
 import BannerEllipseThird from '@icons/BannerEllipseThird.svg'
 import StudentsCommunityAvatars from '@icons/Students_community_avatars.svg'
+import CertificateIcon from "@icons/Certificate-icon-01.svg"
 import styles from "./MainBanner.module.scss"
+
 
 export default function MainBanner() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
@@ -98,7 +102,7 @@ export default function MainBanner() {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className={styles.embla__slide}>
                     <div className={styles.banner_block}>
                         <div className={styles.banner_block_inside_block_first}>
                                 <div className={styles.banner_block_text_block}>
@@ -106,9 +110,63 @@ export default function MainBanner() {
                                         Unlock Your Potential with Byway
                                     </p>
                                     <p className={styles.banner_block_description}>
-                                        Welcome to Byway, where learning knows no bounds. We believe
-                                        that education is the key to personal and professional growth,
-                                        and we&apos;re here to guide you on your journey to success.
+                                    Welcome to Byway, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we&apos;re here to guide you on your journey to success. Whether you&apos;re a student, professional, or lifelong learner, our cutting-edge Learning Management System is designed to elevate your learning experience.
+                                    </p>
+                                </div>
+                                <button className={styles.banner_block_button}>Start your instructor journey</button>
+                        </div>
+                        <div className={styles.banner_block_inside_block_second}>
+                            <Image src={BannerPeopleFirst} alt="Second banner people photo" />
+                            <div className={styles.courses_number_banner}>
+                                <div>
+                                    <div className={styles.courses_number_banner_icon_wrapper}>
+                                        <Image
+                                            className={styles.courses_number_banner_icon}
+                                            src={CertificateIcon}
+                                            alt='Certificate icon'
+                                        />
+                                    </div>
+                                    <p>Number of courses sold</p>
+                                </div>
+                                <p className={styles.courses_number_banner_counter}>
+                                    100,000+
+                                </p>
+                            </div>
+                            <div className={styles.courses_rate_banner}>
+                                <div>
+                                    <div className={styles.courses_rate_state}></div>
+                                    <p className={styles.courses_rate_state_percent}></p>
+                                    <p className={styles.courses_rate_state_title}></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.embla__slide}>
+                    <div className={styles.banner_block}>
+                        <div className={styles.banner_block_inside_block_first}>
+                                <div className={styles.banner_block_text_block}>
+                                    <p className={styles.banner_block_title}>
+                                        Unlock Your Potential with Byway
+                                    </p>
+                                    <p className={styles.banner_block_description}>
+                                    Welcome to Byway, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we&apos;re here to guide you on your journey to success.
+                                    </p>
+                                </div>
+                                <button className={styles.banner_block_button}>Start your instructor journey</button>
+                        </div>
+                        <div className={styles.banner_block_inside_block_second}></div>
+                    </div>
+                </div>
+                <div className={styles.embla__slide}>
+                    <div className={styles.banner_block}>
+                        <div className={styles.banner_block_inside_block_first}>
+                                <div className={styles.banner_block_text_block}>
+                                    <p className={styles.banner_block_title}>
+                                        Unlock Your Potential with Byway
+                                    </p>
+                                    <p className={styles.banner_block_description}>
+                                    Welcome to Byway, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we&apos;re here to guide you on your journey to success. Whether you&apos;re a student, professional, or lifelong learner, our cutting-edge Learning Management System is designed to elevate your learning experience.
                                     </p>
                                 </div>
                                 <button className={styles.banner_block_button}>Start your instructor journey</button>
