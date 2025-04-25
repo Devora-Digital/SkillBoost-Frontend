@@ -103,6 +103,15 @@
         transform: scale(-1, 1);
     }
     
+    .courses_banner_people_first {
+        object-fit: cover;
+        object-position: right;
+        width: 330px;
+        height: 440px;
+        color: transparent;
+        border-radius: 26.41px;
+    }
+
     .first_mini_circle {
         position: absolute !important;
         top: 70px;
@@ -174,6 +183,43 @@
             color: #020617;
             width: 143px;
             margin: 10px 0px 0px 0px;
+        }
+    }
+
+    .courses_number_banner {
+        border: 1px solid #E2E8F0;
+        border-radius: 8px;
+        box-shadow: 0px 0px 8px 0px #3B82F61F;
+        width: 236px;
+
+        .courses_number_banner_inside {
+            display: flex;
+            gap: 8px;
+
+            .courses_number_banner_icon_wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: #aecef5;
+            }
+
+            .courses_number_banner_title {
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                color: #64748B;
+                line-height: 140%;
+            }
+        }
+
+        .courses_number_banner_counter {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 28px;
+            color: #000;
         }
     }
 }

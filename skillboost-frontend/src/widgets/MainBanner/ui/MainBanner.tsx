@@ -116,9 +116,9 @@ export default function MainBanner() {
                                 <button className={styles.banner_block_button}>Start your instructor journey</button>
                         </div>
                         <div className={styles.banner_block_inside_block_second}>
-                            <Image src={BannerPeopleFirst} alt="Second banner people photo" />
+                            <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" />
                             <div className={styles.courses_number_banner}>
-                                <div>
+                                <div className={styles.courses_number_banner_inside}>
                                     <div className={styles.courses_number_banner_icon_wrapper}>
                                         <Image
                                             className={styles.courses_number_banner_icon}
@@ -126,7 +126,7 @@ export default function MainBanner() {
                                             alt='Certificate icon'
                                         />
                                     </div>
-                                    <p>Number of courses sold</p>
+                                    <p className={styles.courses_number_banner_title}>Number of courses sold</p>
                                 </div>
                                 <p className={styles.courses_number_banner_counter}>
                                     100,000+
