@@ -191,35 +191,45 @@
         border-radius: 8px;
         box-shadow: 0px 0px 8px 0px #3B82F61F;
         width: 236px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        // padding: 18px 16px 25px 16px;
 
         .courses_number_banner_inside {
             display: flex;
+            align-items: center;
             gap: 8px;
+            padding: 16px 16px 0px 16px;
 
             .courses_number_banner_icon_wrapper {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 48px;
-                height: 48px;
+                width: 48px !important;
+                height: 48px !important;
                 border-radius: 50%;
-                background: #aecef5;
+                background: #E0F2FE;
             }
 
             .courses_number_banner_title {
                 font-family: 'Inter', sans-serif;
                 font-weight: 600;
-                font-size: 16px;
+                font-size: 14px;
                 color: #64748B;
-                line-height: 140%;
+                line-height: 150%;
             }
         }
 
         .courses_number_banner_counter {
+            display: flex;
+            justify-content: center;
             font-family: 'Inter', sans-serif;
             font-weight: 600;
-            font-size: 28px;
+            font-size: 20px;
             color: #000;
+            padding-bottom: 25px;
+            line-height: 150%;
         }
     }
 }
