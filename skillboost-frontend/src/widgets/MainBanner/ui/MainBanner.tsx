@@ -15,6 +15,8 @@ import BannerEllipseSecond from '@icons/BannerEllipseSecond.svg'
 import BannerEllipseThird from '@icons/BannerEllipseThird.svg'
 import StudentsCommunityAvatars from '@icons/Students_community_avatars.svg'
 import CertificateIcon from "@icons/Certificate-icon-01.svg"
+import CoursesRatingIconFirst from "@icons/CoursesRatingIconFirst.svg"
+import CoursesRatingIconSecond from "@icons/CoursesRatingIconSecond.svg"
 import styles from "./MainBanner.module.scss"
 
 
@@ -117,16 +119,6 @@ export default function MainBanner() {
                         </div>
                         <div className={styles.banner_block_inside_block_second}>
                             <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" />
-                            <div className={styles.students_community_banner_second}>
-                                <Image
-                                    className={styles.students_community_banner_avatars}
-                                    src={StudentsCommunityAvatars}
-                                    alt='Students community avatars'
-                                />
-                                <p className={styles.students_community_second_text}>
-                                    Join our community of 1200+ Students
-                                </p>
-                            </div>
                             <div className={styles.courses_number_banner}>
                                 <div className={styles.courses_number_banner_inside}>
                                     <div className={styles.courses_number_banner_icon_wrapper}>
@@ -143,10 +135,11 @@ export default function MainBanner() {
                                 </p>
                             </div>
                             <div className={styles.courses_rate_banner}>
-                                <div>
-                                    <div className={styles.courses_rate_state}></div>
-                                    <p className={styles.courses_rate_state_percent}></p>
-                                    <p className={styles.courses_rate_state_title}></p>
+                                <div className={styles.courses_rate_banner_wrapper}>
+                                    <Image src={CoursesRatingIconFirst} className={styles.courses_rate_state_first} alt="Courses rate icon first" />
+                                    <Image src={CoursesRatingIconSecond} className={styles.courses_rate_state_second} alt="Courses rate icon second" />
+                                    <p className={styles.courses_rate_state_percent}>87.6%</p>
+                                    <p className={styles.courses_rate_state_title}>Completion rate of our courses</p>
                                 </div>
                             </div>
                         </div>

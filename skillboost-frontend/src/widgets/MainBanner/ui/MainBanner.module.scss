@@ -196,7 +196,7 @@
         padding: 12px;
         position: absolute !important;
         top: 422px;
-        left: 2200px;
+        left: 3200px;
         z-index: 20;
 
         .students_community_second_text {
@@ -224,7 +224,6 @@
             align-items: center;
             gap: 8px;
             padding: 16px 16px 0px 16px;
-            }
 
             .courses_number_banner_icon_wrapper {
                 display: flex;
@@ -255,4 +254,43 @@
             padding-bottom: 25px;
             line-height: 150%;
         }
+    }
+
+    .courses_rate_banner {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #E2E8F0;
+        border-radius: 8px;
+        box-shadow: 0px 0px 8px 0px #3B82F61F;
+        background: #FFF;
+        position: relative;
+        top: -400px;
+        z-index: 20;
+
+        .courses_rate_banner_wrapper {
+            padding: 14px 11px 0px 10px;
+
+            .courses_rate_state_first {
+
+            }
+
+            .courses_rate_state_second {
+                
+            }
+
+            .courses_rate_percent {
+                font-family: $font-family-main;
+                font-size: $font-size-18;
+                font-weight: $primary-semi-bold-font-weight;
+                line-height: 140%;
+            }
+
+            .courses_rate_title {
+                font-family: $font-family-main;
+                font-size: $font-size-14;
+                font-weight: $primary-normal-font-weight;
+                line-height: 140%;
+            }
+        }
+    }
 }
