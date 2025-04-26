@@ -117,6 +117,16 @@ export default function MainBanner() {
                         </div>
                         <div className={styles.banner_block_inside_block_second}>
                             <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" />
+                            <div className={styles.students_community_banner_second}>
+                                <Image
+                                    className={styles.students_community_banner_avatars}
+                                    src={StudentsCommunityAvatars}
+                                    alt='Students community avatars'
+                                />
+                                <p className={styles.students_community_second_text}>
+                                    Join our community of 1200+ Students
+                                </p>
+                            </div>
                             <div className={styles.courses_number_banner}>
                                 <div className={styles.courses_number_banner_inside}>
                                     <div className={styles.courses_number_banner_icon_wrapper}>
@@ -155,7 +165,41 @@ export default function MainBanner() {
                                 </div>
                                 <button className={styles.banner_block_button}>Start your instructor journey</button>
                         </div>
-                        <div className={styles.banner_block_inside_block_second}></div>
+                        <div className={styles.banner_block_inside_block_second}>
+                        <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" />
+                            <div className={styles.students_community_banner_second}>
+                                <Image
+                                    className={styles.students_community_banner_avatars}
+                                    src={StudentsCommunityAvatars}
+                                    alt='Students community avatars'
+                                />
+                                <p className={styles.students_community_second_text}>
+                                    Join our community of 1200+ Students
+                                </p>
+                            </div>
+                            <div className={styles.courses_number_banner}>
+                                <div className={styles.courses_number_banner_inside}>
+                                    <div className={styles.courses_number_banner_icon_wrapper}>
+                                        <Image
+                                            className={styles.courses_number_banner_icon}
+                                            src={CertificateIcon}
+                                            alt='Certificate icon'
+                                        />
+                                    </div>
+                                    <p className={styles.courses_number_banner_title}>Number of courses sold</p>
+                                </div>
+                                <p className={styles.courses_number_banner_counter}>
+                                    100,000+
+                                </p>
+                            </div>
+                            <div className={styles.courses_rate_banner}>
+                                <div>
+                                    <div className={styles.courses_rate_state}></div>
+                                    <p className={styles.courses_rate_state_percent}></p>
+                                    <p className={styles.courses_rate_state_title}></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.embla__slide}>
