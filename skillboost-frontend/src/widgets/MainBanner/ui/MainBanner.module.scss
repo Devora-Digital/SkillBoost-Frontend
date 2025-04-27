@@ -263,6 +263,7 @@
         border-radius: 8px;
         box-shadow: 0px 0px 8px 0px #3B82F61F;
         background: #FFF;
+        width: 186px;
         position: relative;
         top: -400px;
         z-index: 20;
@@ -270,22 +271,25 @@
         .courses_rate_banner_wrapper {
             padding: 14px 11px 0px 10px;
 
-            .courses_rate_state_first {
+            .courses_rate_banner_icons_wrapper {
 
+                .courses_rate_state_first {
+                    // position: absolute;
+                }
+
+                .courses_rate_state_second {
+                    // position: absolute;
+                }
             }
-
-            .courses_rate_state_second {
-                
-            }
-
-            .courses_rate_percent {
+            
+            .courses_rate_state_percent {
                 font-family: $font-family-main;
                 font-size: $font-size-18;
                 font-weight: $primary-semi-bold-font-weight;
                 line-height: 140%;
             }
 
-            .courses_rate_title {
+            .courses_rate_state_title {
                 font-family: $font-family-main;
                 font-size: $font-size-14;
                 font-weight: $primary-normal-font-weight;

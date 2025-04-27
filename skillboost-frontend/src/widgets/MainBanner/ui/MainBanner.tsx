@@ -136,8 +136,10 @@ export default function MainBanner() {
                             </div>
                             <div className={styles.courses_rate_banner}>
                                 <div className={styles.courses_rate_banner_wrapper}>
-                                    <Image src={CoursesRatingIconFirst} className={styles.courses_rate_state_first} alt="Courses rate icon first" />
-                                    <Image src={CoursesRatingIconSecond} className={styles.courses_rate_state_second} alt="Courses rate icon second" />
+                                    <div className={styles.courses_rate_banner_icons_wrapper}>
+                                        <Image src={CoursesRatingIconFirst} className={styles.courses_rate_state_first} alt="Courses rate icon first" />
+                                        <Image src={CoursesRatingIconSecond} className={styles.courses_rate_state_second} alt="Courses rate icon second" />
+                                    </div>
                                     <p className={styles.courses_rate_state_percent}>87.6%</p>
                                     <p className={styles.courses_rate_state_title}>Completion rate of our courses</p>
                                 </div>
