@@ -118,6 +118,7 @@ export default function MainBanner() {
                                 <button className={styles.banner_block_button}>Start your instructor journey</button>
                         </div>
                         <div className={styles.banner_block_inside_block_second}>
+                            <Image className={styles.third_mini_circle} src={BlueMiniCirclesFirst} alt="Blue mini circles" />
                             <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" />
                             <div className={styles.courses_number_banner}>
                                 <div className={styles.courses_number_banner_inside}>

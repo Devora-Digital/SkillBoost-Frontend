@@ -110,6 +110,11 @@
         height: 440px;
         color: transparent;
         border-radius: 26.41px;
+        /**/
+        position: absolute;
+        bottom: 70px;
+        left: 2340px;
+        z-index: 1;
     }
 
     .first_mini_circle {
@@ -124,6 +129,12 @@
         left: 785px;
     }
     
+    .third_mini_circle {
+        position: absolute !important;
+        top: 125px;
+        left: 2283px;
+    }
+
     .banner_image_ellipse_first {
         position: absolute !important;
         top: 282px;
@@ -213,11 +224,15 @@
         border: 1px solid #E2E8F0;
         border-radius: 8px;
         box-shadow: 0px 0px 8px 0px #3B82F61F;
+        background: #FFF;
         width: 236px;
         display: flex;
         flex-direction: column;
         gap: 6px;
-        // padding: 18px 16px 25px 16px;
+        position: absolute;
+        top: 428px;
+        left: 2200px;
+        z-index: 10;
 
         .courses_number_banner_inside {
             display: flex;
@@ -265,8 +280,9 @@
         background: #FFF;
         width: 186px;
         position: relative;
-        top: -400px;
-        z-index: 20;
+        top: 70px;
+        left: 490px;
+        z-index: 10;
         min-height: 146px;
 
         .courses_rate_banner_wrapper {
