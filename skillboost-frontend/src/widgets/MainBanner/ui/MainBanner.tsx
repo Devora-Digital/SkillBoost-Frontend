@@ -17,6 +17,7 @@ import StudentsCommunityAvatars from '@icons/Students_community_avatars.svg'
 import CertificateIcon from "@icons/Certificate-icon-01.svg"
 import CoursesRatingIconFirst from "@icons/CoursesRatingIconFirst.svg"
 import CoursesRatingIconSecond from "@icons/CoursesRatingIconSecond.svg"
+import BannerPictureBorder from "@icons/BannerPictureBorder.svg"
 import styles from "./MainBanner.module.scss"
 
 
@@ -120,6 +121,7 @@ export default function MainBanner() {
                         <div className={styles.banner_block_inside_block_second}>
                             <Image className={styles.third_mini_circle} src={BlueMiniCirclesFirst} alt="Blue mini circles" />
                             <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" />
+                            <Image className={styles.banner_picture_profile} src={BannerPictureBorder} alt="Banner picture profile" />
                             <div className={styles.courses_number_banner}>
                                 <div className={styles.courses_number_banner_inside}>
                                     <div className={styles.courses_number_banner_icon_wrapper}>
@@ -167,7 +169,7 @@ export default function MainBanner() {
                                 <button className={styles.banner_block_button}>Start your instructor journey</button>
                         </div>
                         <div className={styles.banner_block_inside_block_second}>
-                        <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" />
+                            <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" />
                             <div className={styles.students_community_banner_second}>
                                 <Image
                                     className={styles.students_community_banner_avatars}
