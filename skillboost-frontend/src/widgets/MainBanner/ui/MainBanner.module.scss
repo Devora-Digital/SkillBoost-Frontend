@@ -117,6 +117,27 @@
         z-index: 1;
     }
 
+    .courses_banner_people_second {
+        object-fit: cover;
+        object-position: right;
+        width: 330px;
+        height: 440px;
+        color: transparent;
+        border-radius: 26.41px;
+        /**/
+        position: absolute;
+        bottom: 70px;
+        left: 2340px;
+        z-index: 1;
+    }
+
+    .banner_people_first_border {
+        position: relative;
+        top: 150px;
+        left: 270px;
+        /**/
+    }
+
     .first_mini_circle {
         position: absolute !important;
         top: 70px;
@@ -261,12 +282,13 @@
 
         .courses_number_banner_counter {
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             font-family: 'Inter', sans-serif;
             font-weight: 600;
-            font-size: 20px;
+            font-size: 28px;
             color: #000;
-            padding-bottom: 25px;
+            // padding-bottom: 25px;
+            padding: 0px 31px 16px 72px;
             line-height: 150%;
         }
     }
@@ -280,7 +302,7 @@
         background: #FFF;
         width: 186px;
         position: relative;
-        top: 66px;
+        bottom: 376px;
         left: 490px;
         z-index: 10;
         min-height: 146px;

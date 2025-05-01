@@ -121,7 +121,7 @@ export default function MainBanner() {
                         <div className={styles.banner_block_inside_block_second}>
                             <Image className={styles.third_mini_circle} src={BlueMiniCirclesFirst} alt="Blue mini circles" />
                             <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" />
-                            <Image className={styles.banner_picture_profile} src={BannerPictureBorder} alt="Banner picture profile" />
+                            <Image className={styles.banner_people_first_border} src={BannerPictureBorder} alt="Banner picture border" />
                             <div className={styles.courses_number_banner}>
                                 <div className={styles.courses_number_banner_inside}>
                                     <div className={styles.courses_number_banner_icon_wrapper}>
@@ -158,15 +158,15 @@ export default function MainBanner() {
                 <div className={styles.embla__slide}>
                     <div className={styles.banner_block}>
                         <div className={styles.banner_block_inside_block_first}>
-                                <div className={styles.banner_block_text_block}>
-                                    <p className={styles.banner_block_title}>
-                                        Unlock Your Potential with Byway
-                                    </p>
-                                    <p className={styles.banner_block_description}>
+                            <div className={styles.banner_block_text_block}>
+                                <p className={styles.banner_block_title}>
+                                    Unlock Your Potential with Byway
+                                </p>
+                                <p className={styles.banner_block_description}>
                                     Welcome to Byway, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we&apos;re here to guide you on your journey to success.
-                                    </p>
-                                </div>
-                                <button className={styles.banner_block_button}>Start your instructor journey</button>
+                                </p>
+                            </div>
+                            <button className={styles.banner_block_button}>Start your instructor journey</button>
                         </div>
                         <div className={styles.banner_block_inside_block_second}>
                             <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" />
@@ -208,15 +208,15 @@ export default function MainBanner() {
                 <div className={styles.embla__slide}>
                     <div className={styles.banner_block}>
                         <div className={styles.banner_block_inside_block_first}>
-                                <div className={styles.banner_block_text_block}>
-                                    <p className={styles.banner_block_title}>
-                                        Unlock Your Potential with Byway
-                                    </p>
-                                    <p className={styles.banner_block_description}>
+                            <div className={styles.banner_block_text_block}>
+                                <p className={styles.banner_block_title}>
+                                    Unlock Your Potential with Byway
+                                </p>
+                                <p className={styles.banner_block_description}>
                                     Welcome to Byway, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we&apos;re here to guide you on your journey to success. Whether you&apos;re a student, professional, or lifelong learner, our cutting-edge Learning Management System is designed to elevate your learning experience.
-                                    </p>
-                                </div>
-                                <button className={styles.banner_block_button}>Start your instructor journey</button>
+                                </p>
+                            </div>
+                            <button className={styles.banner_block_button}>Start your instructor journey</button>
                         </div>
                         <div className={styles.banner_block_inside_block_second}></div>
                     </div>
