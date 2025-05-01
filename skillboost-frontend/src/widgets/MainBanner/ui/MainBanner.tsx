@@ -170,6 +170,36 @@ export default function MainBanner() {
                         </div>
                         <div className={styles.banner_block_inside_block_second}>
                             <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" />
+                            <div className={styles.courses_number_banner_second}>
+                                <div className={styles.courses_number_banner_inside}>
+                                    <div className={styles.courses_number_banner_icon_wrapper}>
+                                        <Image
+                                            className={styles.courses_number_banner_icon}
+                                            src={CertificateIcon}
+                                            alt='Certificate icon'
+                                        />
+                                    </div>
+                                    <p className={styles.courses_number_banner_title}>Number of courses sold</p>
+                                </div>
+                                <p className={styles.courses_number_banner_counter}>
+                                    100,000+
+                                </p>
+                            </div>
+                            <div className={styles.courses_rate_banner}>
+                                <div className={styles.courses_rate_banner_wrapper}>
+                                    <div className={styles.courses_rate_banner_icons_wrapper}>
+                                        <Image src={CoursesRatingIconFirst} className={styles.courses_rate_state_first} alt="Courses rate icon first" />
+                                        <Image src={CoursesRatingIconSecond} className={styles.courses_rate_state_second} alt="Courses rate icon second" />
+                                    </div>
+                                    <div className={styles.courses_rate_banner_text_wrapper}>
+                                        <p className={styles.courses_rate_state_percent}>87.6%</p>
+                                        <div className={styles.courses_rate_state_title_wrapper}>
+                                            <p className={styles.courses_rate_state_title_first}>Completion rate of our</p>
+                                            <p className={styles.courses_rate_state_title_second}>courses</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div className={styles.students_community_banner_second}>
                                 <Image
                                     className={styles.students_community_banner_avatars}
