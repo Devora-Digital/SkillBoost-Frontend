@@ -191,16 +191,16 @@ export default function MainBanner() {
                             </div>
                             {/* <div className={styles.courses_rate_banner}> */}
                             <div className={styles.courses_rate_banner_second}>
-                                <div className={styles.courses_rate_banner_wrapper}>
-                                    <div className={styles.courses_rate_banner_icons_wrapper}>
-                                        <Image src={CoursesRatingIconFirst} className={styles.courses_rate_state_first} alt="Courses rate icon first" />
-                                        <Image src={CoursesRatingIconSecond} className={styles.courses_rate_state_second} alt="Courses rate icon second" />
+                                <div className={styles.courses_rate_banner_second_wrapper}>
+                                    <div className={styles.courses_rate_banner_second_icons_wrapper}>
+                                        <Image src={CoursesRatingIconFirst} className={styles.courses_rate_second_state_first} alt="Courses rate icon first" />
+                                        <Image src={CoursesRatingIconSecond} className={styles.courses_rate_second_state_second} alt="Courses rate icon second" />
                                     </div>
-                                    <div className={styles.courses_rate_banner_text_wrapper}>
-                                        <p className={styles.courses_rate_state_percent}>87.6%</p>
-                                        <div className={styles.courses_rate_state_title_wrapper}>
-                                            <p className={styles.courses_rate_state_title_first}>Completion rate of our</p>
-                                            <p className={styles.courses_rate_state_title_second}>courses</p>
+                                    <div className={styles.courses_rate_banner_second_text_wrapper}>
+                                        <p className={styles.courses_rate_state_second_percent}>87.6%</p>
+                                        <div className={styles.courses_rate_state_second_title_wrapper}>
+                                            <p className={styles.courses_rate_state_second_title_first}>Completion rate of our</p>
+                                            <p className={styles.courses_rate_state_second_title_second}>courses</p>
                                         </div>
                                     </div>
                                 </div>
