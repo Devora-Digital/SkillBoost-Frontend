@@ -123,11 +123,14 @@
         width: 330px;
         height: 440px;
         color: transparent;
-        border-radius: 26.41px;
+        // border-radius: 26.41px;
+        border-radius: 110px;
         /**/
         position: absolute;
-        bottom: 70px;
-        left: 3840px;
+        // bottom: 70px;
+        bottom: 80px;
+        // left: 3840px;
+        left: 3780px;
         z-index: 1;
     }
 
@@ -138,6 +141,7 @@
         border-radius: 81px;
         /**/
         position: absolute;
+        left: 3740px;
         bottom: 80px;
     }
 
@@ -237,8 +241,10 @@
         background: $white-color;
         padding: 16px 30px 16px 16px;
         position: absolute !important;
-        top: 422px;
-        left: 3200px;
+        // top: 422px;
+        top: 142px;
+        // left: 3200px;
+        left: 3600px;
         z-index: 20;
 
         .students_community_second_text {
@@ -312,7 +318,8 @@
         flex-direction: column;
         gap: 6px;
         position: absolute;
-        top: 428px;
+        // top: 428px;
+        top: 358px;
         left: 3600px;
         z-index: 10;
 
@@ -427,7 +434,9 @@
         background: #FFF;
         width: 186px;
         position: relative;
-        bottom: 376px;
+        // bottom: 376px;
+        // top: 200px;
+        top: 60px;
         left: 490px;
         z-index: 10;
         min-height: 146px;
