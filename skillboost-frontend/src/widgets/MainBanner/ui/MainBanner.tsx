@@ -7,6 +7,7 @@ import BannerImageFirst from "@assets/Banner_Image_01.png"
 import BannerImageSecond from "@assets/Banner_Image_02.png"
 import BannerImageThird from "@assets/Banner_Image_03.png"
 import BannerPeopleFirst from "@assets/BannerPeopleFirst.png"
+import BannerPeopleSecond from "@assets/BannerPeopleSecond.png"
 import FirstMiniCircles from "@icons/mini_circles_1.svg"
 import SecondMiniCircles from '@icons/mini_circles_2.svg'
 import BlueMiniCirclesFirst from "@icons/Blue_mini_circles_first.svg"
@@ -169,7 +170,10 @@ export default function MainBanner() {
                             <button className={styles.banner_block_button}>Start your instructor journey</button>
                         </div>
                         <div className={styles.banner_block_inside_block_second}>
-                            <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" />
+                            {/* <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" /> */}
+                            {/* <Image className={styles.courses_banner_people_second_background} src={BannerPeopleSecond} alt="Third banner people photo background" /> */}
+                            <div className={styles.courses_banner_people_second_background}></div>
+                            <Image className={styles.courses_banner_people_second} src={BannerPeopleSecond} alt="Third banner people photo" />
                             <div className={styles.courses_number_banner_second}>
                                 <div className={styles.courses_number_banner_inside}>
                                     <div className={styles.courses_number_banner_icon_wrapper}>
@@ -185,7 +189,8 @@ export default function MainBanner() {
                                     100,000+
                                 </p>
                             </div>
-                            <div className={styles.courses_rate_banner}>
+                            {/* <div className={styles.courses_rate_banner}> */}
+                            <div className={styles.courses_rate_banner_second}>
                                 <div className={styles.courses_rate_banner_wrapper}>
                                     <div className={styles.courses_rate_banner_icons_wrapper}>
                                         <Image src={CoursesRatingIconFirst} className={styles.courses_rate_state_first} alt="Courses rate icon first" />
@@ -225,13 +230,13 @@ export default function MainBanner() {
                                     100,000+
                                 </p>
                             </div>
-                            <div className={styles.courses_rate_banner}>
+                            {/* <div className={styles.courses_rate_banner}>
                                 <div>
                                     <div className={styles.courses_rate_state}></div>
                                     <p className={styles.courses_rate_state_percent}></p>
                                     <p className={styles.courses_rate_state_title}></p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
