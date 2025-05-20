@@ -10,6 +10,7 @@ import BannerPeopleFirst from "@assets/BannerPeopleFirst.png"
 import BannerPeopleSecond from "@assets/BannerPeopleSecond.png"
 import FirstMiniCircles from "@icons/mini_circles_1.svg"
 import SecondMiniCircles from '@icons/mini_circles_2.svg'
+import ThirdMiniCircles from "@icons/mini_circles_3.svg"
 import BlueMiniCirclesFirst from "@icons/Blue_mini_circles_first.svg"
 import BannerEllipseFirst from '@icons/BannerEllipseFirst.svg'
 import BannerEllipseSecond from '@icons/BannerEllipseSecond.svg'
@@ -174,6 +175,7 @@ export default function MainBanner() {
                             {/* <Image className={styles.courses_banner_people_second_background} src={BannerPeopleSecond} alt="Third banner people photo background" /> */}
                             <div className={styles.courses_banner_people_second_background}></div>
                             <Image className={styles.courses_banner_people_second} src={BannerPeopleSecond} alt="Third banner people photo" />
+                            <Image className={styles.third_banner_mini_circles} src={ThirdMiniCircles} alt="Third mini circles" />
                             <div className={styles.courses_number_banner_second}>
                                 <div className={styles.courses_number_banner_inside}>
                                     <div className={styles.courses_number_banner_icon_wrapper}>
@@ -230,13 +232,6 @@ export default function MainBanner() {
                                     100,000+
                                 </p>
                             </div>
-                            {/* <div className={styles.courses_rate_banner}>
-                                <div>
-                                    <div className={styles.courses_rate_state}></div>
-                                    <p className={styles.courses_rate_state_percent}></p>
-                                    <p className={styles.courses_rate_state_title}></p>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
                 </div>
