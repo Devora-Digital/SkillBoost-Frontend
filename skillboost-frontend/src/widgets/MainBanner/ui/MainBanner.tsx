@@ -6,12 +6,14 @@ import useEmblaCarousel from "embla-carousel-react";
 import BannerImageFirst from "@assets/Banner_Image_01.png"
 import BannerImageSecond from "@assets/Banner_Image_02.png"
 import BannerImageThird from "@assets/Banner_Image_03.png"
-import BannerPeopleFirst from "@assets/BannerPeopleFirst.png"
-import BannerPeopleSecond from "@assets/BannerPeopleSecond.png"
+import BannerPeopleFirst from "@assets/Girl_With_Folder_First.png"
+import BannerPeopleSecond from "@assets/Girl_With_Folder_Second.png"
+import BannerPeopleThird from "@assets/Girl_With_Folder_Third.png"
 import FirstMiniCircles from "@icons/mini_circles_1.svg"
 import SecondMiniCircles from '@icons/mini_circles_2.svg'
 import ThirdMiniCircles from "@icons/mini_circles_3.svg"
 import BlueMiniCirclesFirst from "@icons/Blue_mini_circles_first.svg"
+import PinkMiniCircles from "@icons/Pink_mini_circles.svg"
 import BannerEllipseFirst from '@icons/BannerEllipseFirst.svg'
 import BannerEllipseSecond from '@icons/BannerEllipseSecond.svg'
 import BannerEllipseThird from '@icons/BannerEllipseThird.svg'
@@ -248,7 +250,12 @@ export default function MainBanner() {
                             </div>
                             <button className={styles.banner_block_button}>Start your instructor journey</button>
                         </div>
-                        <div className={styles.banner_block_inside_block_second}></div>
+                        <div className={styles.banner_block_inside_block_second}>
+                            {/* <Image className={styles.courses_banner_people_second} src={BannerPeopleSecond} alt="Third banner people photo" /> */}
+                            <Image className={styles.courses_banner_people_third} src={BannerPeopleThird} alt="Banner people third" />
+                            <Image className={styles.fourth_banner_mini_circles_first} src={PinkMiniCircles} alt="Pink mini circles first" />
+                            <Image className={styles.fourth_banner_mini_circles_second} src={PinkMiniCircles} alt="Pink mini circles second" />
+                        </div>
                     </div>
                 </div>
             </div>
