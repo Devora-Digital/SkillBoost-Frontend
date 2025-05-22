@@ -55,17 +55,20 @@ export default function ProfileFirstTab() {
             label='Full Name'
             placeholder='First Name'
             required={true}
+            headerClassName={styles.inputTitle}
           />
           <InputField
             label='Last Name'
             placeholder='Last Name'
             required={true}
+            headerClassName={styles.inputTitle}
           />
         </div>
         <InputField
           label='Headline'
           placeholder='Headline'
           className={styles.headlineInput}
+          headerClassName={styles.inputTitle}
         />
         <TextareaField label='Description' placeholder='Description' />
         <div className={styles.selectBlock}>
@@ -160,14 +163,31 @@ export default function ProfileFirstTab() {
       </div>
       <div className={`${styles.tabLinks} ${styles.tab}`}>
         <h3 className={styles.tabTitle}>Links</h3>
-        <InputField label='Website' placeholder='Website' />
         <InputField
-          label='X(Formerly Twitter)'
-          placeholder='X(Formerly Twitter)'
+          label='Website'
+          placeholder='Website'
+          headerClassName={styles.inputTitle}
         />
-        <InputField label='Linkedin' placeholder='Linkedin' />
-        <InputField label='YouTube' placeholder='YouTube' />
-        <InputField label='FaceBook' placeholder='FaceBook' />
+        <InputField
+          label='X (Formerly Twitter)'
+          placeholder='X (Formerly Twitter)'
+          headerClassName={styles.inputTitle}
+        />
+        <InputField
+          label='Linkedin'
+          placeholder='Linkedin'
+          headerClassName={styles.inputTitle}
+        />
+        <InputField
+          label='YouTube'
+          placeholder='YouTube'
+          headerClassName={styles.inputTitle}
+        />
+        <InputField
+          label='Facebook'
+          placeholder='Facebook'
+          headerClassName={styles.inputTitle}
+        />
       </div>
     </div>
   )

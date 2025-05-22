@@ -1,30 +1,20 @@
 import { ArrowRight } from 'lucide-react'
 import styles from './Login.module.scss'
 import Image from 'next/image'
+import { InputField } from '@/shared/ui/Input/Input'
 
 export default function Login() {
   return (
     <div className={styles.SignIn}>
       <div className={styles.container}>
         <h2 className={styles.containerTitle}>Sign in to your account</h2>
-        <div>
-          <h5 className={styles.containerSection}>Email</h5>
-          <input
-            className={styles.containerInput}
-            type='text'
-            placeholder='Username or Email ID'
-          />
-        </div>
-
-        <div>
-          <h5 className={styles.containerSection}>Password</h5>
-          <input
-            className={styles.containerInput}
-            type='password'
-            placeholder='Enter Password'
-          />
-        </div>
-
+        <InputField label='Email' placeholder='Email' required={true} />
+        <InputField
+          label='Password'
+          placeholder='Enter Password'
+          type='password'
+          required={true}
+        />
         <button type='submit' className={styles.containerButton}>
           <span>Sign In</span>
           <ArrowRight size={16} />

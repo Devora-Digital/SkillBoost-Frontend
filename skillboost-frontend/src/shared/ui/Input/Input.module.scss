@@ -3,12 +3,16 @@
 
 .mainBlock {
     width: 100%;
-    font-family: 'Inter';
 
     .inputTitle {
         @include small_text;
         color: $login-color-title;
         margin-bottom: 9px;
+    }
+
+    .blockTitle {
+        @include heading_5;
+        margin-bottom: 6px;
     }
 
     .blockInput {
@@ -20,7 +24,6 @@
         border-radius: 8px;
         background: $white-color;
         box-sizing: border-box;
-        outline: none;
         padding: 16px;
         margin-bottom: 16px;
         @include InputText;
@@ -34,6 +37,6 @@
     }
 
     .errorInput::placeholder {
-        color: $red-color
+        color: $red-color;
     }
 }

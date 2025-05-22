@@ -1,0 +1,99 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+
+.containerNamePhoto {
+    color: $login-color-title;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 13px 80px 0;
+    margin-top: 20px;
+    // border-bottom: 1px solid $profile-grey-color;
+
+    .containerNameInstructor {
+        max-width: 297px;
+
+        .containerText {
+            @include small_text;
+            color: $header-text-color; // color: rgb(51, 65, 85);
+        }
+
+        .name {
+            @include heading_2;
+        }
+
+        .skills {
+            @include small_text;
+            margin-bottom: 16px;
+            color: $header-text-color; // color: rgb(51, 65, 85);
+        }
+
+        .totalReviews {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 25px;
+        }
+
+        .containerBoldText {
+            font-weight: 600;
+            font-size: 24px;
+            color: $login-color-title; // color: rgb(15, 23, 42);
+            line-height: 140%;
+        }
+    }
+
+}
+
+.containerInstructorInfoButtons {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 80px 13px;
+
+    .containerInfoInstructor {
+        max-width: 840px;
+
+        .titleAboutInstructor {
+            @include MentorTitle;
+        }
+
+        .infoText {
+            @include MentorText;
+        }
+
+        .containerTitle {
+            @include MentorTitle;
+        }
+
+        .listExpertise {
+            @include MentorText;
+            list-style: disc;
+            margin-left: 20px;
+            padding: 0;
+        }
+    }
+
+    .containerSocialMediaButtons {
+        align-items: center;
+
+        .socialMediaButton {
+            margin: 8px;
+            padding: 16px;
+            width: 200px;
+            height: 48px;
+            box-sizing: border-box;
+            border: 1px solid $profile-grey-color;
+            border-radius: 8px;
+            background: $white-color;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+
+            &:hover {
+                background-color: $footer-main-color;
+            }
+        }
+    }
+}

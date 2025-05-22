@@ -3,7 +3,7 @@
 
 .footerContainer {
     padding: 80px;
-    background-color: #1E293B;
+    background-color: $footer-background;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -42,7 +42,7 @@
             @include FooterText;
 
             &:hover {
-                color: #eef0f3;
+                color: $footer-link-hover;
             }
 
         }

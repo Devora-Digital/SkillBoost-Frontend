@@ -7,7 +7,7 @@
     align-items: center;
     position: relative;
     padding: 13px 80px;
-    border-bottom: 1px solid #E2E8F0;
+    border-bottom: 1px solid $profile-grey-color;
 
     .headerLogo {
         display: flex;
@@ -44,7 +44,6 @@
 
         .headerSearchInput {
             color: $header-secondary-color;
-            font-family: 'Inter', sans-serif;
             font-size: 12px;
             font-weight: 400;
             line-height: 15px;
@@ -78,7 +77,6 @@
                 align-items: center;
                 justify-content: center;
                 color: $white-color;
-                font-family: 'Inter', sans-serif;
                 font-size: 16px;
                 font-weight: 500;
                 line-height: 19px;
@@ -101,7 +99,7 @@
                 font-size: 14px;
 
                 &:hover {
-                    background-color: #f3f5f8;
+                    background-color: $footer-main-color;
                 }
 
             }
@@ -111,7 +109,7 @@
                 padding: 10px;
                 background: $header-secondary-color;
                 border: none;
-                color: #ffffff;
+                color: $white-color;
                 font-size: 14px;
 
                 &:hover {

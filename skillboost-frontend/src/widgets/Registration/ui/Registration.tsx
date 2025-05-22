@@ -1,7 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 import styles from './Registration.module.scss'
 import Image from 'next/image'
-
+import { InputField } from '@/shared/ui/Input/Input'
 export default function Registration() {
   return (
     <div className={styles.SignUp}>
@@ -17,57 +17,37 @@ export default function Registration() {
         <h2 className={styles.containerTitle}>Create Your Account</h2>
         <div className={styles.containerLine}>
           <div className={styles.block}>
-            <h5 className={styles.blockTitle}>Full Name</h5>
             <div className={styles.blockFlex}>
-              <input
-                className={styles.blockInput}
-                type='text'
+              <InputField
+                label='First Name'
                 placeholder='First Name'
+                required={true}
               />
-              <input
-                className={styles.blockInput}
-                type='text'
+              <InputField
+                label='Last Name'
                 placeholder='Last Name'
+                required={true}
               />
             </div>
           </div>
         </div>
 
-        <div className={styles.block}>
-          <h5 className={styles.blockTitle}>Username</h5>
-          <input
-            type='text'
-            placeholder='Username'
-            className={styles.blockInput}
-          />
-        </div>
-
-        <div className={styles.block}>
-          <h5 className={styles.blockTitle}>Email</h5>
-          <input
-            type='email'
-            placeholder='Email ID'
-            className={styles.blockInput}
-          />
-        </div>
+        <InputField label='Username' placeholder='User' required={true} />
+        <InputField label='Email' placeholder='Email' required={true} />
 
         <div className={styles.containerLine}>
-          <div className={styles.block}>
-            <h5 className={styles.blockTitle}>Password</h5>
-            <input
-              className={styles.blockInput}
-              type='password'
-              placeholder='Enter Password'
-            />
-          </div>
-          <div className={styles.block}>
-            <h5 className={styles.blockTitle}>Confirm Password</h5>
-            <input
-              className={styles.blockInput}
-              type='password'
-              placeholder='Confirm Password'
-            />
-          </div>
+          <InputField
+            label='Password'
+            placeholder='Enter Password'
+            type='password'
+            required={true}
+          />
+          <InputField
+            label='Password'
+            placeholder='Confirm Password'
+            type='password'
+            required={true}
+          />
         </div>
 
         <button type='submit' className={styles.Button}>
