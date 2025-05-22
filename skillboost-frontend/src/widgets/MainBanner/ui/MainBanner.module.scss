@@ -123,7 +123,6 @@
         width: 330px;
         height: 440px;
         color: transparent;
-        // border-radius: 26.41px;
         border-radius: 110px;
         /**/
         position: absolute;
@@ -147,10 +146,25 @@
         width: 435px;
         height: 480px;
         transform: scale(-1, 1);
+        border-bottom-left-radius: 26%;
         /**/
         position: absolute;
         bottom: 70px;
         left: 5200px;
+    }
+
+    .fourth_banner_pink_circle {
+        position: absolute;
+        top: 330px;
+        left: 5120px;
+        z-index: -1;
+    }
+
+    .fourth_banner_black_circle {
+        position: absolute;
+        top: 365px;
+        left: 5150px;
+        z-index: -2;
     }
 
     .third_banner_mini_circles {
@@ -162,8 +176,9 @@
 
     .fourth_banner_mini_circles_first {
         position: absolute;
-        bottom: 36px;
+        bottom: 26px;
         left: 5080px;
+        z-index: -3;
     }
 
     .fourth_banner_mini_circles_second {

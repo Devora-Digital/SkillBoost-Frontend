@@ -17,6 +17,8 @@ import PinkMiniCircles from "@icons/Pink_mini_circles.svg"
 import BannerEllipseFirst from '@icons/BannerEllipseFirst.svg'
 import BannerEllipseSecond from '@icons/BannerEllipseSecond.svg'
 import BannerEllipseThird from '@icons/BannerEllipseThird.svg'
+import PinkCircleFourthBanner from "@icons/Pink_Circle_For_Banner_Picture.svg"
+import BlackCircleFourthBanner from "@icons/Black_Circle_For_Banner_Picture.svg"
 import StudentsCommunityAvatars from '@icons/Students_community_avatars.svg'
 import CertificateIcon from "@icons/Certificate-icon-01.svg"
 import CoursesRatingIconFirst from "@icons/CoursesRatingIconFirst.svg"
@@ -253,6 +255,8 @@ export default function MainBanner() {
                         <div className={styles.banner_block_inside_block_second}>
                             {/* <Image className={styles.courses_banner_people_second} src={BannerPeopleSecond} alt="Third banner people photo" /> */}
                             <Image className={styles.courses_banner_people_third} src={BannerPeopleThird} alt="Banner people third" />
+                            <Image className={styles.fourth_banner_pink_circle} src={PinkCircleFourthBanner} alt="Pink circle for fourth banner" />
+                            <Image className={styles.fourth_banner_black_circle} src={BlackCircleFourthBanner} alt="Black circle for fourth banner" />
                             <Image className={styles.fourth_banner_mini_circles_first} src={PinkMiniCircles} alt="Pink mini circles first" />
                             <Image className={styles.fourth_banner_mini_circles_second} src={PinkMiniCircles} alt="Pink mini circles second" />
                         </div>
