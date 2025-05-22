@@ -175,8 +175,6 @@ export default function MainBanner() {
                             <button className={styles.banner_block_button}>Start your instructor journey</button>
                         </div>
                         <div className={styles.banner_block_inside_block_second}>
-                            {/* <Image className={styles.courses_banner_people_first} src={BannerPeopleFirst} alt="Second banner people photo" /> */}
-                            {/* <Image className={styles.courses_banner_people_second_background} src={BannerPeopleSecond} alt="Third banner people photo background" /> */}
                             <div className={styles.courses_banner_people_second_background}></div>
                             <Image className={styles.courses_banner_people_second} src={BannerPeopleSecond} alt="Third banner people photo" />
                             <Image className={styles.third_banner_mini_circles} src={ThirdMiniCircles} alt="Third mini circles" />
@@ -195,7 +193,6 @@ export default function MainBanner() {
                                     100,000+
                                 </p>
                             </div>
-                            {/* <div className={styles.courses_rate_banner}> */}
                             <div className={styles.courses_rate_banner_second}>
                                 <div className={styles.courses_rate_banner_second_wrapper}>
                                     <div className={styles.courses_rate_banner_second_icons_wrapper}>
@@ -253,7 +250,6 @@ export default function MainBanner() {
                             <button className={styles.banner_block_button}>Start your instructor journey</button>
                         </div>
                         <div className={styles.banner_block_inside_block_second}>
-                            {/* <Image className={styles.courses_banner_people_second} src={BannerPeopleSecond} alt="Third banner people photo" /> */}
                             <Image className={styles.courses_banner_people_third} src={BannerPeopleThird} alt="Banner people third" />
                             <Image className={styles.fourth_banner_pink_circle} src={PinkCircleFourthBanner} alt="Pink circle for fourth banner" />
                             <Image className={styles.fourth_banner_black_circle} src={BlackCircleFourthBanner} alt="Black circle for fourth banner" />

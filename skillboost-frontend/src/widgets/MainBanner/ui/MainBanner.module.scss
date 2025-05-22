@@ -4,7 +4,6 @@
 /*Embla carousel*/
 .embla {
     overflow: hidden;
-    /**/
     width: 1440px;
 
     .embla__container {
@@ -70,7 +69,6 @@
         left: 840.78px;
         width: 204.54px;
         height: 204.54px;
-        /**/
         background: #F87171;
         border-radius: 50%;
         object-fit: cover;
@@ -83,7 +81,6 @@
         left: 1060px;
         width: 217.35px;
         height: 217.35px;
-        /**/
         background: #60A5FA;
         border-radius: 50%;
         object-fit: cover;
@@ -96,7 +93,6 @@
         left: 1090px;
         width: 222px;
         height: 222px;
-        /**/
         background: #FACC15;
         border-radius: 50%;
         object-fit: cover;
@@ -110,7 +106,6 @@
         height: 440px;
         color: transparent;
         border-radius: 26.41px;
-        /**/
         position: absolute;
         bottom: 70px;
         left: 2340px;
@@ -124,7 +119,6 @@
         height: 440px;
         color: transparent;
         border-radius: 110px;
-        /**/
         position: absolute;
         bottom: 80px;
         left: 3780px;
@@ -136,7 +130,6 @@
         min-height: 397px;
         background: #93C5FD;
         border-radius: 81px;
-        /**/
         position: absolute;
         left: 3740px;
         bottom: 80px;
@@ -146,10 +139,10 @@
         width: 435px;
         height: 480px;
         transform: scale(-1, 1);
-        border-bottom-left-radius: 26%;
-        /**/
+        border-bottom-right-radius: 22%;
+        border-bottom-left-radius: 40%;
         position: absolute;
-        bottom: 70px;
+        bottom: 55px;
         left: 5200px;
     }
 
@@ -183,7 +176,7 @@
 
     .fourth_banner_mini_circles_second {
         position: absolute;
-        top: 100px;
+        top: 110px;
         left: 5540px;
     }
 
