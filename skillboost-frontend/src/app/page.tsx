@@ -11,26 +11,7 @@ import {
   LucideChevronRight,
   LucideArrowRight
 } from 'lucide-react'
-// import FirstMiniCircles from "@icons/mini_circles_1.svg"
-// import SecondMiniCircles from '@icons/mini_circles_2.svg'
-// import BannerEllipseFirst from '@icons/BannerEllipseFirst.svg'
-// import BannerEllipseSecond from '@icons/BannerEllipseSecond.svg'
-// import BannerEllipseThird from '@icons/BannerEllipseThird.svg'
-// import StudentsCommunityAvatars from '@icons/Students_community_avatars.svg'
 import QuoteMarkIcon from '@icons/ri_double-quotes-l.svg'
-// import {
-//   default as BannerImageFirst,
-//   default as BannerImageSecond,
-//   default as BannerImageThird,
-//   default as TopCoursesImage,
-//   default as TopInstructorsImage,
-//   default as OfferImageFirst,
-//   default as OfferImageSecond,
-//   default as DesignerPhoto
-// } from '@assets'
-// import BannerImageFirst from "@assets/Banner_Image_01.png"
-// import BannerImageSecond from "@assets/Banner_Image_02.png"
-// import BannerImageThird from "@assets/Banner_Image_03.png"
 import TopCoursesImage from "@assets/TopCoursesImage_01.jpeg"
 import TopInstructorsImage from "@assets/InstructorImage_01.png"
 import OfferImageFirst from "@assets/Offer_image_01.png"
