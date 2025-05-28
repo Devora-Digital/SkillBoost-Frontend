@@ -30,9 +30,10 @@ import styles from "./MainBanner.module.scss"
 export default function MainBanner() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
     useEffect(() => {
-        if (emblaApi) {
-            emblaApi.scrollTo(0)
-        }
+        if (!emblaApi) return;
+        const autoScroll = setInterval(() => emblaApi.scrollNext(), 5000)
+        emblaApi.on('pointerDown', () => clearInterval(autoScroll))
+        return () => clearInterval(autoScroll)
     }, [emblaApi])
     return (
         <div className={styles.embla} ref={emblaRef}>
