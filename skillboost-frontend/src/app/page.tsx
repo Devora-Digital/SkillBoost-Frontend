@@ -18,6 +18,7 @@ import OfferImageFirst from "@assets/Offer_image_01.png"
 import OfferImageSecond from "@assets/Offer_Image_02.png"
 import DesignerPhoto from "@assets/Designer_image_01.jpeg"
 import { MainBanner } from '@/widgets/MainBanner'
+import MentorsItemCards from '@/shared/ui/ItemCard/MentorsItemCards'
 import styles from './page.module.scss'
 
 export default function Home() {
@@ -259,11 +260,11 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.instructors_block}>
-          <div className={styles.instructors_control_block}>
+          {/* <div className={styles.instructors_control_block}>
             <p className={styles.instructors_title}>Top Instructors</p>
             <button className={styles.all_instructors_button}>See All</button>
-          </div>
-          <div className={styles.mentors_items_block}>
+          </div> */}
+          {/* <div className={styles.mentors_items_block}>
             <div className={styles.mentors_item}>
               <div className={styles.mentors_item_inside}>
                 <Image
@@ -399,7 +400,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+          <MentorsItemCards/>
+          {/* <InstructorItemCard />
+          <InstructorItemCard />
+          <InstructorItemCard />
+          <InstructorItemCard /> */}
         </div>
         <div className={styles.quotes_block}>
           <div className={styles.quotes_block_header}>

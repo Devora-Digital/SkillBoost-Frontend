@@ -1,0 +1,114 @@
+
+@use '@/shared/styles/_variables.scss' as *;
+
+/*Instructors styles*/
+.mentors_block {
+    display: flex;
+    flex-direction: column;
+    gap: $primary-gap-2;
+    width: 1280px;
+
+    .mentors_control_block {
+        display: flex;
+        justify-content: space-between;
+
+        .mentors_title {
+            font-family: $font-family-main;
+            font-weight: $primary-semi-bold-font-weight;
+            font-size: $font-size-24;
+            margin: 7px 0px 7px 0px;
+        }
+        
+        .all_mentors_button {
+            font-family: $font-family-main;
+            font-weight: $primary-medium-font-weight;
+            background: $white-color;
+            color: #3B82F6;
+            padding: $primary-padding;
+        }
+    }
+
+    .mentors_items_block {
+        display: flex;
+        justify-content: space-between;
+
+        .mentors_item {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid $white-color-2;
+            border-radius: $primary-border-radius;
+            padding: 16px;
+        }
+        
+        .mentors_item_inside {
+            display: flex;
+            flex-direction: column;
+            gap: $primary-gap;
+
+            .mentor_item_picture {
+                border-radius: 8px;
+                object-fit: cover;
+                object-position: top;
+            }
+            
+            .mentors_item_info {
+                display: flex;
+                flex-direction: column;
+                gap: $primary-gap;
+
+                .mentors_item_info_first_block {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0px 19.5px 0px 19.5px;
+
+                    .mentors_item_title {
+                        font-size: 18px;
+                        font-weight: $primary-semi-bold-font-weight;
+                        font-family: $font-family-main;
+                        height: 29px;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    
+                    .mentors_item_post {
+                        font-family: $font-family-main;
+                        color: #334155;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                .mentors_item_info_second_block {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .mentors_item_rating_block {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+
+                        .mentors_item_rating {
+                            font-size: 12px;
+                            font-weight: $primary-semi-bold-font-weight;
+                            font-family: $font-family-main;
+                            margin: 2.5px 0px 2.5px 0px;
+                        }
+                    }
+
+                    .mentors_item_students_count {
+                        font-size: 12px;
+                        font-weight: $primary-semi-bold-font-weight;
+                        font-family: $font-family-main;
+                        margin: 2.5px 0px 2.5px 0px;
+                    }
+                }
+
+                .line {
+                    width: 100%;
+                }                
+            }
+        }
+    }
+}
