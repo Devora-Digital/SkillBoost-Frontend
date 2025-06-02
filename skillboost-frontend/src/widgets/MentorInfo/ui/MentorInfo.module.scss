@@ -1,99 +1,200 @@
 @use '@/shared/styles/mixins' as *;
 @use '@/shared/styles/variables' as *;
 
-.containerNamePhoto {
-    color: $login-color-title;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 13px 80px 0;
+.container{
+    padding: 13px 80px;
     margin-top: 20px;
-    // border-bottom: 1px solid $profile-grey-color;
+    margin-bottom: 20px;
 
-    .containerNameInstructor {
-        max-width: 297px;
+    .containerNamePhoto {
+        color: $login-color-title;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        position: relative;
+        // border-bottom: 1px solid $profile-grey-color;
 
-        .containerText {
-            @include small_text;
-            color: $header-text-color; // color: rgb(51, 65, 85);
+        .containerNameInstructor {
+            max-width: 297px;
+        }
+            .job { 
+                font-weight: 400;
+                font-size: 14px;   
+                color: $header-text-color; // color: rgb(51, 65, 85);
+                line-height: 150%;
+            }
+
+            .name {
+                font-weight: 600;
+                font-size: 32px; 
+                color: $login-color-title; // color: rgb(15, 23, 42);
+                line-height: 150%;
+            }
+
+            .skills {
+                font-weight: 400;
+                font-size: 14px;
+                margin-bottom: 16px;
+                color: $header-text-color; // color: rgb(51, 65, 85);
+                line-height: 150%;
+            }
+
+            .TotalReviews {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 25px;
+            }
+
+                .TotalStudents {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $header-text-color; // color: rgb(51, 65, 85);
+                    line-height: 150%;
+                }
+
+                .TotalStudentsEquals {
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: $login-color-title; // color: rgb(15, 23, 42);
+                    line-height: 140%;
+            
+                }
+
+                .nameReviews {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $header-text-color; // color: rgb(51, 65, 85);
+                    line-height: 150%;
+            
+                }
+
+                .ReviewsEquals {
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: $login-color-title; // color: rgb(15, 23, 42);
+                    line-height: 140%;
+                }
+        .instructorPhoto {
+            margin-top: 0px;
         }
 
-        .name {
-            @include heading_2;
-        }
-
-        .skills {
-            @include small_text;
-            margin-bottom: 16px;
-            color: $header-text-color; // color: rgb(51, 65, 85);
-        }
-
-        .totalReviews {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-right: 25px;
-        }
-
-        .containerBoldText {
-            font-weight: 600;
-            font-size: 24px;
-            color: $login-color-title; // color: rgb(15, 23, 42);
-            line-height: 140%;
-        }
     }
 
-}
+    .containerInstructorInfoButtons {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
 
-.containerInstructorInfoButtons {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 0 80px 13px;
+        .containerInfoInstructor {
+            max-width: 840px;
 
-    .containerInfoInstructor {
-        max-width: 840px;
+            .titleAboutInstructor {
+                margin-top: 8px;
+                height: 30px;
+                font-weight: 600;
+                font-size: 20px;
+                color: $login-color-title; // color: rgb(15, 23, 42);
+                line-height: 150%;
+            }
 
-        .titleAboutInstructor {
-            @include MentorTitle;
-        }
+            .infoAboutInstructor {
+            font-weight: 400;
+            font-size: 16px;
+            color: $header-text-color; // color: rgb(51, 65, 85);
+            line-height: 160%;
+            }
 
-        .infoText {
-            @include MentorText;
-        }
+            .titleExpertise {
+                margin-top: 8px;
+                height: 30px;
+                font-weight: 600;
+                font-size: 20px;
+                color: $login-color-title; // color: rgb(15, 23, 42);
+                line-height: 150%;
+            }
 
-        .containerTitle {
-            @include MentorTitle;
-        }
+            .listExpertise {
+                font-weight: 400;
+                font-size: 16px;
+                list-style: disc;
+                margin-left: 20px;
+                padding: 0;
+                color: $header-text-color; // color: rgb(51, 65, 85);
+                line-height: 160%;
+                
+            }
 
-        .listExpertise {
-            @include MentorText;
-            list-style: disc;
-            margin-left: 20px;
-            padding: 0;
-        }
-    }
+            .titleProfExpertise {
+                margin-top: 8px;
+                height: 30px;
+                font-weight: 600;
+                font-size: 20px;
+                color: $login-color-title; // color: rgb(15, 23, 42);
+                line-height: 150%;
+            }
 
-    .containerSocialMediaButtons {
-        align-items: center;
-
-        .socialMediaButton {
-            margin: 8px;
-            padding: 16px;
-            width: 200px;
-            height: 48px;
-            box-sizing: border-box;
-            border: 1px solid $profile-grey-color;
-            border-radius: 8px;
-            background: $white-color;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            text-align: center;
-
-            &:hover {
-                background-color: $footer-main-color;
+            .infoProfExpertise {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: $header-text-color; // color: rgb(51, 65, 85);
+                line-height: 160%;
             }
         }
-    }
+        .containerSocialMediaButtons {
+            align-items: center;
+        
+            .socialMediaButton {
+                margin: 8px;
+                padding: 16px;
+                width: 200px;
+                height: 48px;
+                box-sizing: border-box;
+                border: 1px solid $profile-grey-color;
+                border-radius: 8px;
+                background: $white-color;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: center;
+                
+                
+            }
+        }
+} 
+
+.nameLeanerReviews{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+    .containerRatingReviews {
+        // color: $login-color-title;
+        // // border-bottom: 1px solid $profile-grey-color;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        position: relative;
+        margin-top: 10px;
+
+
+            .containerImgStarRatingReviews{
+                display: flex;
+            }
+            .containerReviewStar{
+                display: flex;
+                flex-direction: row;
+            }
+            .containerTotalStarRating{
+                margin: 0;
+            }
+            .containerTotalReviews{
+                margin: 6px;
+                font-size: 11px;
+            }
+            .containerReviewStar p {
+                margin: 6px;
+            }
+            
+        }
+    }
