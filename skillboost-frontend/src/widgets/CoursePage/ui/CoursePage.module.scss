@@ -1,0 +1,36 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+
+.mainTitle {
+    color: $login-color-title; // color: rgb(15, 23, 42);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -2%;
+    text-align: left;
+
+    max-width: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 17;
+}
+
+.paragraph {
+    color: $header-text-color; // color: rgb(51, 65, 85);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+
+    max-width: 729px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 17;
+}

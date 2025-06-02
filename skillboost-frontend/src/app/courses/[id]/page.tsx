@@ -1,5 +1,5 @@
 import { Breadcrumbs } from '@/shared/ui/BreadCrumbs/BreadCrumbs'
-import CoursePages from '@/widgets/CoursePage/ui/CoursePages'
+import CoursePages from '@/widgets/CoursePage/ui/CoursePage'
 
 
 
@@ -9,14 +9,12 @@ const breadcrumbs = [
     href: '/'
   },
   {
-    title: 'Categories',
-    color: '#2563EB',
-    arrow: true
+    title: 'Lable',
+    href: '/',
   },
   {
-    title: 'Categories',
-    color: '#2563EB',
-    arrow: true
+    title: 'Lable',
+    href: '/',
   }
 ]
 
