@@ -1,9 +1,9 @@
 'use client'
-import LeanerReviewsCard from '@/shared/ui/LeanerReviewsCard/LeanerReviewsCard'
 import styles from './MentorInfo.module.scss'
 import Image from 'next/image'
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
+import LeanerReviewsCard from '@/shared/ui/LeanerReviewsCard/LeanerReviewCard';
 
 
 export default function MentorInfo() {
