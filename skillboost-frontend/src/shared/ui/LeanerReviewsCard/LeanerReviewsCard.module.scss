@@ -1,0 +1,48 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+
+
+.containerCard {
+        color: $login-color-title;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        box-sizing: border-box;
+        /* grey/border */
+        border: 1px solid rgb(226, 232, 240);
+        border-radius: 16px;
+        /* white */
+        background: rgb(255, 255, 255);
+        margin: 16px 0px;
+
+        .containerPhotoName {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin: 20px;
+            align-items: center;
+            max-height: 50px;
+        }
+        .containerStarsReviews {
+            margin: 20px;
+
+            .containerRatingDate {
+                padding-bottom: 20px;
+                display: flex;
+                gap: 30px;
+                align-items: center;
+
+                .containerIconStar{
+                    display: flex;
+                    align-items: center;
+                }
+
+
+            }
+        }
+        .containerText{
+            max-width: 631px;
+            min-width: 500px;
+            width:100%
+        }
+}
