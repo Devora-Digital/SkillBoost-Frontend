@@ -1,6 +1,8 @@
 'use client'
 import styles from './CoursePage.module.scss'
 import Image from 'next/image'
+import Rating from '@mui/material/Rating';
+import Stack from '@mui/material/Stack';
 
 
 export default function CoursePage() { 
@@ -10,7 +12,11 @@ export default function CoursePage() {
             <p className={styles.paragraph}>This course is meticulously crafted to provide you with a foundational understanding of the principles, methodologies, and tools that drive exceptional user experiences in the digital landscape.</p>
             <div className={styles.containerStartHoursLectures}>
                 <div className={styles.itemNumber}>4.6</div>
-                <div className={styles.itemStars}>stars</div>
+                <div className={styles.itemStars}>
+                    <Stack spacing={1}>
+                            <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                    </Stack> 
+                </div>
                 <div className={styles.ItemRatingHoursLectures}>(651651 rating) | 22 Total Hours. 155 Lectures. All levels</div>
             </div>
             <div className={styles.containerPhotoName}>

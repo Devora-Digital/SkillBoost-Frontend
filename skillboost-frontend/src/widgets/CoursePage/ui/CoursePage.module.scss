@@ -13,13 +13,13 @@
         line-height: 140%;
         letter-spacing: -2%;
         text-align: left;
-
         max-width: 840px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 17;
+        margin-top: 20px;
     }
 
     .paragraph {
@@ -36,29 +36,40 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: 17;
+        margin-top: 20px;
+
     }
 
     .containerStartHoursLectures{
         display: flex;
         justify-content: flex-start;
-        align-items: flex-start;
         color: $header-text-color; // color: rgb(51, 65, 85);
         font-family: Inter;
         font-size: 14px;
         font-weight: 400;
         line-height: 150%;
+        align-items: center;
+        gap: 5px;
+        max-height: 50px;
+        margin-top: 24px;
     }
 
     .containerPhotoName{
         display: flex;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
+        gap: 5px;
+        max-height: 50px;
+        margin-top: 24px;
     }
 
     .containerWorldIconLanguages{
         display: flex;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
+        gap: 5px;
+        max-height: 50px;
+        margin-top: 24px;
     }
 
 
