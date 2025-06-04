@@ -2,17 +2,14 @@
 @use '@/shared/styles/variables' as *;
 
 
-.container{
+.container {
     background: $profile-aside; // background: rgb(248, 250, 252);
 
     .mainTitle {
         color: $login-color-title; // color: rgb(15, 23, 42);
-        font-family: Inter;
         font-size: 40px;
         font-weight: 700;
         line-height: 140%;
-        letter-spacing: -2%;
-        text-align: left;
         max-width: 840px;
         display: flex;
         flex-direction: column;
@@ -24,12 +21,8 @@
 
     .paragraph {
         color: $header-text-color; // color: rgb(51, 65, 85);
-        font-family: Inter;
-        font-size: 16px;
-        font-weight: 400;
+        @include FooterText;
         line-height: 160%;
-        letter-spacing: 0%;
-        text-align: left;
         max-width: 729px;
         display: flex;
         flex-direction: column;
@@ -37,14 +30,12 @@
         align-items: flex-start;
         gap: 17;
         margin-top: 20px;
-
     }
 
     .containerStartHoursLectures{
         display: flex;
         justify-content: flex-start;
         color: $header-text-color; // color: rgb(51, 65, 85);
-        font-family: Inter;
         font-size: 14px;
         font-weight: 400;
         line-height: 150%;
@@ -71,6 +62,4 @@
         max-height: 50px;
         margin-top: 24px;
     }
-
-
 }

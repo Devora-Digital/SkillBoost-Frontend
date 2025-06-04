@@ -1,4 +1,3 @@
-'use client'
 import styles from './CoursePage.module.scss'
 import Image from 'next/image'
 import Rating from '@mui/material/Rating';

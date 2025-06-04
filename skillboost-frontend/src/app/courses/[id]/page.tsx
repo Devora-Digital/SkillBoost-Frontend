@@ -1,6 +1,5 @@
 import { Breadcrumbs } from '@/shared/ui/BreadCrumbs/BreadCrumbs'
-import CoursePages from '@/widgets/CoursePage/ui/CoursePage'
-
+import { CoursePage } from '@/widgets/CoursePage'
 
 
 const breadcrumbs = [
@@ -9,20 +8,21 @@ const breadcrumbs = [
     href: '/'
   },
   {
-    title: 'Lable',
-    href: '/',
+    title: 'Categories',
+    href: '/categories',
   },
   {
-    title: 'Lable',
-    href: '/',
+    title: 'Course',
+    href: '',
+    arrow: false
   }
 ]
 
-export default function CoursePage() {
+export default function PageCourse () {
   return (
     <>
           <Breadcrumbs items={breadcrumbs} />
-          <CoursePages/>
+          <CoursePage/>
         </>
   )
 }

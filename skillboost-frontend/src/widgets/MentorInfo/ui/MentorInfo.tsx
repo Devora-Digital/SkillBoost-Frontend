@@ -67,7 +67,7 @@ export default function MentorInfo() {
                     <div className={styles.containerImgStarRatingReviews}>
                         <div className={styles.containerImgStar}>
                             <img
-                                src='/icons/icon-star.svg'
+                                src='/icons/icon-star3.svg'
                                 alt='SkillBoost'
                                 width={16}
                                 height={16}
