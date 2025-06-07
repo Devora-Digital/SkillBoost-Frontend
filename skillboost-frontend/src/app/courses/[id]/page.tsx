@@ -14,7 +14,7 @@ const breadcrumbs = [
   {
     title: 'Course',
     href: '',
-    arrow: false
+    arrow: true
   }
 ]
 

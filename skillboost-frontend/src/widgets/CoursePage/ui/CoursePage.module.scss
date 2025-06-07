@@ -4,62 +4,98 @@
 
 .container {
     background: $profile-aside; // background: rgb(248, 250, 252);
+    padding: 13px 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
-    .mainTitle {
-        color: $login-color-title; // color: rgb(15, 23, 42);
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 140%;
-        max-width: 840px;
+    .containerRatingDiscount {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 17;
-        margin-top: 20px;
-    }
+        justify-content: flex-end;
 
-    .paragraph {
-        color: $header-text-color; // color: rgb(51, 65, 85);
-        @include FooterText;
-        line-height: 160%;
-        max-width: 729px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 17;
-        margin-top: 20px;
-    }
+        .containerRating{
+        .mainTitle {
+                color: $login-color-title; // color: rgb(15, 23, 42);
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 140%;
+                max-width: 840px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 17;
+                margin-top: 20px;
+            }
 
-    .containerStartHoursLectures{
-        display: flex;
-        justify-content: flex-start;
-        color: $header-text-color; // color: rgb(51, 65, 85);
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 150%;
-        align-items: center;
-        gap: 5px;
-        max-height: 50px;
-        margin-top: 24px;
-    }
+            .paragraph {
+                color: $header-text-color; // color: rgb(51, 65, 85); 
+                @include FooterText;
+                line-height: 160%;
+                max-width: 729px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 17;
+                margin-top: 20px;
+            }
 
-    .containerPhotoName{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 5px;
-        max-height: 50px;
-        margin-top: 24px;
-    }
+            .containerStartHoursLectures{
+                display: flex;
+                justify-content: flex-start;
+                color: $header-text-color; // color: rgb(51, 65, 85);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 150%;
+                align-items: center;
+                gap: 5px;
+                max-height: 50px;
+                margin-top: 24px;
+            }
 
-    .containerWorldIconLanguages{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 5px;
-        max-height: 50px;
-        margin-top: 24px;
+            .containerPhotoName{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 5px;
+                max-height: 50px;
+                margin-top: 24px;
+            }
+
+            .containerWorldIconLanguages{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 5px;
+                max-height: 50px;
+                margin-top: 24px;
+            }
+
+            
+        }
+
+    
+        .containerDiscount {
+            max-width: 400px;
+            box-sizing: border-box;
+            border: 1px solid rgb(226, 232, 240);
+            border-radius: 16px;
+            box-shadow: 0px 0px 8px 0px rgba(59, 130, 246, 0.12);
+            background: rgb(255, 255, 255);
+        
+            .footerColumnSoc {
+                    margin-top: 16px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+
+                    .footerSocImg {
+                        background-color: $white-color;
+                        border-radius: 50%;
+                        padding: 4px;
+
+                    }
+                }
+        }
     }
 }
