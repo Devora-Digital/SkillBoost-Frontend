@@ -25,12 +25,11 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
-                gap: 17;
                 margin-top: 20px;
             }
 
-            .paragraph {
-                color: $header-text-color; // color: rgb(51, 65, 85); 
+            .paragraphText {
+                color: rgb(15, 23, 42); // color: rgb(51, 65, 85); 
                 @include FooterText;
                 line-height: 160%;
                 max-width: 729px;
@@ -71,12 +70,8 @@
                 gap: 5px;
                 max-height: 50px;
                 margin-top: 24px;
-            }
-
-            
+            }  
         }
-
-    
         .containerDiscount {
             max-width: 400px;
             box-sizing: border-box;
@@ -85,17 +80,49 @@
             box-shadow: 0px 0px 8px 0px rgba(59, 130, 246, 0.12);
             background: rgb(255, 255, 255);
 
+            .discountPhoto{
+                padding: 10px;
+            }
+
             .containerPrice{
                 display: flex;
                 justify-content: flex-start;
                 gap: 10px;
+                margin: 8px;
+                align-items: center;
+
+                
+                .lastPrice{
+                    color: rgb(15, 23, 42);
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 140%;
+                }
+                .firstPrice{
+                    color: $header-text-color; 
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 160%;
+                    text-decoration: line-through;
+                }
+                .discountPercent{
+                    color: rgb(22, 163, 74);
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 150%;
+                }
+            }
+            
+            .shareText{
+                color: rgb(15, 23, 42);
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 500;
             }
 
             .whiteButton {
                 margin: 8px;
                 padding: 16px;
-                width: 200px;
-                height: 48px;
                 box-sizing: border-box;
                 border: 1px solid $profile-grey-color;
                 border-radius: 8px;
@@ -109,23 +136,25 @@
             .blackButton {
                 margin: 8px;
                 padding: 16px;
-                width: 200px;
-                height: 48px;
                 box-sizing: border-box;
                 border: 1px solid $profile-grey-color;
                 border-radius: 8px;
-                background: $white-color;
+                background: $black-color;
                 cursor: pointer;
                 font-size: 14px;
                 font-weight: 500;
-                text-align: center;
+                text-align: center;    
+                color: $white-color;            
             }
-        
+            
+            .shareText {
+               margin: 8px; 
+            }
             .footerColumnSoc {
                     margin-top: 16px;
                     display: flex;
                     flex-direction: row;
-                    gap: 20px;
+                    gap: 6px;
 
                     .footerSocImg {
                         background-color: $white-color;

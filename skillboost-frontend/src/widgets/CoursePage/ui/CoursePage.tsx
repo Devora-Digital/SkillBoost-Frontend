@@ -7,11 +7,11 @@ export default function CoursePage() {
   return (
     <div className={styles.container}>
       <div className={styles.containerRatingDiscount}>
-        <div className={styles.containerRatings}>
+        <div className={styles.containerRating}>
           <h1 className={styles.mainTitle}>
             Introduction to User Experience Design
           </h1>
-          <p className={styles.paragraph}>
+          <p className={styles.paragraphText}>
             This course is meticulously crafted to provide you with a
             foundational understanding of the principles, methodologies, and
             tools that drive exceptional user experiences in the digital
@@ -54,25 +54,27 @@ export default function CoursePage() {
               English, Spanish, Italian, German
             </div>
           </div>
-        </div>
+              </div>
+              
+
         <div className={styles.containerDiscount}>
           <Image
             className={styles.discountPhoto}
             src='/assets/image-discount.svg'
             alt='SkillBoost'
-            width={356}
+            width={280}
             height={200}
           />
           <div className={styles.containerPrice}>
-            <p>$49.5</p>
-            <p>$99.5</p>
-            <p>50% Off</p>
+            <p className={styles.lastPrice}>$49.5</p>
+            <p className={styles.firstPrice}>$99.5</p>
+            <p className={styles.discountPercent}>50% Off</p>
           </div>
           <div className={styles.containerButtons}>
             <div className={styles.blackButton}>Label</div>
             <div className={styles.whiteButton}>Label</div>
           </div>
-          <p>Share</p>
+          <p className={styles.shareText}>Share</p>
           <div>
             <ul className={styles.footerColumnSoc}>
               <li className={styles.footerSocIcon}>
