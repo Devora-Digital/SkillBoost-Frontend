@@ -21,23 +21,14 @@
                 font-weight: 700;
                 line-height: 140%;
                 max-width: 840px;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: flex-start;
                 margin-top: 20px;
             }
 
             .paragraphText {
-                color: rgb(15, 23, 42); // color: rgb(51, 65, 85); 
+                color: #0f172a; // color: rgb(51, 65, 85); 
                 @include FooterText;
                 line-height: 160%;
                 max-width: 729px;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: flex-start;
-                gap: 17;
                 margin-top: 20px;
             }
 
@@ -115,7 +106,6 @@
             
             .shareText{
                 color: rgb(15, 23, 42);
-                font-family: Inter;
                 font-size: 16px;
                 font-weight: 500;
             }
