@@ -114,6 +114,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 24px;
+        min-height: 300px;
 
         .noCourses {
             grid-column: 1 / -1; 
