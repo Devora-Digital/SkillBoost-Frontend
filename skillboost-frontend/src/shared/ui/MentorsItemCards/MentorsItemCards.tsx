@@ -20,7 +20,6 @@ import styles from "./MentorsItemCards.module.scss"
     useEffect(() => {
       setMentorsData(mentors)
     }, [])
-    // const [mentorsData, setMentorsData] = useState<MentorsItem[]>([])
     const lineStyleFirst = {
         width: '100%',
         border: '1px solid #E2E8F0'

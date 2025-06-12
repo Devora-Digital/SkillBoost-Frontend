@@ -13,7 +13,6 @@ import {
 } from 'lucide-react'
 import QuoteMarkIcon from '@icons/ri_double-quotes-l.svg'
 import TopCoursesImage from "@assets/TopCoursesImage_01.jpeg"
-import TopInstructorsImage from "@assets/InstructorImage_01.png"
 import OfferImageFirst from "@assets/Offer_image_01.png"
 import OfferImageSecond from "@assets/Offer_Image_02.png"
 import DesignerPhoto from "@assets/Designer_image_01.jpeg"
@@ -22,10 +21,6 @@ import MentorsItemCards from '@/shared/ui/MentorsItemCards/MentorsItemCards'
 import styles from './page.module.scss'
 
 export default function Home() {
-  const lineStyleFirst = {
-    width: '100%',
-    border: '1px solid #E2E8F0'
-  }
   return (
     <RootLayoutClient>
       <div className={styles.page}>
@@ -260,152 +255,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.instructors_block}>
-          {/* <div className={styles.instructors_control_block}>
-            <p className={styles.instructors_title}>Top Instructors</p>
-            <button className={styles.all_instructors_button}>See All</button>
-          </div> */}
-          {/* <div className={styles.mentors_items_block}>
-            <div className={styles.mentors_item}>
-              <div className={styles.mentors_item_inside}>
-                <Image
-                  className={styles.mentor_item_picture}
-                  src={TopInstructorsImage}
-                  width={177}
-                  height={132}
-                  alt='Top Mentor 01'
-                />
-                <div className={styles.mentors_item_info}>
-                  <div className={styles.mentors_item_info_first_block}>
-                    <p className={styles.mentors_item_title}>Ronald Richards</p>
-                    <p className={styles.mentors_item_post}>UI/UX Designer</p>
-                  </div>
-                  <hr style={lineStyleFirst} />
-                  <div className={styles.mentors_item_info_second_block}>
-                    <div className={styles.mentors_item_rating_block}>
-                      <Rating name='mentor-rating' max={1} readOnly />
-                      <p className={styles.mentors_item_rating}>4.9</p>
-                    </div>
-                    <p className={styles.mentors_item_students_count}>
-                      2400 Students
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.mentors_item}>
-              <div className={styles.mentors_item_inside}>
-                <Image
-                  className={styles.mentor_item_picture}
-                  src={TopInstructorsImage}
-                  width={177}
-                  height={132}
-                  alt='Top Mentor 01'
-                />
-                <div className={styles.mentors_item_info}>
-                  <div className={styles.mentors_item_info_first_block}>
-                    <p className={styles.mentors_item_title}>Ronald Richards</p>
-                    <p className={styles.mentors_item_post}>UI/UX Designer</p>
-                  </div>
-                  <hr style={lineStyleFirst} />
-                  <div className={styles.mentors_item_info_second_block}>
-                    <div className={styles.mentors_item_rating_block}>
-                      <Rating name='mentor-rating' max={1} readOnly />
-                      <p className={styles.mentors_item_rating}>4.9</p>
-                    </div>
-                    <p className={styles.mentors_item_students_count}>
-                      2400 Students
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.mentors_item}>
-              <div className={styles.mentors_item_inside}>
-                <Image
-                  className={styles.mentor_item_picture}
-                  src={TopInstructorsImage}
-                  width={177}
-                  height={132}
-                  alt='Top Mentor 01'
-                />
-                <div className={styles.mentors_item_info}>
-                  <div className={styles.mentors_item_info_first_block}>
-                    <p className={styles.mentors_item_title}>Ronald Richards</p>
-                    <p className={styles.mentors_item_post}>UI/UX Designer</p>
-                  </div>
-                  <hr style={lineStyleFirst} />
-                  <div className={styles.mentors_item_info_second_block}>
-                    <div className={styles.mentors_item_rating_block}>
-                      <Rating name='mentor-rating' max={1} readOnly />
-                      <p className={styles.mentors_item_rating}>4.9</p>
-                    </div>
-                    <p className={styles.mentors_item_students_count}>
-                      2400 Students
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.mentors_item}>
-              <div className={styles.mentors_item_inside}>
-                <Image
-                  className={styles.mentor_item_picture}
-                  src={TopInstructorsImage}
-                  width={177}
-                  height={132}
-                  alt='Top Mentor 01'
-                />
-                <div className={styles.mentors_item_info}>
-                  <div className={styles.mentors_item_info_first_block}>
-                    <p className={styles.mentors_item_title}>Ronald Richards</p>
-                    <p className={styles.mentors_item_post}>UI/UX Designer</p>
-                  </div>
-                  <hr style={lineStyleFirst} />
-                  <div className={styles.mentors_item_info_second_block}>
-                    <div className={styles.mentors_item_rating_block}>
-                      <Rating name='mentor-rating' max={1} readOnly />
-                      <p className={styles.mentors_item_rating}>4.9</p>
-                    </div>
-                    <p className={styles.mentors_item_students_count}>
-                      2400 Students
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.mentors_item}>
-              <div className={styles.mentors_item_inside}>
-                <Image
-                  className={styles.mentor_item_picture}
-                  src={TopInstructorsImage}
-                  width={177}
-                  height={132}
-                  alt='Top Mentor 01'
-                />
-                <div className={styles.mentors_item_info}>
-                  <div className={styles.mentors_item_info_first_block}>
-                    <p className={styles.mentors_item_title}>Ronald Richards</p>
-                    <p className={styles.mentors_item_post}>UI/UX Designer</p>
-                  </div>
-                  <hr style={lineStyleFirst} />
-                  <div className={styles.mentors_item_info_second_block}>
-                    <div className={styles.mentors_item_rating_block}>
-                      <Rating name='mentor-rating' max={1} readOnly />
-                      <p className={styles.mentors_item_rating}>4.9</p>
-                    </div>
-                    <p className={styles.mentors_item_students_count}>
-                      2400 Students
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
           <MentorsItemCards/>
-          {/* <InstructorItemCard />
-          <InstructorItemCard />
-          <InstructorItemCard />
-          <InstructorItemCard /> */}
         </div>
         <div className={styles.quotes_block}>
           <div className={styles.quotes_block_header}>
