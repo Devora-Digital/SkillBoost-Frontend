@@ -16,8 +16,6 @@ export default function RootLayoutClient({
     <div>
       <Provider store={store}>
         <Header isAuthenticated={false} />
-        {/* <main>{children}</main> */}
-        {/* <Header isAuthenticated={true} /> */}
         {/* <NotFound /> */}
         <HomeScreen>
             {children}

@@ -18,7 +18,7 @@ import OfferImageFirst from "@assets/Offer_image_01.png"
 import OfferImageSecond from "@assets/Offer_Image_02.png"
 import DesignerPhoto from "@assets/Designer_image_01.jpeg"
 import { MainBanner } from '@/widgets/MainBanner'
-import MentorsItemCards from '@/shared/ui/ItemCard/MentorsItemCards'
+import MentorsItemCards from '@/shared/ui/MentorsItemCards/MentorsItemCards'
 import styles from './page.module.scss'
 
 export default function Home() {
