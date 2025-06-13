@@ -1,5 +1,5 @@
 'use client'
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import styles from './ProfileSecondTab.module.scss'
 import { Search, X } from 'lucide-react'
 import Sort from '@/shared/ui/SortComponent/Sort'
@@ -8,8 +8,10 @@ import Filter, {
   FilterState
 } from '@/shared/ui/FilterComponent/Filter'
 import { CourseCardUser } from '@/shared/ui/CourseCardUser/CourseCardUser'
+import Pagination from '@/shared/ui/Pagination/Pagination'
 
 const sortOptions = ['Newness', 'Popularity', 'Rating', 'Price']
+const cardsOnPage = 12
 
 const filterOptions: FilterOption[] = [
   {
@@ -44,8 +46,8 @@ const courses = [
   },
   {
     id: 2,
-    title: 'JavaScript Fundamentals',
-    creator: 'John Doe',
+    title: "Beginner's Guide to Design",
+    creator: 'Ronald Richards',
     imageUrl: '/assets/img-course.png',
     rating: 4,
     totalRatings: 850,
@@ -56,8 +58,8 @@ const courses = [
   },
   {
     id: 3,
-    title: 'UI/UX Design Principles',
-    creator: 'Sarah Wilson',
+    title: "Beginner's Guide to Design",
+    creator: 'Ronald Richards',
     imageUrl: '/assets/img-course.png',
     rating: 5,
     totalRatings: 2100,
@@ -68,8 +70,116 @@ const courses = [
   },
   {
     id: 4,
-    title: 'Advanced React Patterns',
-    creator: 'Mike Johnson',
+    title: "Beginner's Guide to Design",
+    creator: 'Ronald Richards',
+    imageUrl: '/assets/img-course.png',
+    rating: 4,
+    totalRatings: 950,
+    progress: 100,
+    category: 'Programming',
+    level: 'Advanced',
+    price: 'Paid'
+  },
+  {
+    id: 5,
+    title: "Beginner's Guide to Design",
+    creator: 'Ronald Richards',
+    imageUrl: '/assets/img-course.png',
+    rating: 4,
+    totalRatings: 950,
+    progress: 100,
+    category: 'Programming',
+    level: 'Advanced',
+    price: 'Paid'
+  },
+  {
+    id: 6,
+    title: "Beginner's Guide to Design",
+    creator: 'Ronald Richards',
+    imageUrl: '/assets/img-course.png',
+    rating: 4,
+    totalRatings: 950,
+    progress: 100,
+    category: 'Programming',
+    level: 'Advanced',
+    price: 'Paid'
+  },
+  {
+    id: 7,
+    title: "Beginner's Guide to Design",
+    creator: 'Ronald Richards',
+    imageUrl: '/assets/img-course.png',
+    rating: 4,
+    totalRatings: 950,
+    progress: 100,
+    category: 'Programming',
+    level: 'Advanced',
+    price: 'Paid'
+  },
+  {
+    id: 8,
+    title: "Beginner's Guide to Design",
+    creator: 'Ronald Richards',
+    imageUrl: '/assets/img-course.png',
+    rating: 4,
+    totalRatings: 950,
+    progress: 100,
+    category: 'Programming',
+    level: 'Advanced',
+    price: 'Paid'
+  },
+  {
+    id: 9,
+    title: "Beginner's Guide to Design",
+    creator: 'Ronald Richards',
+    imageUrl: '/assets/img-course.png',
+    rating: 4,
+    totalRatings: 950,
+    progress: 100,
+    category: 'Programming',
+    level: 'Advanced',
+    price: 'Paid'
+  },
+  {
+    id: 10,
+    title: "Beginner's Guide to Design",
+    creator: 'Ronald Richards',
+    imageUrl: '/assets/img-course.png',
+    rating: 4,
+    totalRatings: 950,
+    progress: 100,
+    category: 'Programming',
+    level: 'Advanced',
+    price: 'Paid'
+  },
+  {
+    id: 11,
+    title: "Beginner's Guide to Design",
+    creator: 'Ronald Richards',
+    imageUrl: '/assets/img-course.png',
+    rating: 4,
+    totalRatings: 950,
+    progress: 100,
+    category: 'Programming',
+    level: 'Advanced',
+    price: 'Paid'
+  },
+  {
+    id: 12,
+    title: "Beginner's Guide to Design",
+    creator: 'Ronald Richards',
+    imageUrl: '/assets/img-course.png',
+    rating: 4,
+    totalRatings: 950,
+    progress: 100,
+    category: 'Programming',
+    level: 'Advanced',
+    price: 'Paid'
+  },
+  {
+    id: 13,
+    title: "Beginner's Guide to Design",
+    creator: 'Ronald Richards',
     imageUrl: '/assets/img-course.png',
     rating: 4,
     totalRatings: 950,
@@ -88,9 +198,14 @@ export default function ProfileSecondTab() {
     price: []
   })
   const [searchTerm, setSearchTerm] = useState('')
+  const [currentPage, setCurrentPage] = useState(1)
   const [openDropdown, setOpenDropdown] = useState<'sort' | 'filter' | null>(
     null
   )
+
+  useEffect(() => {
+    setCurrentPage(1)
+  }, [selectedFilters, searchTerm, selectedSort])
 
   const filteredCourses = useMemo(() => {
     return courses.filter((course) => {
@@ -103,7 +218,6 @@ export default function ProfileSecondTab() {
       const matchesLevel =
         selectedFilters.level.length === 0 ||
         selectedFilters.level.includes(course.level)
-
       const matchesPrice =
         selectedFilters.price.length === 0 ||
         selectedFilters.price.includes(course.price)
@@ -124,9 +238,21 @@ export default function ProfileSecondTab() {
         return coursesCopy.sort((a, b) => (a.price === 'Free' ? -1 : 1))
       case 'Newness':
       default:
-        return coursesCopy 
+        return coursesCopy
     }
   }, [filteredCourses, selectedSort])
+
+  const paginatedCourses = useMemo(() => {
+    const startIndex = (currentPage - 1) * cardsOnPage
+    const endIndex = Math.min(
+      startIndex + cardsOnPage,
+      sortedAndFilteredCourses.length
+    )
+    return sortedAndFilteredCourses.slice(startIndex, endIndex)
+  }, [currentPage, sortedAndFilteredCourses])
+
+  const totalPages = Math.ceil(sortedAndFilteredCourses.length / cardsOnPage)
+  const shouldShowPagination = totalPages > 1
 
   const handleSortToggle = () => {
     setOpenDropdown((prev) => (prev === 'sort' ? null : 'sort'))
@@ -142,6 +268,11 @@ export default function ProfileSecondTab() {
 
   const handleSortSelect = (value: string) => {
     setSelectedSort(value)
+  }
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   const toggleFilter = (type: string, value: string) => {
@@ -263,23 +394,37 @@ export default function ProfileSecondTab() {
         </div>
       </div>
 
-      <div className={styles.tabBoxCards}>
-        {sortedAndFilteredCourses.length === 0 ? (
-          <div className={styles.noCourses}>
-            <p className={styles.noCoursesText}>Courses not found</p>
-          </div>
-        ) : (
-          sortedAndFilteredCourses.map((course) => (
-            <CourseCardUser
-              key={course.id}
-              title={course.title}
-              creator={course.creator}
-              imageUrl={course.imageUrl}
-              progress={course.progress}
-              rating={course.rating}
-              totalRatings={course.totalRatings}
+      <div className={styles.contentWrapper}>
+        <div className={styles.tabBoxCards}>
+          {paginatedCourses.length === 0 ? (
+            <div className={styles.noCourses}>
+              <p className={styles.noCoursesText}>
+                No courses found matching your criteria
+              </p>
+            </div>
+          ) : (
+            paginatedCourses.map((course) => (
+              <CourseCardUser
+                key={`${course.id}-${course.title}-${course.creator}`}
+                title={course.title}
+                creator={course.creator}
+                imageUrl={course.imageUrl}
+                progress={course.progress}
+                rating={course.rating}
+                totalRatings={course.totalRatings}
+              />
+            ))
+          )}
+        </div>
+
+        {shouldShowPagination && (
+          <div className={styles.paginationWrapper}>
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
             />
-          ))
+          </div>
         )}
       </div>
     </div>
