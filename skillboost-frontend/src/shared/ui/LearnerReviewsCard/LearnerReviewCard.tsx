@@ -1,7 +1,6 @@
 
-import styles from './LeanerReviewsCard.module.scss'
+import styles from './LearnerReviewsCard.module.scss'
 import Image from 'next/image'
-// import { useState } from 'react' 
 
 interface ReviewsCardProps{
     date: string
