@@ -38,7 +38,17 @@ export default function CustomerQuotes() {
             </div>
           </div>
           <div className={styles.quotes_block_quotes}>
-            <CustomerQuotesCard />
+            {groupedQuotes.map((card, index) => {
+              return (
+                <div key={index} className="embla__slide">
+                  {card.map((quote, index) => {
+                    return (
+                      <CustomerQuotesCard key={index} quote_text={quote.quote_text} author_name={quote.author_name} author_post={quote.author_post} />
+                    )
+                  })}
+                </div>
+              )
+            })}
           </div>
         </div>
     )
