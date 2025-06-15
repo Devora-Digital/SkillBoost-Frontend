@@ -66,25 +66,30 @@
             }
         }
 
-        .socialMediaButton {
-            margin: 8px;
-            padding: 16px 0;
-            min-width: 200px;
-            box-sizing: border-box;
-            border: 1px solid $button-border;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            text-align: center;
-            color: $header-secondary-color;
-            transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+        .containerSocialMediaButtons {
+            display: flex;
+            flex-direction: column;
+            .socialMediaButton {
+                margin: 8px;
+                padding: 16px 0;
+                min-width: 200px;
+                box-sizing: border-box;
+                border: 1px solid $button-border;
+                background-color: $white-color;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: center;
+                color: $header-secondary-color;
+                transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 
-            &:hover {
-                background: $profile-aside;
-                box-shadow: 0 2px 8px #0000000d, 0 4px 16px #00000014;
-                color: $button-border;
-                transform: translateY(-1px);
+                &:hover {
+                    background: $profile-aside;
+                    box-shadow: 0 2px 8px #0000000d, 0 4px 16px #00000014;
+                    color: $button-border;
+                    transform: translateY(-1px);
+                }
             }
         }
     }
@@ -109,6 +114,7 @@
             .containerImgStar {
                 display: flex;
                 align-items: center;
+                gap: 5px;
             }
 
             .containerTotalReviewsText {
@@ -125,6 +131,7 @@
             flex-direction: row;
             align-items: center;
             gap: 8px;
+            color: $header-text-color;
         }
 
     }

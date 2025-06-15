@@ -71,9 +71,9 @@ export default function MentorInfo() {
           </p>
         </div>
         <div className={styles.containerSocialMediaButtons}>
-          <div className={styles.socialMediaButton}>Website</div>
-          <div className={styles.socialMediaButton}>Twitter</div>
-          <div className={styles.socialMediaButton}>Youtube</div>
+          <button className={styles.socialMediaButton}>Website</button>
+          <button className={styles.socialMediaButton}>Twitter</button>
+          <button className={styles.socialMediaButton}>Youtube</button>
         </div>
       </div>
       <h3 className={styles.reviewsTitle}>Leaner Reviews</h3>
