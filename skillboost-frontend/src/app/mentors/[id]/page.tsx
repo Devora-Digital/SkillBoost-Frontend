@@ -1,4 +1,5 @@
-import MentorInfo from "@/widgets/MentorInfo/ui/MentorInfo";
+import { MentorInfo } from "@/widgets/MentorInfo";
+
 
 
 export default function MentorPage({ params }: { params: { id: string } }) {
