@@ -18,6 +18,7 @@ import OfferImageSecond from "@assets/Offer_Image_02.png"
 import DesignerPhoto from "@assets/Designer_image_01.jpeg"
 import { MainBanner } from '@/widgets/MainBanner'
 import MentorsItemCards from '@/shared/ui/MentorsItemCards/MentorsItemCards'
+import CustomerQuotes from '@/shared/ui/CustomerQuotes/CustomerQuotes'
 import styles from './page.module.scss'
 
 export default function Home() {
@@ -257,83 +258,84 @@ export default function Home() {
         <div className={styles.instructors_block}>
           <MentorsItemCards/>
         </div>
-        <div className={styles.quotes_block}>
-          <div className={styles.quotes_block_header}>
-            <p className={styles.quotes_block_header_title}>
-              What Our Customer Say About Us
-            </p>
-            <div className={styles.quotes_block_header_buttons_block}>
-              <button className={styles.quotes_navigation_block}>
-                <LucideChevronLeft />
-              </button>
-              <button className={styles.quotes_navigation_block}>
-                <LucideChevronRight />
-              </button>
-            </div>
-          </div>
-          <div className={styles.quotes_block_quotes}>
-            <div className={styles.quotes_block_quotes_item}>
-              <Image src={QuoteMarkIcon} alt='Quote mark icon' />
-              <p className={styles.quotes_block_quote_text}>
-                &quot;Byway&apos;s tech courses are top-notch! As someone
-                who&apos;s always looking to stay ahead in the rapidly evolving
-                tech world, I appreciate the up-to-date content and engaging
-                multimedia.
-              </p>
-              <div className={styles.quotes_block_author}>
-                <Image
-                  src={DesignerPhoto}
-                  className={styles.quotes_block_author_photo}
-                  alt='Designer photo'
-                />
-                <div className={styles.quotes_block_author_inside}>
-                  <p className={styles.quotes_block_author_name}>Jane Doe</p>
-                  <p className={styles.quotes_block_author_post}>Designer</p>
+        <CustomerQuotes />
+        {/* <div className={styles.quotes_block}>
+            <div className={styles.quotes_block_header}>
+                  <p className={styles.quotes_block_header_title}>
+                    What Our Customer Say About Us
+                  </p>
+                  <div className={styles.quotes_block_header_buttons_block}>
+                    <button className={styles.quotes_navigation_block}>
+                      <LucideChevronLeft />
+                    </button>
+                    <button className={styles.quotes_navigation_block}>
+                      <LucideChevronRight />
+                    </button>
                 </div>
-              </div>
             </div>
-            <div className={styles.quotes_block_quotes_item}>
-              <Image src={QuoteMarkIcon} alt='Quote mark icon' />
-              <p className={styles.quotes_block_quote_text}>
-                &quot;Byway&apos;s tech courses are top-notch! As someone
-                who&apos;s always looking to stay ahead in the rapidly evolving
-                tech world, I appreciate the up-to-date content and engaging
-                multimedia.
-              </p>
-              <div className={styles.quotes_block_author}>
-                <Image
-                  src={DesignerPhoto}
-                  className={styles.quotes_block_author_photo}
-                  alt='Designer photo'
-                />
-                <div className={styles.quotes_block_author_inside}>
-                  <p className={styles.quotes_block_author_name}>Jane Doe</p>
-                  <p className={styles.quotes_block_author_post}>Designer</p>
+            <div className={styles.quotes_block_quotes}>
+                <div className={styles.quotes_block_quotes_item}>
+                    <Image src={QuoteMarkIcon} alt='Quote mark icon' />
+                    <p className={styles.quotes_block_quote_text}>
+                      &quot;Byway&apos;s tech courses are top-notch! As someone
+                      who&apos;s always looking to stay ahead in the rapidly evolving
+                      tech world, I appreciate the up-to-date content and engaging
+                      multimedia.
+                    </p>
+                    <div className={styles.quotes_block_author}>
+                      <Image
+                        src={DesignerPhoto}
+                        className={styles.quotes_block_author_photo}
+                        alt='Designer photo'
+                      />
+                      <div className={styles.quotes_block_author_inside}>
+                        <p className={styles.quotes_block_author_name}>Jane Doe</p>
+                        <p className={styles.quotes_block_author_post}>Designer</p>
+                      </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div className={styles.quotes_block_quotes_item}>
-              <Image src={QuoteMarkIcon} alt='Quote mark icon' />
-              <p className={styles.quotes_block_quote_text}>
-                &quot;Byway&apos;s tech courses are top-notch! As someone
-                who&apos;s always looking to stay ahead in the rapidly evolving
-                tech world, I appreciate the up-to-date content and engaging
-                multimedia.
-              </p>
-              <div className={styles.quotes_block_author}>
-                <Image
-                  src={DesignerPhoto}
-                  className={styles.quotes_block_author_photo}
-                  alt='Designer photo'
-                />
-                <div className={styles.quotes_block_author_inside}>
-                  <p className={styles.quotes_block_author_name}>Jane Doe</p>
-                  <p className={styles.quotes_block_author_post}>Designer</p>
+                <div className={styles.quotes_block_quotes_item}>
+                    <Image src={QuoteMarkIcon} alt='Quote mark icon' />
+                    <p className={styles.quotes_block_quote_text}>
+                      &quot;Byway&apos;s tech courses are top-notch! As someone
+                      who&apos;s always looking to stay ahead in the rapidly evolving
+                      tech world, I appreciate the up-to-date content and engaging
+                      multimedia.
+                    </p>
+                    <div className={styles.quotes_block_author}>
+                      <Image
+                        src={DesignerPhoto}
+                        className={styles.quotes_block_author_photo}
+                        alt='Designer photo'
+                      />
+                      <div className={styles.quotes_block_author_inside}>
+                        <p className={styles.quotes_block_author_name}>Jane Doe</p>
+                        <p className={styles.quotes_block_author_post}>Designer</p>
+                      </div>
+                    </div>
                 </div>
-              </div>
+                <div className={styles.quotes_block_quotes_item}>
+                    <Image src={QuoteMarkIcon} alt='Quote mark icon' />
+                    <p className={styles.quotes_block_quote_text}>
+                      &quot;Byway&apos;s tech courses are top-notch! As someone
+                      who&apos;s always looking to stay ahead in the rapidly evolving
+                      tech world, I appreciate the up-to-date content and engaging
+                      multimedia.
+                    </p>
+                    <div className={styles.quotes_block_author}>
+                      <Image
+                        src={DesignerPhoto}
+                        className={styles.quotes_block_author_photo}
+                        alt='Designer photo'
+                      />
+                      <div className={styles.quotes_block_author_inside}>
+                        <p className={styles.quotes_block_author_name}>Jane Doe</p>
+                        <p className={styles.quotes_block_author_post}>Designer</p>
+                      </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+        </div> */}
         <div className={styles.offers_block}>
           <div className={styles.offers_block_wrapper}>
             <div className={styles.offers_block_wrapper_first}>
@@ -384,6 +386,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* </div> */}
     </RootLayoutClient>
   )
 }

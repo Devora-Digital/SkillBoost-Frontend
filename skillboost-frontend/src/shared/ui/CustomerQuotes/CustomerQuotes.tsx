@@ -23,32 +23,34 @@ export default function CustomerQuotes() {
     }
     const groupedQuotes = chunkArray(customersQuotes, 3)
     return (
-        <div className={styles.quotes_block}>
+        <div className={styles.quotes_block} ref={emblaRef} >
           <div className={styles.quotes_block_header}>
             <p className={styles.quotes_block_header_title}>
               What Our Customer Say About Us
             </p>
             <div className={styles.quotes_block_header_buttons_block}>
-              <button className={styles.quotes_navigation_block}>
+              <button className={styles.quotes_navigation_block} onClick={() => emblaApi?.scrollPrev()} >
                 <LucideChevronLeft />
               </button>
-              <button className={styles.quotes_navigation_block}>
+              <button className={styles.quotes_navigation_block} onClick={() => emblaApi?.scrollPrev()} >
                 <LucideChevronRight />
               </button>
             </div>
           </div>
-          <div className={styles.quotes_block_quotes}>
-            {groupedQuotes.map((card, index) => {
-              return (
-                <div key={index} className="embla__slide">
-                  {card.map((quote, index) => {
-                    return (
-                      <CustomerQuotesCard key={index} quote_text={quote.quote_text} author_name={quote.author_name} author_post={quote.author_post} />
-                    )
-                  })}
-                </div>
-              )
-            })}
+          <div className={`embla__container ${styles.quotes_block_quotes}`} >
+                {groupedQuotes.map((group, index) => {
+                  return (
+                    // <div key={index} className={`embla__slide ${styles.quotes_block_quotes_item}`} >
+                    // Реагирует на embla__slide
+                    <div key={index} className="embla__slide" >
+                      {group.map((quote, index) => {
+                        return (
+                          <CustomerQuotesCard key={index} quote_text={quote.quote_text} author_name={quote.author_name} author_post={quote.author_post} />
+                        )
+                      })}
+                    </div>
+                  )
+                })}
           </div>
         </div>
     )
