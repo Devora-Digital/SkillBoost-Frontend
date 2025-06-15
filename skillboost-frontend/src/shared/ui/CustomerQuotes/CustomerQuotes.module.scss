@@ -7,16 +7,30 @@
     .embla__conatiner {
         display: flex;
         /**/
-        overflow: hidden;
         flex-direction: row;
+        overflow: hidden;
+        gap: 20px;
     }
 
     .embla__slide {
-        flex: 0 0 100%;
+        // flex: 0 0 100%;
+        flex: 0 0 auto;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
+        gap: 16px;
+        // justify-content: center;
+        // align-items: center;
     }
+
+    // .embla__slide {
+    //     // flex: 0 0 100%;
+    //     flex: 0 0 auto;
+    //     display: flex;
+    //     flex-direction: row;
+    //     gap: 16px;
+    //     // justify-content: center;
+    //     // align-items: center;
+    // }
 }
 
 
@@ -54,6 +68,9 @@
         display: flex;
         gap: $primary-gap;
         margin: 0px 0px 64px 80px;
+        /**/
+        flex-direction: row;
+        overflow: hidden;
 
         // .quotes_block_quotes_item {
         //     display: flex;

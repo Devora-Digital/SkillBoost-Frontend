@@ -23,7 +23,7 @@ export default function CustomerQuotes() {
     }
     const groupedQuotes = chunkArray(customersQuotes, 3)
     return (
-        <div className={styles.quotes_block} ref={emblaRef} >
+        <div className={styles.quotes_block} >
           <div className={styles.quotes_block_header}>
             <p className={styles.quotes_block_header_title}>
               What Our Customer Say About Us
@@ -37,9 +37,8 @@ export default function CustomerQuotes() {
               </button>
             </div>
           </div>
-          <div className={`embla__container ${styles.quotes_block_quotes}`} >
-                {groupedQuotes.map((group, index) => {
-                  return (
+          <div className={`${styles.quotes_block_quotes} embla__container`} ref={emblaRef} >
+                {groupedQuotes.map((group, index) => (
                     // <div key={index} className={`embla__slide ${styles.quotes_block_quotes_item}`} >
                     // Реагирует на embla__slide
                     <div key={index} className="embla__slide" >
@@ -49,8 +48,7 @@ export default function CustomerQuotes() {
                         )
                       })}
                     </div>
-                  )
-                })}
+                ))}
           </div>
         </div>
     )
