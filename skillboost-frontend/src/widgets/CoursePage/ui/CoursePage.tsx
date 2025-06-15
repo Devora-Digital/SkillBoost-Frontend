@@ -2,15 +2,33 @@ import styles from './CoursePage.module.scss'
 import Image from 'next/image'
 import Rating from '@mui/material/Rating'
 import Stack from '@mui/material/Stack'
+import Link from 'next/link'
+import { Breadcrumbs } from '@/shared/ui/BreadCrumbs/BreadCrumbs'
 
 export default function CoursePage() {
+  const breadcrumbs = [
+    {
+      title: 'HomePage',
+      href: '/'
+    },
+    {
+      title: 'Categories',
+      href: '/categories'
+    },
+    {
+      title: 'Course',
+      href: '',
+      arrow: true
+    }
+  ]
   return (
     <div className={styles.container}>
+      <Breadcrumbs items={breadcrumbs} />
       <div className={styles.containerRatingDiscount}>
         <div className={styles.containerRating}>
-          <h1 className={styles.mainTitle}>
+          <h2 className={styles.mainTitle}>
             Introduction to User Experience Design
-          </h1>
+          </h2>
           <p className={styles.paragraphText}>
             This course is meticulously crafted to provide you with a
             foundational understanding of the principles, methodologies, and
@@ -18,17 +36,17 @@ export default function CoursePage() {
             landscape.
           </p>
           <div className={styles.containerStartHoursLectures}>
-            <div className={styles.itemNumber}>4.6</div>
+            <p className={styles.itemNumber}>4.6</p>
             <div className={styles.itemStars}>
               <Stack spacing={1}>
                 <Rating name='half-rating' defaultValue={2.5} precision={0.5} />
               </Stack>
             </div>
-            <div className={styles.ItemRatingHoursLectures}>
+            <p className={styles.ItemRatingHoursLectures}>
               (651651 rating) | 22 Total Hours. 155 Lectures. All levels
-            </div>
+            </p>
           </div>
-          <div className={styles.containerPhotoName}>
+          <div className={styles.containerMentorGap}>
             <div className={styles.itemPhoto}>
               <Image
                 className={styles.instructorPhoto}
@@ -38,9 +56,12 @@ export default function CoursePage() {
                 height={40}
               />
             </div>
-            <div className={styles.itemName}>Created by Ronal Richards</div>
+            <p style={{ color: '#334155' }}>
+              Created by{' '}
+              <span style={{ color: '#2563eb' }}>Ronal Richards</span>
+            </p>
           </div>
-          <div className={styles.containerWorldIconLanguages}>
+          <div className={styles.containerMentorGap}>
             <div className={styles.itemWordIcon}>
               <Image
                 className={styles.instructorPhoto}
@@ -50,13 +71,11 @@ export default function CoursePage() {
                 height={20}
               />
             </div>
-            <div className={styles.itemLanguages}>
+            <p className={styles.itemLanguages}>
               English, Spanish, Italian, German
-            </div>
+            </p>
           </div>
-              </div>
-              
-
+        </div>
         <div className={styles.containerDiscount}>
           <Image
             className={styles.discountPhoto}
@@ -71,69 +90,67 @@ export default function CoursePage() {
             <p className={styles.discountPercent}>50% Off</p>
           </div>
           <div className={styles.containerButtons}>
-            <div className={styles.blackButton}>Label</div>
-            <div className={styles.whiteButton}>Label</div>
+            <p className={styles.mentorButton}>Add to Cart</p>
+            <p className={styles.mentorButton}>Buy Now</p>
           </div>
           <p className={styles.shareText}>Share</p>
-          <div>
-            <ul className={styles.footerColumnSoc}>
-              <li className={styles.footerSocIcon}>
-                <a href='#'>
-                  <Image
-                    src='/icons/icon-fb.svg'
-                    alt='SkillBoost'
-                    className={styles.footerSocImg}
-                    width={40}
-                    height={40}
-                  />
-                </a>
-              </li>
-              <li className={styles.footerSocIcon}>
-                <a href='#'>
-                  <Image
-                    src='/icons/icon-github.svg'
-                    alt='SkillBoost'
-                    className={styles.footerSocImg}
-                    width={40}
-                    height={40}
-                  />
-                </a>
-              </li>
-              <li className={styles.footerSocIcon}>
-                <a href='#'>
-                  <Image
-                    src='/icons/icon-google.svg'
-                    alt='SkillBoost'
-                    className={styles.footerSocImg}
-                    width={40}
-                    height={40}
-                  />
-                </a>
-              </li>
-              <li className={styles.footerSocIcon}>
-                <a href='#'>
-                  <Image
-                    src='/icons/icon-x.svg'
-                    alt='SkillBoost'
-                    className={styles.footerSocImg}
-                    width={40}
-                    height={40}
-                  />
-                </a>
-              </li>
-              <li className={styles.footerSocIcon}>
-                <a href='#'>
-                  <Image
-                    src='/icons/icon-microsoft.svg'
-                    alt='SKILLBOOST'
-                    className={styles.footerSocImg}
-                    width={40}
-                    height={40}
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul className={styles.footerColumnSoc}>
+            <li className={styles.footerSocIcon}>
+              <Link href='#'>
+                <Image
+                  src='/icons/icon-fb.svg'
+                  alt='SkillBoost'
+                  className={styles.footerSocImg}
+                  width={40}
+                  height={40}
+                />
+              </Link>
+            </li>
+            <li className={styles.footerSocIcon}>
+              <Link href='#'>
+                <Image
+                  src='/icons/icon-github.svg'
+                  alt='SkillBoost'
+                  className={styles.footerSocImg}
+                  width={40}
+                  height={40}
+                />
+              </Link>
+            </li>
+            <li className={styles.footerSocIcon}>
+              <Link href='#'>
+                <Image
+                  src='/icons/icon-google.svg'
+                  alt='SkillBoost'
+                  className={styles.footerSocImg}
+                  width={40}
+                  height={40}
+                />
+              </Link>
+            </li>
+            <li className={styles.footerSocIcon}>
+              <Link href='#'>
+                <Image
+                  src='/icons/icon-x.svg'
+                  alt='SkillBoost'
+                  className={styles.footerSocImg}
+                  width={40}
+                  height={40}
+                />
+              </Link>
+            </li>
+            <li className={styles.footerSocIcon}>
+              <Link href='#'>
+                <Image
+                  src='/icons/icon-microsoft.svg'
+                  alt='Skillboost'
+                  className={styles.footerSocImg}
+                  width={40}
+                  height={40}
+                />
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

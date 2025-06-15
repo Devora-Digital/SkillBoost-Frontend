@@ -1,159 +1,254 @@
 @use '@/shared/styles/mixins' as *;
 @use '@/shared/styles/variables' as *;
 
-
 .container {
-    background: $profile-aside; // background: rgb(248, 250, 252);
+    background: $profile-aside;
     padding: 13px 80px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 
     .containerRatingDiscount {
         display: flex;
         justify-content: space-between;
+        gap: 40px;
+        align-items: flex-start;
 
         .containerRating {
-            gap: 10px;
+            flex: 1;
+            max-width: 60%;
 
             .mainTitle {
-                color: $login-color-title; // color: rgb(15, 23, 42);
+                color: $login-color-title;
                 font-size: 40px;
                 font-weight: 700;
                 line-height: 140%;
-                max-width: 840px;
                 margin-top: 20px;
+                margin-bottom: 0;
             }
 
             .paragraphText {
-                color: #0f172a; // color: rgb(51, 65, 85); 
-                @include FooterText;
-                line-height: 160%;
-                max-width: 729px;
+                @include MentorText;
+                max-width: 800px;
                 margin-top: 20px;
+                margin-bottom: 0;
             }
 
-            .containerStartHoursLectures{
+            .containerStartHoursLectures {
                 display: flex;
-                justify-content: flex-start;
-                color: $header-text-color; // color: rgb(51, 65, 85);
+                color: $header-text-color;
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 150%;
                 align-items: center;
-                gap: 5px;
-                max-height: 50px;
+                gap: 8px;
                 margin-top: 24px;
+
+                .itemNumber {
+                    color: $login-color-title;
+                    font-weight: 600;
+                    margin: 0;
+                }
+
+                .itemStars {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .ItemRatingHoursLectures {
+                    margin: 0;
+                }
             }
 
-            .containerPhotoName{
+            .containerMentorGap {
                 display: flex;
-                justify-content: flex-start;
                 align-items: center;
-                gap: 5px;
-                max-height: 50px;
+                gap: 8px;
                 margin-top: 24px;
-            }
 
-            .containerWorldIconLanguages{
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                gap: 5px;
-                max-height: 50px;
-                margin-top: 24px;
-            }  
+                .itemPhoto {
+                    display: flex;
+                    align-items: center;
+
+                    .instructorPhoto {
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+                .itemWordIcon {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .itemLanguages {
+                    color: $header-text-color;
+                    font-size: 14px;
+                    margin: 0;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 14px;
+
+                    span {
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            color: darken(#2563eb, 10%);
+                        }
+                    }
+                }
+            }
         }
+
         .containerDiscount {
-            max-width: 400px;
+            flex-shrink: 0;
+            width: 320px;
             box-sizing: border-box;
-            border: 1px solid rgb(226, 232, 240);
+            border: 1px solid $profile-grey-color;
             border-radius: 16px;
             box-shadow: 0px 0px 8px 0px rgba(59, 130, 246, 0.12);
-            background: rgb(255, 255, 255);
+            background: $white-color;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-            .discountPhoto{
-                padding: 10px;
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0px 4px 16px 0px rgba(59, 130, 246, 0.18);
             }
 
-            .containerPrice{
+            .discountPhoto {
+                width: 100%;
+                height: auto;
+                display: block;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            .containerPrice {
                 display: flex;
-                justify-content: flex-start;
-                gap: 10px;
-                margin: 8px;
+                gap: 12px;
+                margin: 16px;
                 align-items: center;
 
-                
-                .lastPrice{
-                    color: rgb(15, 23, 42);
+                .lastPrice {
+                    color: #0f172a;
                     font-size: 24px;
                     font-weight: 600;
                     line-height: 140%;
+                    margin: 0;
                 }
-                .firstPrice{
-                    color: $header-text-color; 
-                    font-size: 18px;
-                    font-weight: 600;
-                    line-height: 160%;
+
+                .firstPrice {
+                    @include heading_5;
+                    color: $header-text-color;
                     text-decoration: line-through;
+                    margin: 0;
                 }
-                .discountPercent{
-                    color: rgb(22, 163, 74);
-                    font-size: 20px;
+
+                .discountPercent {
+                    @include heading_4;
+                    color: $green-discount;
+                    background: rgba($green-discount, 0.1);
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                    font-size: 14px;
                     font-weight: 600;
-                    line-height: 150%;
+                    margin: 0;
                 }
             }
-            
-            .shareText{
-                color: rgb(15, 23, 42);
+
+            .containerButtons {
+                border-bottom: 1px solid $profile-grey-color;
+                padding: 0 16px 24px 16px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .mentorButton {
+                    margin: 0;
+                    padding: 16px;
+                    box-sizing: border-box;
+                    border: 1px solid $profile-grey-color;
+                    border-radius: 8px;
+                    background: $white-color;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-align: center;
+                    transition: all 0.3s ease;
+                    display: block;
+
+                    &:hover {
+                        background: lighten($profile-grey-color, 5%);
+                        border-color: darken($profile-grey-color, 10%);
+                        transform: translateY(-1px);
+                    }
+
+                    &:nth-child(2) {
+                        background: $black-color;
+                        color: $white-color;
+                        border-color: $black-color;
+
+                        &:hover {
+                            background: lighten($black-color, 10%);
+                            transform: translateY(-1px);
+                        }
+                    }
+
+                    &:active {
+                        transform: translateY(0);
+                    }
+                }
+            }
+
+            .shareText {
+                margin: 16px;
+                color: $login-color-title;
                 font-size: 16px;
                 font-weight: 500;
+                line-height: 160%;
             }
 
-            .whiteButton {
-                margin: 8px;
-                padding: 16px;
-                box-sizing: border-box;
-                border: 1px solid $profile-grey-color;
-                border-radius: 8px;
-                background: $white-color;
-                cursor: pointer;
-                font-size: 14px;
-                font-weight: 500;
-                text-align: center;
-            }
-
-            .blackButton {
-                margin: 8px;
-                padding: 16px;
-                box-sizing: border-box;
-                border: 1px solid $profile-grey-color;
-                border-radius: 8px;
-                background: $black-color;
-                cursor: pointer;
-                font-size: 14px;
-                font-weight: 500;
-                text-align: center;    
-                color: $white-color;            
-            }
-            
-            .shareText {
-               margin: 8px; 
-            }
             .footerColumnSoc {
-                    margin-top: 16px;
-                    display: flex;
-                    flex-direction: row;
-                    gap: 6px;
+                margin: 0 16px 16px 16px;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+                justify-content: flex-start;
+
+                .footerSocIcon {
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: translateY(-2px);
+                    }
+
+                    a {
+                        display: block;
+                        transition: opacity 0.3s ease;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
 
                     .footerSocImg {
                         background-color: $white-color;
                         border-radius: 50%;
-                        padding: 4px;
-                        
+                        padding: 8px;
+                        border: 1px solid rgba($profile-grey-color, 0.3);
+                        transition: all 0.3s ease;
+                        display: block;
 
+                        &:hover {
+                            border-color: $profile-grey-color;
+                            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+                        }
                     }
                 }
+            }
         }
     }
 }
