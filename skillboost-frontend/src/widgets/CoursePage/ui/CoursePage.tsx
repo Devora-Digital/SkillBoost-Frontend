@@ -79,7 +79,7 @@ export default function CoursePage() {
         <div className={styles.containerDiscount}>
           <Image
             className={styles.discountPhoto}
-            src='/assets/image-discount.svg'
+            src='/assets/img-course.png'
             alt='SkillBoost'
             width={280}
             height={200}
