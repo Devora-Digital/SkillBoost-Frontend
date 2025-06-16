@@ -94,57 +94,57 @@ export default function CoursePage() {
             <p className={styles.mentorButton}>Buy Now</p>
           </div>
           <p className={styles.shareText}>Share</p>
-          <ul className={styles.footerColumnSoc}>
-            <li className={styles.footerSocIcon}>
+          <ul className={styles.mentorColumnSoc}>
+            <li className={styles.mentorSocIcon}>
               <Link href='#'>
                 <Image
                   src='/icons/icon-fb.svg'
                   alt='SkillBoost'
-                  className={styles.footerSocImg}
+                  className={styles.mentorSocImg}
                   width={40}
                   height={40}
                 />
               </Link>
             </li>
-            <li className={styles.footerSocIcon}>
+            <li className={styles.mentorSocIcon}>
               <Link href='#'>
                 <Image
                   src='/icons/icon-github.svg'
                   alt='SkillBoost'
-                  className={styles.footerSocImg}
+                  className={styles.mentorSocImg}
                   width={40}
                   height={40}
                 />
               </Link>
             </li>
-            <li className={styles.footerSocIcon}>
+            <li className={styles.mentorSocIcon}>
               <Link href='#'>
                 <Image
                   src='/icons/icon-google.svg'
                   alt='SkillBoost'
-                  className={styles.footerSocImg}
+                  className={styles.mentorSocImg}
                   width={40}
                   height={40}
                 />
               </Link>
             </li>
-            <li className={styles.footerSocIcon}>
+            <li className={styles.mentorSocIcon}>
               <Link href='#'>
                 <Image
                   src='/icons/icon-x.svg'
                   alt='SkillBoost'
-                  className={styles.footerSocImg}
+                  className={styles.mentorSocImg}
                   width={40}
                   height={40}
                 />
               </Link>
             </li>
-            <li className={styles.footerSocIcon}>
+            <li className={styles.mentorSocIcon}>
               <Link href='#'>
                 <Image
                   src='/icons/icon-microsoft.svg'
                   alt='Skillboost'
-                  className={styles.footerSocImg}
+                  className={styles.mentorSocImg}
                   width={40}
                   height={40}
                 />

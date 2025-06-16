@@ -40,6 +40,10 @@
                 line-height: 140%;
             }
         }
+
+        .containerPhoto {
+            margin-right: 8px;
+        }
     }
 
     .containerInstructorInfoButtons {
@@ -69,6 +73,7 @@
         .containerSocialMediaButtons {
             display: flex;
             flex-direction: column;
+
             .socialMediaButton {
                 margin: 8px;
                 padding: 16px 0;

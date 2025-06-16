@@ -1,10 +1,10 @@
 @use '@/shared/styles/mixins' as *;
 @use '@/shared/styles/variables' as *;
+@use "sass:color";
 
 .container {
     background: $profile-aside;
     padding: 13px 80px;
-    margin: 20px 0;
 
     .containerRatingDiscount {
         display: flex;
@@ -93,7 +93,7 @@
                         transition: color 0.3s ease;
 
                         &:hover {
-                            color: darken(#2563eb, 10%);
+                            color: color.adjust(#2563eb, $lightness: -10%);
                         }
                     }
                 }
@@ -179,8 +179,8 @@
                     display: block;
 
                     &:hover {
-                        background: lighten($profile-grey-color, 5%);
-                        border-color: darken($profile-grey-color, 10%);
+                        background: color.adjust($profile-grey-color, $lightness: 5%);
+                        border-color: color.adjust($profile-grey-color, $lightness: -10%);
                         transform: translateY(-1px);
                     }
 
@@ -190,7 +190,7 @@
                         border-color: $black-color;
 
                         &:hover {
-                            background: lighten($black-color, 10%);
+                            background: color.adjust(#000, $lightness: 10%);
                             transform: translateY(-1px);
                         }
                     }
@@ -209,7 +209,7 @@
                 line-height: 160%;
             }
 
-            .footerColumnSoc {
+            .mentorColumnSoc {
                 margin: 0 16px 16px 16px;
                 padding: 0;
                 list-style: none;
@@ -218,7 +218,7 @@
                 gap: 8px;
                 justify-content: flex-start;
 
-                .footerSocIcon {
+                .mentorSocIcon {
                     transition: transform 0.3s ease;
 
                     &:hover {
@@ -234,7 +234,7 @@
                         }
                     }
 
-                    .footerSocImg {
+                    .mentorSocImg {
                         background-color: $white-color;
                         border-radius: 50%;
                         padding: 8px;
