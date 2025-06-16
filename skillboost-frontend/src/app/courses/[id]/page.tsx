@@ -1,3 +1,9 @@
-export default function CoursePage({ params }: { params: { id: string } }) {
-  return <h1>Course detail: {params.id}</h1>
+import { CoursePage } from '@/widgets/CoursePage'
+
+export default function PageCourse() {
+  return (
+    <>
+      <CoursePage />
+    </>
+  )
 }

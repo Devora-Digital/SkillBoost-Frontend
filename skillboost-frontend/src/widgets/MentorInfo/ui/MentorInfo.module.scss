@@ -1,99 +1,138 @@
 @use '@/shared/styles/mixins' as *;
 @use '@/shared/styles/variables' as *;
 
-.containerNamePhoto {
-    color: $login-color-title;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 13px 80px 0;
-    margin-top: 20px;
-    // border-bottom: 1px solid $profile-grey-color;
+.container {
+    padding: 13px 80px;
+    margin: 20px 0;
 
-    .containerNameInstructor {
-        max-width: 297px;
+    .containerNamePhoto {
+        color: $login-color-title;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
 
-        .containerText {
+        .mentorText {
             @include small_text;
-            color: $header-text-color; // color: rgb(51, 65, 85);
+            color: $header-text-color;
         }
 
-        .name {
+        .mentorName {
             @include heading_2;
-        }
-
-        .skills {
-            @include small_text;
-            margin-bottom: 16px;
-            color: $header-text-color; // color: rgb(51, 65, 85);
         }
 
         .totalReviews {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-right: 25px;
-        }
+            margin: 16px 25px 0 0;
 
-        .containerBoldText {
-            font-weight: 600;
-            font-size: 24px;
-            color: $login-color-title; // color: rgb(15, 23, 42);
-            line-height: 140%;
-        }
-    }
+            .totalTitle {
+                font-weight: 400;
+                font-size: 14px;
+                color: $header-text-color;
+                line-height: 150%;
+            }
 
-}
-
-.containerInstructorInfoButtons {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 0 80px 13px;
-
-    .containerInfoInstructor {
-        max-width: 840px;
-
-        .titleAboutInstructor {
-            @include MentorTitle;
-        }
-
-        .infoText {
-            @include MentorText;
-        }
-
-        .containerTitle {
-            @include MentorTitle;
-        }
-
-        .listExpertise {
-            @include MentorText;
-            list-style: disc;
-            margin-left: 20px;
-            padding: 0;
-        }
-    }
-
-    .containerSocialMediaButtons {
-        align-items: center;
-
-        .socialMediaButton {
-            margin: 8px;
-            padding: 16px;
-            width: 200px;
-            height: 48px;
-            box-sizing: border-box;
-            border: 1px solid $profile-grey-color;
-            border-radius: 8px;
-            background: $white-color;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            text-align: center;
-
-            &:hover {
-                background-color: $footer-main-color;
+            .totalText {
+                font-weight: 600;
+                font-size: 24px;
+                color: $login-color-title;
+                line-height: 140%;
             }
         }
+    }
+
+    .containerInstructorInfoButtons {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .containerInfoInstructor {
+            max-width: 840px;
+
+            .containerInstructorTitle {
+                @include MentorTitle;
+            }
+
+            .containerInstructorText {
+                @include MentorText;
+            }
+
+            .listExpertise {
+                @include MentorText;
+                list-style: disc;
+                margin-left: 20px;
+                padding: 0;
+            }
+        }
+
+        .containerSocialMediaButtons {
+            display: flex;
+            flex-direction: column;
+            .socialMediaButton {
+                margin: 8px;
+                padding: 16px 0;
+                min-width: 200px;
+                box-sizing: border-box;
+                border: 1px solid $button-border;
+                background-color: $white-color;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: center;
+                color: $header-secondary-color;
+                transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+
+                &:hover {
+                    background: $profile-aside;
+                    box-shadow: 0 2px 8px #0000000d, 0 4px 16px #00000014;
+                    color: $button-border;
+                    transform: translateY(-1px);
+                }
+            }
+        }
+    }
+
+    .reviewsTitle {
+        margin: 25px 0;
+        @include heading_4;
+    }
+
+    .containerRatingReviews {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 10px;
+
+        .containerImgStarRatingReviews {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 16px;
+
+            .containerImgStar {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .containerTotalReviewsText {
+                color: $header-text-color;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+                margin-top: 3px;
+            }
+        }
+
+        .containerReviewStar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            color: $header-text-color;
+        }
+
     }
 }

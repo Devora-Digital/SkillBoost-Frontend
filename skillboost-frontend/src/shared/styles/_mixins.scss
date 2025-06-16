@@ -20,6 +20,13 @@
 
 }
 
+@mixin heading_4 {
+    color: $login-color-title;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
 @mixin heading_5 {
     color: $login-color-title;
     font-size: 18px;
@@ -56,6 +63,6 @@
     height: 30px;
     font-weight: 600;
     font-size: 20px;
-    color: $login-color-title; // color: rgb(15, 23, 42);
+    color: $login-color-title; 
     line-height: 150%
 }
