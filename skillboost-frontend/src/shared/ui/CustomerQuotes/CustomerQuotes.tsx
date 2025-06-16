@@ -37,7 +37,9 @@ export default function CustomerQuotes() {
               </button>
             </div>
           </div>
-          <div className={`${styles.quotes_block_quotes} embla__container`} ref={emblaRef} >
+          {/* <div className={`${styles.quotes_block_quotes} embla__container`} ref={emblaRef} > */}
+          <div className={`${styles.quotes_block_quotes} embla__container`} >
+              <div className={`${styles.embla__container} embla__container`} ref={emblaRef} >
                 {groupedQuotes.map((group, index) => (
                     // <div key={index} className={`embla__slide ${styles.quotes_block_quotes_item}`} >
                     // Реагирует на embla__slide
@@ -49,6 +51,7 @@ export default function CustomerQuotes() {
                       })}
                     </div>
                 ))}
+              </div>
           </div>
         </div>
     )
