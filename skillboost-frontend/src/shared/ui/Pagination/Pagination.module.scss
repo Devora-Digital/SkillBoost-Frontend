@@ -1,0 +1,53 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+
+    .paginationButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 6px;
+        border: 1px solid $profile-grey-color;
+        background-color: $white-color;
+        color: $header-secondary-color;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        &:hover:not(:disabled):not(.paginationActive) {
+            background-color: $footer-main-color;
+        }
+    }
+
+    .paginationActive {
+        background-color: $light-blue;
+        border-color: $light-blue;
+        color: $white-color;
+
+        &:hover {
+            background-color: $pagination-blue;
+            border-color: $pagination-blue;
+        }
+    }
+
+    .paginationEllipsis {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        color: $header-secondary-color;
+    }
+}

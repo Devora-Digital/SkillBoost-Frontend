@@ -1,0 +1,165 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+
+.filterWrapper {
+  position: relative;
+  min-width: 120px;
+
+  .filterButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border: 1px solid $profile-grey-color;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: $white-color;
+    min-width: 120px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    color: $login-color-title;
+    gap: 8px;
+
+    &.hasFilters {
+      border-color: $light-blue;
+      background-color: $sort-filter-bg;
+    }
+
+    .filterButtonText {
+      flex: 1;
+      text-align: left;
+    }
+
+    .filterIcon {
+      color: $header-secondary-color;
+    }
+
+    .arrowIcon {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.3s ease;
+      color: $header-secondary-color;
+
+      &.arrowIconOpen {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .filterDropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 0;
+    background: $white-color;
+    border: 1px solid $profile-grey-color;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px $black-shadow;
+    z-index: 10;
+    padding: 12px;
+    width: 280px;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: all 0.2s ease;
+    pointer-events: none;
+
+    &.filterDropdownOpen {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  .filterTabs {
+    display: flex;
+    border-bottom: 1px solid $profile-grey-color;
+    margin-bottom: 12px;
+  }
+
+  .filterTab {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: $header-secondary-color;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 8px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: transparent;
+    }
+
+    &.activeTab {
+      color: $login-color-title;
+      font-weight: 600;
+
+      &:after {
+        background: $login-color-title;
+      }
+    }
+  }
+
+  .filterOptions {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 12px;
+  }
+
+  .filterTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .filterTag {
+    padding: 6px 12px;
+    font-size: 14px;
+    color: $login-color-title;
+    background: $footer-main-color;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+
+    &:hover {
+      background: $profile-grey-color;
+    }
+
+    &.activeTag {
+      background: $login-color-title;
+      color: $white-color;
+    }
+  }
+
+  .filterFooter {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 12px;
+    border-top: 1px solid $profile-grey-color;
+  }
+
+  .resetButton {
+    background: none;
+    border: none;
+    color: $light-blue;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 8px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+
+.sortContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    .sortLabel {
+        font-size: 16px;
+        color: $login-color-title;
+        white-space: nowrap;
+        margin: 0;
+    }
+
+    .selectWrapper {
+        position: relative;
+        min-width: 120px;
+
+        .selectButton {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            border: 1px solid $profile-grey-color;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: $white-color;
+            min-width: 120px;
+            transition: all 0.2s ease;
+            font-size: 14px;
+            color: $login-color-title;
+            gap: 8px;
+            border-color: $profile-grey-color;
+
+            &.hasFilters {
+                border-color: $light-blue;
+                background-color: $sort-filter-bg;
+            }
+
+            .selectButtonText {
+                flex: 1;
+            }
+
+            .arrowIcon {
+                width: 16px;
+                height: 16px;
+                transition: transform 0.3s ease;
+                color: $header-secondary-color;
+
+                &.arrowIconOpen {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .selectDropdown {
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 0;
+            right: 0;
+            background: $white-color;
+            border: 1px solid $profile-grey-color;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px $black-shadow;
+            z-index: 10;
+            transform: translateY(-10px);
+            opacity: 0;
+            transition: all 0.2s ease;
+            pointer-events: none;
+
+            &.selectDropdownOpen {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            .selectOption {
+                padding: 8px 12px;
+                font-size: 14px;
+                color: $login-color-title;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                background: none;
+                border: none;
+
+                &:hover {
+                    background-color: $footer-main-color;
+                }
+
+                &.activeOption {
+                    background-color: $profile-grey-color;
+                    font-weight: 600;
+                }
+
+                .checkmark {
+                    color: $light-blue;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

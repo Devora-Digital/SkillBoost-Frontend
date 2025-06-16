@@ -1,0 +1,134 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+
+.tabContainer {
+    .tabTopNav {
+        margin-bottom: 17px;
+
+        .tabCount {
+            font-size: 20px;
+            font-weight: 600;
+            color: $login-color-title;
+            margin-bottom: 18px;
+        }
+
+        .activeFiltersContainer {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+
+            .activeFilters {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                flex: 1;
+            }
+
+            .activeFilter {
+                background: $footer-main-color;
+                padding: 6px 12px;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                color: $login-color-title;
+            }
+
+            .removeFilterButton {
+                background: none;
+                border: none;
+                margin-left: 6px;
+                cursor: pointer;
+                color: $header-secondary-color;
+                display: flex;
+                align-items: center;
+                padding: 0;
+
+                &:hover {
+                    color: $login-color-title;
+                }
+            }
+
+            .resetAllButton {
+                background: none;
+                border: none;
+                color: $light-blue;
+                cursor: pointer;
+                font-size: 14px;
+                padding: 0;
+                white-space: nowrap;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .tabFilterBox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+
+            .tabSearch {
+                border: 1px solid $profile-grey-color;
+                border-radius: 8px;
+                max-width: 300px;
+                width: 100%;
+
+                .tabSearchLabel {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                }
+
+                .tabSearchInput {
+                    border: none;
+                    outline: none;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $header-secondary-color;
+                    width: 100%;
+
+                    &::placeholder {
+                        color: $header-secondary-color;
+                    }
+                }
+            }
+
+            .tabSort {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .tabBoxCards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        min-height: 300px;
+
+        .noCourses {
+            grid-column: 1 / -1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .noCoursesText {
+                font-size: 20px;
+                font-weight: 500;
+                color: $login-color-title;
+                text-align: center;
+            }
+        }
+    }
+
+}

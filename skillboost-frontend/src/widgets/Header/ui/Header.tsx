@@ -1,3 +1,4 @@
+'use client'
 import { Bell, Heart, Search, ShoppingCart } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
@@ -19,7 +20,9 @@ export default function Header({ isAuthenticated }: HeaderProps) {
             width={20}
             height={30}
           />
-          <p className={styles.headerLogoText}>SkillBoost</p>
+          <Link className={styles.headerLogoText} href='/'>
+            SkillBoost
+          </Link>
         </div>
         <nav className={styles.headerNav}>
           <Link className={styles.headerNavLink} href='/categories'>
@@ -44,13 +47,19 @@ export default function Header({ isAuthenticated }: HeaderProps) {
           {isAuthenticated ? (
             <div className={styles.headerIcons}>
               <Heart className={styles.headerIcon} color='#64748B' />
-              <ShoppingCart className={styles.headerIcon} color='#64748B' />
+              <Link href='/cart'>
+                <ShoppingCart className={styles.headerIcon} color='#64748B' />
+              </Link>
               <Bell className={styles.headerIcon} color='#64748B' />
-              <div className={styles.headerIconProfile}>J</div>
+              <Link className={styles.headerIconProfile} href='/profile'>
+                J
+              </Link>
             </div>
           ) : (
             <div className={styles.headerAuth}>
-              <ShoppingCart className={styles.headerIcon} color='#64748B' />
+              <Link href='/cart'>
+                <ShoppingCart className={styles.headerIcon} color='#64748B' />
+              </Link>
               <Link href='/login'>
                 <button className={styles.headerAuthLogin}>Log In</button>
               </Link>

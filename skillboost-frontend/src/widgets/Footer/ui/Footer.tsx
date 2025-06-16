@@ -9,7 +9,7 @@ export default function Footer() {
           <div className={styles.footerLogo}>
             <Image
               className={styles.footerLogoIcon}
-              src='/icons/icon-logo.png'
+              src='/assets/icon-logo.png'
               alt='SkillBoost'
               width={20}
               height={30}
