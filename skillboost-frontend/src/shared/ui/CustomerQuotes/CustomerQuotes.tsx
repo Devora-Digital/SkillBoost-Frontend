@@ -11,6 +11,7 @@ export default function CustomerQuotes() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
     useEffect(() => {
         if (!emblaApi) return;
+        console.log("Количество embla__slide: ", emblaApi.scrollSnapList().length);
         const autoScroll = setInterval(() => {
             emblaApi.scrollNext()
         }, 5000)
@@ -38,12 +39,13 @@ export default function CustomerQuotes() {
             </div>
           </div>
           {/* <div className={`${styles.quotes_block_quotes} embla__container`} ref={emblaRef} > */}
-          <div className={`${styles.quotes_block_quotes} embla__container`} >
-              <div className={`${styles.embla__container} embla__container`} ref={emblaRef} >
+          <div className={styles.quotes_block_quotes}>
+              <div className={styles.embla__container} ref={emblaRef} >
                 {groupedQuotes.map((group, index) => (
                     // <div key={index} className={`embla__slide ${styles.quotes_block_quotes_item}`} >
                     // Реагирует на embla__slide
-                    <div key={index} className="embla__slide" >
+                    // <div key={index} className="embla__slide" >
+                    <div key={index} className={styles.embla__slide} >
                       {group.map((quote, index) => {
                         return (
                           <CustomerQuotesCard key={index} quote_text={quote.quote_text} author_name={quote.author_name} author_post={quote.author_post} />

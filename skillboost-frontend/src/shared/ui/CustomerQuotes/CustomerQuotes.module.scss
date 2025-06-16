@@ -6,22 +6,38 @@
 
     .embla__conatiner {
         display: flex !important;
-        /**/
         flex-direction: row !important;
-        gap: 20px;
-        flex-wrap: nowrap !important;
-        overflow: hidden;
-        white-space: nowrap;
+        overflow: visible !important;
     }
 
+    // .embla__conatiner {
+    //     display: flex !important;
+    //     /**/
+    //     flex-direction: row !important;
+    //     gap: 20px;
+    //     flex-wrap: nowrap !important;
+    //     overflow: hidden;
+    //     white-space: nowrap;
+    //     align-items: center !important;
+    //     transform: translateX(0) !important;
+    // }
+
     .embla__slide {
-        display: flex;
+        display: flex !important;
         flex-direction: row !important;
-        justify-content: space-between;
-        align-items: flex-start;
         gap: 20px;
-        flex-wrap: nowrap !important;
+        transform: translateX(0) !important;
     }
+
+    // .embla__slide {
+    //     display: flex !important;
+    //     flex-direction: row !important;
+    //     justify-content: space-between;
+    //     // align-items: flex-start;
+    //     gap: 20px;
+    //     flex-wrap: nowrap !important;
+    //     transform: translateX(0) !important;
+    // }
 
     // .embla__slide {
     //     // flex: 0 0 100%;
@@ -66,11 +82,11 @@
     }
 
     .quotes_block_quotes {
-        display: flex;
+        display: flex !important;
         gap: $primary-gap;
         margin: 0px 0px 64px 80px;
         /**/
-        flex-direction: row;
+        flex-direction: row !important;
         overflow: hidden;
 
         // .quotes_block_quotes_item {
