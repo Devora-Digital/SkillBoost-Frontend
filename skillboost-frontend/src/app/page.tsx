@@ -19,6 +19,7 @@ import DesignerPhoto from "@assets/Designer_image_01.jpeg"
 import { MainBanner } from '@/widgets/MainBanner'
 import MentorsItemCards from '@/shared/ui/MentorsItemCards/MentorsItemCards'
 import CustomerQuotes from '@/shared/ui/CustomerQuotes/CustomerQuotes'
+import CustomerQuotesSecond from '@/shared/ui/CustomerQuotesSecond/CustomerQuotesSecond'
 import styles from './page.module.scss'
 
 export default function Home() {
@@ -258,6 +259,8 @@ export default function Home() {
         <div className={styles.instructors_block}>
           <MentorsItemCards/>
         </div>
+        <CustomerQuotesSecond />
+        <p>Quotes 2</p>
         <CustomerQuotes />
         {/* <div className={styles.quotes_block}>
             <div className={styles.quotes_block_header}>
