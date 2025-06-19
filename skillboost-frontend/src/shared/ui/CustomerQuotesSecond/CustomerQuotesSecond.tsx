@@ -13,7 +13,8 @@ export default function CustomerQuotesSecond() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
     useEffect(() => {
         if (!emblaApi) return;
-        console.log("Количество embla__slide: ", emblaApi.scrollSnapList().length);
+        console.log(styles.embla__container);
+        // console.log("Количество embla__slide: ", emblaApi.scrollSnapList().length);
         const autoScroll = setInterval(() => {
             emblaApi.scrollNext()
         }, 5000)

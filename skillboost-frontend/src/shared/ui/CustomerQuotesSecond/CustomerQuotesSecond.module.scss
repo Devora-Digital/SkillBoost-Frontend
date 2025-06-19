@@ -1,42 +1,37 @@
 @use '@/shared/styles/_variables.scss' as *;
 
 /*Embla*/
+.embla__container {
+    display: flex !important;
+    transition: transform 0.3s ease !important;
+    will-change: transform;
+}
+
+.embla__slide {
+    flex: 0 0 100% !important;
+    display: flex !important;
+    justify-content: flex-start;
+    // flex-direction: row;
+    gap: 20px;
+}
+
 .embla {
-    width: 1440px;
+    width: 100%;
+    overflow: hidden;
 
-    .embla__container {
-        display: flex;
-        flex-direction: row;
-        overflow: visible;
-    }
-
-    .embla__slide {
-        display: flex !important;
-        flex-direction: row !important;
-        gap: 20px;
-        transform: translateX(0) !important;
-        /**/
-        justify-content: space-between;
-    }
+    // .embla__container {
+    //     display: flex;
+    //     flex-direction: row;
+    //     overflow: visible;
+    // }
 
     // .embla__slide {
     //     display: flex !important;
     //     flex-direction: row !important;
-    //     justify-content: space-between;
-    //     // align-items: flex-start;
     //     gap: 20px;
-    //     flex-wrap: nowrap !important;
     //     transform: translateX(0) !important;
-    // }
-
-    // .embla__slide {
-    //     // flex: 0 0 100%;
-    //     flex: 0 0 auto;
-    //     display: flex;
-    //     flex-direction: row;
-    //     gap: 16px;
-    //     // justify-content: center;
-    //     // align-items: center;
+    //     /**/
+    //     justify-content: space-between;
     // }
 }
 
@@ -44,6 +39,8 @@
 /*Quotes*/
 .quotes_block {
     background: #F8FAFC;
+    /**/
+    width: 100%;
 
     .quotes_block_header {
         display: flex;
@@ -78,8 +75,11 @@
         /**/
         flex-direction: row !important;
         flex-wrap: nowrap !important;
+        /**/
         width: 100%;
         overflow: hidden;
+        /**/
+        position: relative;
 
         .quotes_block_quotes_item {
             display: flex;
