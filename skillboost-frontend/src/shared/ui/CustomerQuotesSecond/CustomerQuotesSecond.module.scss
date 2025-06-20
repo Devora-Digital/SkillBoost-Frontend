@@ -2,18 +2,40 @@
 
 /*Embla*/
 .embla__container {
+    scroll-snap-type: x mandatory;
+    /**/
     display: flex !important;
     transition: transform 0.3s ease !important;
     will-change: transform;
+    /**/
+    width: 200%; 
 }
 
+// .embla__container {
+//     display: flex !important;
+//     transition: transform 0.3s ease !important;
+//     will-change: transform;
+//     /**/
+//     width: calc(100% * 2);
+// }
+
 .embla__slide {
+    scroll-snap-align: start;
+    /**/
     flex: 0 0 100% !important;
     display: flex !important;
-    justify-content: flex-start;
-    // flex-direction: row;
-    gap: 20px;
+    gap: 20px;  
 }
+
+// .embla__slide {
+//     flex: 0 0 100% !important;
+//     display: flex !important;
+//     justify-content: flex-start;
+//     // flex-direction: row;
+//     gap: 20px;
+//     /**/
+//     width: 100%;
+// }
 
 .embla {
     width: 100%;
@@ -69,7 +91,8 @@
     }
 
     .quotes_block_quotes {
-        display: flex !important;
+        display: block !important;
+        // display: flex !important;
         gap: $primary-gap;
         margin: 0px 0px 64px 80px;
         /**/

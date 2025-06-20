@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useState, useEffect } from "react"
 import useEmblaCarousel from "embla-carousel-react"
 import Image from "next/image"
 import { LucideChevronLeft, LucideChevronRight } from "lucide-react"
@@ -10,22 +10,29 @@ import { customersQuotes, customerQuote } from "@/data/customerQuotesData"
 import styles from "./CustomerQuotesSecond.module.scss"
 
 export default function CustomerQuotesSecond() {
+    const chunkArray = <T,>(array: T[], size: number): T[][] => {
+      return Array.from({ length: Math.ceil(array.length / size) }, (_, i) =>
+          array.slice(i * size, i * size + size)
+      );
+    }
+    const groupedQuotes = chunkArray(customersQuotes, 3);
+    const shouldInitCarousel = groupedQuotes.length > 1;
+    const [containerNode, setContainerNode] = useState<HTMLDivElement | null>(null);
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
     useEffect(() => {
-        if (!emblaApi) return;
-        console.log(styles.embla__container);
-        // console.log("Количество embla__slide: ", emblaApi.scrollSnapList().length);
+        // if (!emblaApi) return;
+        // if (!emblaApi || groupedQuotes.length  < 1) return;
+        if (!emblaApi || !containerNode) return;
+        console.log("container scrollWidth:", containerNode.scrollWidth)
+        console.log("wrapper clientWidth:", containerNode.parentElement?.clientWidth)
+        console.log('Второй компонент количество слайдов Scroll Snap List:', emblaApi.scrollSnapList().length);
+        // console.log('Второй компонент Selected Scroll Snap:', emblaApi.selectedScrollSnap());
         const autoScroll = setInterval(() => {
             emblaApi.scrollNext()
         }, 5000)
         return () => clearInterval(autoScroll)
-    }, [emblaApi])
-    const chunkArray = <T,>(array: T[], size: number): T[][] => {
-        return Array.from({ length: Math.ceil(array.length / size) }, (_, i) =>
-            array.slice(i * size, i * size + size)
-        );
-    }
-    const groupedQuotes = chunkArray(customersQuotes, 3)
+      }, [emblaApi, containerNode])
+    // }, [emblaApi, groupedQuotes])
     return (
         <div className={styles.quotes_block} >
           <div className={styles.quotes_block_header}>
@@ -43,8 +50,14 @@ export default function CustomerQuotesSecond() {
           </div>
           {/* <div className={`${styles.quotes_block_quotes} embla__container`} ref={emblaRef} > */}
           <div className={styles.quotes_block_quotes}>
-              <div className={styles.embla__container} ref={emblaRef} >
-                {groupedQuotes.map((group, index) => (
+              {/* <div className={styles.embla__container} ref={emblaRef} > */}
+              <div className={styles.embla__container} ref={(node) => {
+                setContainerNode(node);
+                emblaRef(node);
+              }} >
+                {/* {groupedQuotes.map((group, index) => ( */}
+                {groupedQuotes.length > 0 && groupedQuotes.map((group, index) => (
+                  group.length > 0 && (
                     <div key={index} className={styles.embla__slide} >
                       {group.map((quote, index) => (
                           <div key={index} className={styles.quotes_block_quotes_item}>
@@ -69,6 +82,7 @@ export default function CustomerQuotesSecond() {
                           </div>
                       ))}
                     </div>
+                  )
                 ))}
               </div>
           </div>
