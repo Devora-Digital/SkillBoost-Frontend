@@ -16,17 +16,20 @@ export default function CustomerQuotesSecond() {
       );
     }
     const groupedQuotes = chunkArray(customersQuotes, 3);
-    const shouldInitCarousel = groupedQuotes.length > 1;
+    // const shouldInitCarousel = groupedQuotes.length > 1;
     const [containerNode, setContainerNode] = useState<HTMLDivElement | null>(null);
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
+    // const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false })
     useEffect(() => {
         // if (!emblaApi) return;
         // if (!emblaApi || groupedQuotes.length  < 1) return;
         if (!emblaApi || !containerNode) return;
-        console.log("container scrollWidth:", containerNode.scrollWidth)
-        console.log("wrapper clientWidth:", containerNode.parentElement?.clientWidth)
-        console.log('Второй компонент количество слайдов Scroll Snap List:', emblaApi.scrollSnapList().length);
-        // console.log('Второй компонент Selected Scroll Snap:', emblaApi.selectedScrollSnap());
+        // console.log("container scrollWidth:", containerNode.scrollWidth)
+        // console.log("wrapper clientWidth:", containerNode.parentElement?.clientWidth)
+        // console.log('Второй компонент Scroll Snap List:', emblaApi.scrollSnapList());
+        // console.log('Второй компонент количество слайдов Scroll Snap List:', emblaApi.scrollSnapList().length);
+        console.log('DOM слайдов:', document.querySelectorAll('.embla__slide').length);
+        console.log('snapList:', emblaApi?.scrollSnapList().length);
         const autoScroll = setInterval(() => {
             emblaApi.scrollNext()
         }, 5000)
@@ -48,44 +51,45 @@ export default function CustomerQuotesSecond() {
               </button>
             </div>
           </div>
-          {/* <div className={`${styles.quotes_block_quotes} embla__container`} ref={emblaRef} > */}
-          <div className={styles.quotes_block_quotes}>
-              {/* <div className={styles.embla__container} ref={emblaRef} > */}
-              <div className={styles.embla__container} ref={(node) => {
-                setContainerNode(node);
-                emblaRef(node);
-              }} >
-                {/* {groupedQuotes.map((group, index) => ( */}
-                {groupedQuotes.length > 0 && groupedQuotes.map((group, index) => (
-                  group.length > 0 && (
-                    <div key={index} className={styles.embla__slide} >
-                      {group.map((quote, index) => (
-                          <div key={index} className={styles.quotes_block_quotes_item}>
-                            <Image src={QuoteMarkIcon} alt='Quote mark icon' />
-                            <p className={styles.quotes_block_quote_text}>
-                              &quot;Byway&apos;s tech courses are top-notch! As someone
-                              who&apos;s always looking to stay ahead in the rapidly evolving
-                              tech world, I appreciate the up-to-date content and engaging
-                              multimedia.
-                            </p>
-                            <div className={styles.quotes_block_author}>
-                              <Image
-                                src={DesignerPhoto}
-                                className={styles.quotes_block_author_photo}
-                                alt='Designer photo'
-                              />
-                              <div className={styles.quotes_block_author_inside}>
-                                <p className={styles.quotes_block_author_name}>Jane Doe</p>
-                                <p className={styles.quotes_block_author_post}>Designer</p>
+            {groupedQuotes.length > 0 && (
+              <div className={styles.quotes_block_quotes} key={groupedQuotes.length} >
+                  {/* <div className={styles.embla__container} ref={emblaRef} > */}
+                  <div className={styles.embla__container} ref={(node) => {
+                    setContainerNode(node);
+                    emblaRef(node);
+                  }} >
+                    {/* {groupedQuotes.map((group, index) => ( */}
+                    {groupedQuotes.length > 0 && groupedQuotes.map((group, index) => (
+                      group.length > 0 && (
+                        <div key={index} className={styles.embla__slide} >
+                          {group.map((quote, index) => (
+                              <div key={index} className={styles.quotes_block_quotes_item}>
+                                <Image src={QuoteMarkIcon} alt='Quote mark icon' />
+                                <p className={styles.quotes_block_quote_text}>
+                                  &quot;Byway&apos;s tech courses are top-notch! As someone
+                                  who&apos;s always looking to stay ahead in the rapidly evolving
+                                  tech world, I appreciate the up-to-date content and engaging
+                                  multimedia.
+                                </p>
+                                <div className={styles.quotes_block_author}>
+                                  <Image
+                                    src={DesignerPhoto}
+                                    className={styles.quotes_block_author_photo}
+                                    alt='Designer photo'
+                                  />
+                                  <div className={styles.quotes_block_author_inside}>
+                                    <p className={styles.quotes_block_author_name}>Jane Doe</p>
+                                    <p className={styles.quotes_block_author_post}>Designer</p>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                          </div>
-                      ))}
-                    </div>
-                  )
-                ))}
+                          ))}
+                        </div>
+                      )
+                    ))}
+                  </div>
               </div>
-          </div>
+            )}
         </div>
     )
 }
