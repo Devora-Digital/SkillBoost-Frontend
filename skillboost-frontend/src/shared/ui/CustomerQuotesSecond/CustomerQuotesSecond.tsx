@@ -10,31 +10,35 @@ import { customersQuotes, customerQuote } from "@/data/customerQuotesData"
 import styles from "./CustomerQuotesSecond.module.scss"
 
 export default function CustomerQuotesSecond() {
+  const [customersQuotesData, setCustomersQuotesData] = useState<customerQuote[]>([])
+    useEffect(() => {
+      const loadData = () => {
+        setTimeout(() => {
+          setCustomersQuotesData(customersQuotes);
+        }, 800)
+      };
+      loadData();
+      console.log(customersQuotesData);
+    }, [customersQuotesData])
     const chunkArray = <T,>(array: T[], size: number): T[][] => {
       return Array.from({ length: Math.ceil(array.length / size) }, (_, i) =>
           array.slice(i * size, i * size + size)
       );
     }
-    const groupedQuotes = chunkArray(customersQuotes, 3);
-    // const shouldInitCarousel = groupedQuotes.length > 1;
-    const [containerNode, setContainerNode] = useState<HTMLDivElement | null>(null);
+    const groupedQuotes = chunkArray(customersQuotesData, 3);
+    // const groupedQuotes = chunkArray(customersQuotes, 3);
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
-    // const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false })
     useEffect(() => {
         // if (!emblaApi) return;
-        // if (!emblaApi || groupedQuotes.length  < 1) return;
-        if (!emblaApi || !containerNode) return;
-        // console.log("container scrollWidth:", containerNode.scrollWidth)
-        // console.log("wrapper clientWidth:", containerNode.parentElement?.clientWidth)
-        // console.log('Второй компонент Scroll Snap List:', emblaApi.scrollSnapList());
-        // console.log('Второй компонент количество слайдов Scroll Snap List:', emblaApi.scrollSnapList().length);
+        if (!emblaApi || groupedQuotes.length  < 1) return;
+        emblaApi.reInit();
         console.log('DOM слайдов:', document.querySelectorAll('.embla__slide').length);
         console.log('snapList:', emblaApi?.scrollSnapList().length);
         const autoScroll = setInterval(() => {
             emblaApi.scrollNext()
         }, 5000)
         return () => clearInterval(autoScroll)
-      }, [emblaApi, containerNode])
+      }, [emblaApi, groupedQuotes.length])
     // }, [emblaApi, groupedQuotes])
     return (
         <div className={styles.quotes_block} >
@@ -53,14 +57,9 @@ export default function CustomerQuotesSecond() {
           </div>
             {groupedQuotes.length > 0 && (
               <div className={styles.quotes_block_quotes} key={groupedQuotes.length} >
-                  {/* <div className={styles.embla__container} ref={emblaRef} > */}
-                  <div className={styles.embla__container} ref={(node) => {
-                    setContainerNode(node);
-                    emblaRef(node);
-                  }} >
-                    {/* {groupedQuotes.map((group, index) => ( */}
-                    {groupedQuotes.length > 0 && groupedQuotes.map((group, index) => (
-                      group.length > 0 && (
+                  <div className={styles.embla__container} ref={emblaRef} >
+                    {/* {groupedQuotes.length > 0 && groupedQuotes.map((group, index) => ( */}
+                    {groupedQuotes.map((group, index) => (
                         <div key={index} className={styles.embla__slide} >
                           {group.map((quote, index) => (
                               <div key={index} className={styles.quotes_block_quotes_item}>
@@ -85,7 +84,6 @@ export default function CustomerQuotesSecond() {
                               </div>
                           ))}
                         </div>
-                      )
                     ))}
                   </div>
               </div>
