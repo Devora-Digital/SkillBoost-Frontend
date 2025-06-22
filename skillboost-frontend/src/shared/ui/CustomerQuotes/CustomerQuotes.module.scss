@@ -4,7 +4,7 @@
 .embla {
     width: 1440px;
 
-    .embla__conatiner {
+    .embla__container {
         display: flex !important;
         flex-direction: row !important;
         overflow: visible !important;
@@ -53,6 +53,7 @@
 
 /*Quotes*/
 .quotes_block {
+    width: 100%;
     background: #F8FAFC;
 
     .quotes_block_header {
