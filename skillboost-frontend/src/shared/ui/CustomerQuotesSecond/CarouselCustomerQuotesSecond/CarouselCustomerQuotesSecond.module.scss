@@ -1,22 +1,43 @@
 @use '@/shared/styles/_variables.scss' as *;
 
+/*Embla*/
+.embla__viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
 .embla__container {
-    scroll-snap-type: x mandatory;
-    /**/
-    display: flex !important;
-    transition: transform 0.3s ease !important;
+    display: flex;
+    // overflow: hidden;
     will-change: transform;
-    /**/
-    width: 200%; 
 }
 
 .embla__slide {
-    scroll-snap-align: start;
-    /**/
     flex: 0 0 100% !important;
     display: flex !important;
-    gap: 20px;  
+    box-sizing: border-box;
+    min-width: 0;
+    // padding: 1rem;
+    // gap: 20px;  
 }
+
+// .embla__container {
+//     scroll-snap-type: x mandatory;
+//     /**/
+//     display: flex !important;
+//     transition: transform 0.3s ease !important;
+//     will-change: transform;
+//     /**/
+//     width: 200%; 
+// }
+
+// .embla__slide {
+//     scroll-snap-align: start;
+//     /**/
+//     flex: 0 0 100% !important;
+//     display: flex !important;
+//     gap: 20px;  
+// }
 
 .quotes_block_quotes {
     display: block !important;
