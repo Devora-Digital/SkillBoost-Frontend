@@ -39,8 +39,8 @@ export default function CustomerQuotes() {
             </div>
           </div>
           {/* <div className={`${styles.quotes_block_quotes} embla__container`} ref={emblaRef} > */}
-          <div className={styles.quotes_block_quotes}>
-              <div className={styles.embla__container} ref={emblaRef} >
+          <div className={styles.quotes_block_quotes} ref={emblaRef} >
+              <div className={styles.embla__container} >
                 {groupedQuotes.map((group, index) => (
                     // <div key={index} className={`embla__slide ${styles.quotes_block_quotes_item}`} >
                     // Реагирует на embla__slide
