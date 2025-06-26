@@ -1,0 +1,56 @@
+@use '@/shared/styles/_variables.scss' as *;
+
+.quotes_block_quotes_item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid $white-color-2;
+    border-radius: $primary-border-radius;
+    box-shadow: 0px 0px 8px 0px #3B82F61F;
+    padding: 24px;
+    width: 432px;
+    /**/
+    transform: none !important;
+}
+
+.quotes_block_quote_text {
+    font-family: $font-family-main;
+    width: 384px;
+    margin: 0;
+    line-height: 160%;
+}
+
+.quotes_block_author {
+    display: flex;
+    gap: 8px;
+
+    .quotes_block_author_photo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .quotes_block_author_inside {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0px 5px 0px;
+
+        .quotes_block_author_name {
+            font-size: 18px;
+            font-weight: $primary-semi-bold-font-weight;
+            font-family: $font-family-main;
+            height: 29px;
+            margin: 0;
+            line-height: 160%;
+        }
+        
+        .quotes_block_author_post {
+            font-size: $font-size-14;
+            font-family: $font-family-main;
+            margin: 0;
+            line-height: 150%;
+        }
+    }
+}
+

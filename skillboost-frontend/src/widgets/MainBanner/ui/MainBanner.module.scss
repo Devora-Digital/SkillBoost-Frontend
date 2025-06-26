@@ -1,0 +1,524 @@
+
+@use '@/shared/styles/_variables.scss' as *;
+
+/*Embla carousel*/
+.embla {
+    overflow: hidden;
+    width: 1440px;
+
+    .embla__container {
+        display: flex;
+
+    .embla__slide {
+        flex: 0 0 100%;
+    }    
+    }
+}
+ 
+
+/*Banner block*/
+.banner_block {
+    display: flex;
+    align-self: flex-start;
+    height: 600px;
+
+    .banner_block_inside_block_first {
+        display: flex;
+        flex-direction: column;
+        gap: $primary-gap-2;
+        margin-top: 168.5px;
+        margin-left: 80px;
+
+        .banner_block_text_block {
+            display: flex;
+            flex-direction: column;
+            gap: $primary-gap;
+        }
+        
+        .banner_block_title {
+            font-size: 40px;
+            font-weight: 700;
+            font-family: $font-family-main;
+            width: 483px;
+            margin: 0;
+        }
+        
+        .banner_block_description {
+            font-family: $font-family-main;
+            width: 592px;
+            color: #334155;
+            margin: 0;
+            line-height: 160%;
+        }
+        
+        .banner_block_button {
+            font-size: $font-size-14;
+            font-weight: $primary-medium-font-weight;
+            font-family: $font-family-main;
+            width: 238px;
+            color: $white-color;
+            background: #3B82F6;
+            border-radius: 8px;
+            padding: $primary-padding;
+        }
+    }
+    
+    .banner_image_first {
+        position: absolute !important;
+        top: 172.78px;
+        left: 840.78px;
+        width: 204.54px;
+        height: 204.54px;
+        background: #F87171;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top;
+    }
+    
+    .banner_image_second {
+        position: absolute !important;
+        top: 74px;
+        left: 1060px;
+        width: 217.35px;
+        height: 217.35px;
+        background: #60A5FA;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top;
+    }
+    
+    .banner_image_third {
+        position: absolute !important;
+        top: 330px;
+        left: 1090px;
+        width: 222px;
+        height: 222px;
+        background: #FACC15;
+        border-radius: 50%;
+        object-fit: cover;
+        transform: scale(-1, 1);
+    }
+    
+    .courses_banner_people_first {
+        object-fit: cover;
+        object-position: right;
+        width: 330px;
+        height: 440px;
+        color: transparent;
+        border-radius: 26.41px;
+        position: absolute;
+        bottom: 70px;
+        left: 2340px;
+        z-index: 1;
+    }
+
+    .courses_banner_people_second {
+        object-fit: cover;
+        object-position: right;
+        width: 330px;
+        height: 440px;
+        color: transparent;
+        border-radius: 110px;
+        position: absolute;
+        bottom: 80px;
+        left: 3780px;
+        z-index: 1;
+    }
+
+    .courses_banner_people_second_background {
+        min-width: 404px;
+        min-height: 397px;
+        background: #93C5FD;
+        border-radius: 81px;
+        position: absolute;
+        left: 3740px;
+        bottom: 80px;
+    }
+
+    .courses_banner_people_third {
+        width: 435px;
+        height: 480px;
+        transform: scale(-1, 1);
+        border-bottom-right-radius: 22%;
+        border-bottom-left-radius: 40%;
+        position: absolute;
+        bottom: 55px;
+        left: 5200px;
+    }
+
+    .fourth_banner_pink_circle {
+        position: absolute;
+        top: 330px;
+        left: 5120px;
+        z-index: -1;
+    }
+
+    .fourth_banner_black_circle {
+        position: absolute;
+        top: 365px;
+        left: 5150px;
+        z-index: -2;
+    }
+
+    .third_banner_mini_circles {
+        position: absolute;
+        top: 340px;
+        left: 4100px;
+        z-index: -1;
+    }
+
+    .fourth_banner_mini_circles_first {
+        position: absolute;
+        bottom: 26px;
+        left: 5080px;
+        z-index: -3;
+    }
+
+    .fourth_banner_mini_circles_second {
+        position: absolute;
+        top: 110px;
+        left: 5540px;
+    }
+
+    .banner_people_first_border {
+        position: relative;
+        top: 150px;
+        left: 270px;
+    }
+
+    .first_mini_circle {
+        position: absolute !important;
+        top: 70px;
+        left: 1026px;
+    }
+    
+    .second_mini_circle {
+        position: absolute !important;
+        top: 200px;
+        left: 785px;
+    }
+    
+    .third_mini_circle {
+        position: absolute !important;
+        top: 125px;
+        left: 2283px;
+    }
+
+    .banner_image_ellipse_first {
+        position: absolute !important;
+        top: 282px;
+        left: 824px;
+    }
+    
+    .banner_image_ellipse_second {
+        position: absolute !important;
+        top: 55px;
+        left: 1145px;
+    }
+    
+    .banner_image_ellipse_third {
+        position: absolute !important;
+        top: 360px;
+        left: 1183px;
+    }
+    
+    .banner_center_circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background: #0F172A;
+        border-radius: 50%;
+        position: absolute !important;
+        top: 300px;
+        left: 1085px;
+
+        .banner_center_circle_square {
+            width: 19px;
+            height: 19px;
+            background: $white-color;
+            transform: rotate(45deg);
+            transform-origin: center;
+        }
+    }
+    
+    .students_community_banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 8px;
+        box-shadow: 0px 4px 16px 0px #0000001F;
+        background: $white-color;
+        padding: 12px;
+        position: absolute !important;
+        top: 422px;
+        left: 1000px;
+        z-index: 20;
+
+        .students_community_text {
+            font-family: $font-family-main;
+            font-size: 12px;
+            font-weight: $primary-semi-bold-font-weight;
+            color: #020617;
+            width: 143px;
+            margin: 10px 0px 0px 0px;
+        }
+    }
+
+    .students_community_banner_second {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 8px;
+        box-shadow: 0px 0px 8px 0px #3B82F61F;
+        background: $white-color;
+        padding: 16px 30px 16px 16px;
+        position: absolute !important;
+        top: 142px;
+        left: 3600px;
+        z-index: 20;
+
+        .students_community_second_text {
+            font-family: $font-family-main;
+            font-size: $font-size-14;
+            font-weight: $primary-normal-font-weight;
+            color: #020617;
+            width: 143px;
+            margin: 10px 0px 0px 0px;
+            line-height: 150%;
+        }
+    }
+
+    .courses_number_banner {
+        border: 1px solid #E2E8F0;
+        border-radius: 8px;
+        box-shadow: 0px 0px 8px 0px #3B82F61F;
+        background: #FFF;
+        width: 236px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        position: absolute;
+        top: 428px;
+        left: 2200px;
+        z-index: 10;
+
+        .courses_number_banner_inside {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 16px 0px 16px;
+
+            .courses_number_banner_icon_wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 48px !important;
+                height: 48px !important;
+                border-radius: 50%;
+                background: #E0F2FE;
+            }
+
+            .courses_number_banner_title {
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                color: #64748B;
+                line-height: 150%;
+            }
+        }
+
+        .courses_number_banner_counter {
+            display: flex;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 28px;
+            color: #000;
+            padding: 0px 31px 16px 72px;
+            line-height: 150%;
+        }
+    }
+
+    .courses_number_banner_second {
+        border: 1px solid #E2E8F0;
+        border-radius: 8px;
+        box-shadow: 0px 0px 8px 0px #3B82F61F;
+        background: #FFF;
+        width: 236px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        position: absolute;
+        top: 358px;
+        left: 3600px;
+        z-index: 10;
+
+        .courses_number_banner_inside {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 16px 0px 16px;
+
+            .courses_number_banner_icon_wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 48px !important;
+                height: 48px !important;
+                border-radius: 50%;
+                background: #E0F2FE;
+            }
+
+            .courses_number_banner_title {
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                color: #64748B;
+                line-height: 150%;
+            }
+        }
+
+        .courses_number_banner_counter {
+            display: flex;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 28px;
+            color: #000;
+            padding: 0px 31px 16px 72px;
+            line-height: 150%;
+        }
+    }
+
+    .courses_rate_banner {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #E2E8F0;
+        border-radius: 8px;
+        box-shadow: 0px 0px 8px 0px #3B82F61F;
+        background: #FFF;
+        width: 186px;
+        position: relative;
+        bottom: 376px;
+        left: 490px;
+        z-index: 10;
+        min-height: 146px;
+
+        .courses_rate_banner_wrapper {
+            padding: 14px 11px 0px 10px;
+
+            .courses_rate_banner_icons_wrapper {
+
+                .courses_rate_state_first {
+                    position: absolute;
+                    left: 30px;
+                }
+
+                .courses_rate_state_second {
+                    position: absolute;
+                    left: 30px;
+                }
+            }
+            
+            .courses_rate_state_percent {
+                font-family: $font-family-main;
+                font-size: $font-size-18;
+                font-weight: $primary-semi-bold-font-weight;
+                line-height: 140%;
+                position: absolute;
+                top: 55px;
+                left: 70px;
+            }
+
+            .courses_rate_state_title_wrapper {
+                position: absolute;
+                top: 90px;
+                left: 20px;
+            
+                .courses_rate_state_title_first {
+                    display: flex;
+                    justify-content: center;
+                    font-family: $font-family-main;
+                    font-size: $font-size-14;
+                    font-weight: $primary-normal-font-weight;
+                    line-height: 140%;
+                }
+
+                .courses_rate_state_title_second {
+                    display: flex;
+                    justify-content: center;
+                    font-family: $font-family-main;
+                    font-size: $font-size-14;
+                    font-weight: $primary-normal-font-weight;
+                    line-height: 140%;
+                }
+            }
+        }
+    }
+
+    .courses_rate_banner_second {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #E2E8F0;
+        border-radius: 8px;
+        box-shadow: 0px 0px 8px 0px #3B82F61F;
+        background: #FFF;
+        width: 186px;
+        position: relative;
+        top: 60px;
+        left: 490px;
+        z-index: 10;
+        min-height: 146px;
+
+        .courses_rate_banner_second_wrapper {
+            padding: 14px 11px 0px 10px;
+
+            .courses_rate_banner_second_icons_wrapper {
+
+                .courses_rate_second_state_first {
+                    position: absolute;
+                    left: 30px;
+                }
+
+                .courses_rate_second_state_second {
+                    position: absolute;
+                    left: 30px;
+                }
+            }
+            
+            .courses_rate_state_second_percent {
+                font-family: $font-family-main;
+                font-size: $font-size-18;
+                font-weight: $primary-semi-bold-font-weight;
+                line-height: 140%;
+                position: absolute;
+                top: 55px;
+                left: 70px;
+            }
+
+            .courses_rate_state_second_title_wrapper {
+                position: absolute;
+                top: 90px;
+                left: 20px;
+            
+                .courses_rate_state_second_title_first {
+                    display: flex;
+                    justify-content: center;
+                    font-family: $font-family-main;
+                    font-size: $font-size-14;
+                    font-weight: $primary-normal-font-weight;
+                    line-height: 140%;
+                }
+
+                .courses_rate_state_second_title_second {
+                    display: flex;
+                    justify-content: center;
+                    font-family: $font-family-main;
+                    font-size: $font-size-14;
+                    font-weight: $primary-normal-font-weight;
+                    line-height: 140%;
+                }
+            }
+        }
+    }
+}
