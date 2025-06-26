@@ -1,5 +1,4 @@
-import type { Metadata } from "next";
-import './styles/globals.scss'
+import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import RootLayoutClient from './layoutClient'
 
@@ -21,9 +20,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.variable}>
-        <RootLayoutClient>
-          {children}
-        </RootLayoutClient>
+        <RootLayoutClient>{children}</RootLayoutClient>
       </body>
     </html>
   )

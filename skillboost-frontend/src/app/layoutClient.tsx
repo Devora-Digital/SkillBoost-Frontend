@@ -1,4 +1,5 @@
 'use client'
+
 import { ReactNode } from 'react'
 import { usePathname } from 'next/navigation'
 import { Provider } from 'react-redux'
@@ -8,7 +9,11 @@ import { Footer } from '@/widgets/Footer'
 import styles from './page.module.css'
 import { HomeScreen } from '@/widgets/Main'
 
-export default function RootLayoutClient({ children }: { children: ReactNode }) {
+export default function RootLayoutClient({
+  children
+}: {
+  children: ReactNode
+}) {
   const pathname = usePathname()
 
   const hideHeaderFooterRoutes = ['/signup', '/login']
