@@ -1,0 +1,68 @@
+@use '@/shared/styles/variables' as *;
+
+@mixin HeaderText {
+    font-weight: 500;
+    line-height: 19px;
+    color: $header-text-color;
+}
+
+@mixin FooterText {
+    color: $footer-secondary-text;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin heading_2 {
+    color: $login-color-title;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+
+}
+
+@mixin heading_4 {
+    color: $login-color-title;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+@mixin heading_5 {
+    color: $login-color-title;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+@mixin small_text {
+    color: $login-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+@mixin InputText {
+    font-size: 16px;
+    font-weight: 400;
+    color: $black-color;
+
+    &::placeholder {
+        color: $login-color;
+    }
+}
+
+@mixin MentorText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $header-text-color;
+}
+
+@mixin MentorTitle {
+    margin-top: 8px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: $login-color-title; 
+    line-height: 150%
+}

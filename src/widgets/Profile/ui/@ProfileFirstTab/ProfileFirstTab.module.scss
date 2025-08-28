@@ -1,0 +1,123 @@
+@use '@/shared/styles/mixins' as *;
+@use '@/shared/styles/variables' as *;
+
+.containerTab {
+    display: flex;
+    gap: 27px;
+    flex-direction: column;
+
+    .tab {
+        box-sizing: border-box;
+        border: 1px solid $profile-grey-color;
+        border-radius: 16px;
+        padding: 24px;
+
+        &Title {
+            color: $login-color-title;
+            @include heading_5;
+            margin-bottom: 16px;
+        }
+
+        &.tabMain {
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+
+            .blockFlex {
+                gap: 30px;
+                display: flex;
+            }
+
+            .headlineInput {
+                width: 70%;
+            }
+
+
+            .selectBlock {
+                .selectTitle {
+                    @include small_text;
+                    color: $login-color-title;
+                    margin-bottom: 6px;
+                }
+            }
+        }
+
+        &.tabImage {
+
+            .imageText {
+                @include InputText;
+                color: $login-color;
+            }
+
+            .imageButton {
+                color: $white-color;
+                border-radius: 8px;
+                background: $login-color-title;
+                border: none;
+                cursor: pointer;
+                @include small_text;
+                color: $white-color;
+                padding: 15px 24px;
+                margin-top: 8px;
+
+                &:disabled {
+                    background-color: $footer-secondary-text;
+                    cursor: not-allowed;
+                }
+            }
+
+
+            .tabTitle {
+                margin-top: 16px;
+            }
+
+            .boxImage {
+                max-width: 425px;
+                width: 100%;
+                max-height: 255px;
+                height: 100%;
+                border-radius: 8px;
+                border: 1px solid $profile-border;
+                padding: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $white-color;
+            }
+
+            .tabUpload {
+                display: flex;
+                margin-top: 12px;
+                align-items: center;
+                gap: 16px;
+
+
+                .uploadButton {
+                    padding: 10px 24px 10px 24px;
+                    box-sizing: border-box;
+                    border: 1px solid $login-color-title;
+                    border-radius: 8px;
+                    background-color: $white-color;
+                    cursor: pointer;
+                    display: inline-block;
+                }
+
+                .uploadButton label {
+                    cursor: pointer;
+                }
+
+                .uploadButton input {
+                    display: none;
+                }
+            }
+
+        }
+
+        .inputTitle {
+            @include small_text;
+            color: $login-color-title;
+            margin-bottom: 9px;
+        }
+    }
+
+}

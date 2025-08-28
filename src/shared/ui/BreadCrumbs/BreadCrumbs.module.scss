@@ -1,0 +1,29 @@
+.link {
+    color: #0f172a;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb:last-child .link {
+    color: #3b82f6;
+}
+
+.breadcrumb svg {
+    width: 16px;
+    height: 16px;
+    color: #64748b;
+}
